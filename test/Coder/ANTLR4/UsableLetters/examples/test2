@@ -1,0 +1,50 @@
+    fragment token StringCharacter =
+        ~('\''|'"'|'\\'|'\r'|'\n')
+        | '\\' EscapeSequence
+    ;
+    fragment token EscapeSequence = 
+        CharacterEscapeSequence
+        | HexEscapeSequence
+        | UnicodeEscapeSequence
+    ;
+    fragment token CharacterEscapeSequence =
+        SingleEscapeCharacter
+    ;
+    fragment token HexEscapeSequence =
+        'x' HexDigit HexDigit
+    ;
+    fragment token UnicodeEscapeSequence =
+        'u' HexDigit HexDigit HexDigit HexDigit
+    ;
+    fragment token SingleEscapeCharacter =
+        ('\''|'"'|'\\'|'b'|'f'|'n'|'r'|'t'|'v')
+    ;
+    fragment token EscapeCharacter =
+        SingleEscapeCharacter
+        | DecimalDigit
+        | ('x'|'u')
+    ;
+    fragment token DecimalDigit =
+        '0'..'9'
+    ;
+    fragment token HexDigit =
+        (('0'..'9')|('a'..'f')|('A'..'F'))
+    ;
+    fragment token DecimalIntegerLiteral =
+        '0'
+        | ('1'..'9') (DecimalDigit)*
+    ;
+    fragment token IdentifierStart =
+        UnicodeLetter
+    ;
+    fragment token UnicodeLetter =
+        ('\u0041'..'\u005A')
+        | ('\u0061'..'\u007A')
+        | '\u00AA'
+        | '\u00B5'
+        | '\u00BA'
+        | ('\u00C0'..'\u00D6')
+        | ('\u00D8'..'\u00F6')
+        | ('\u00F8'..'\u021F')
+    ;
+
