@@ -1,0 +1,6 @@
+[submodule "core/Hammer"]
+	path = core/Hammer
+	url = ../Hammer
+[submodule "core/Monticore"]
+	path = core/Monticore
+	url = ../Monticore
