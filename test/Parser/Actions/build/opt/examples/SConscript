@@ -1,0 +1,11 @@
+Import('env')
+
+example = env.Clone()
+example.Append(LIBS="hammer", LIBPATH="../src")
+
+dns = example.Program('dns', ['dns.c', 'rr.c', 'dns_common.c'])
+base64 = example.Program('base64', 'base64.c')
+base64_sem1 = example.Program('base64_sem1', 'base64_sem1.c')
+base64_sem2 = example.Program('base64_sem2', 'base64_sem2.c')
+ties = example.Program('ties', ['ties.c', 'grammar.c'])
+env.Alias("examples", [dns, base64, base64_sem1, base64_sem2, ties])

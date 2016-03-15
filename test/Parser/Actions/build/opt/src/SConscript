@@ -1,0 +1,100 @@
+# -*- python -*-
+import os.path
+Import('env testruns')
+
+dist_headers = [
+    "hammer.h",
+    "allocator.h",
+    "compiler_specifics.h",
+    "glue.h",
+    "internal.h",
+    "platform.h"
+]
+
+parsers_headers = [
+    "parsers/parser_internal.h"
+]
+
+backends_headers = [
+    "backends/regex.h",
+    "backends/contextfree.h"
+]
+
+parsers = ['parsers/%s.c'%s for s in
+           ['action',
+            'and',
+            'attr_bool',
+            'bind',
+            'bits',
+            'butnot',
+            'ch',
+            'charset',
+            'choice',
+            'difference',
+            'end',
+            'endianness',
+            'epsilon',
+            'ignore',
+            'ignoreseq',
+            'indirect',
+            'int_range',
+            'many',
+            'not',
+            'nothing',
+            'optional',
+            'permutation',
+            'sequence',
+            'token',
+            'unimplemented',
+            'whitespace',
+            'xor',
+            'value']] 
+
+backends = ['backends/%s.c' % s for s in
+            ['packrat', 'llk', 'regex', 'glr', 'lalr', 'lr', 'lr0']]
+
+misc_hammer_parts = [
+    'allocator.c',
+    'benchmark.c',
+    'bitreader.c',
+    'bitwriter.c',
+    'cfgrammar.c',
+    'datastructures.c',
+    'desugar.c',
+    'glue.c',
+    'hammer.c',
+    'platform_bsdlike.c',
+    'pprint.c',
+    'registry.c',
+    'system_allocator.c']
+
+ctests = ['t_benchmark.c',
+          't_bitreader.c',
+          't_bitwriter.c',
+          't_parser.c',
+          't_grammar.c',
+          't_misc.c',
+	  't_regression.c']
+
+libhammer_shared = env.SharedLibrary('hammer', parsers + backends + misc_hammer_parts)
+libhammer_static = env.StaticLibrary('hammer', parsers + backends + misc_hammer_parts)
+Default(libhammer_shared, libhammer_static)
+
+env.Install("$libpath", [libhammer_static, libhammer_shared])
+env.Install("$incpath", dist_headers)
+env.Install("$parsersincpath", parsers_headers)
+env.Install("$backendsincpath", backends_headers)
+env.Install("$pkgconfigpath", "../../../libhammer.pc")
+
+testenv = env.Clone()
+testenv.ParseConfig('pkg-config --cflags --libs glib-2.0')
+testenv.Append(LIBS=['hammer'], LIBPATH=['.'])
+ctestexec = testenv.Program('test_suite', ctests + ['test_suite.c'], LINKFLAGS="--coverage" if testenv.GetOption("coverage") else None)
+ctest = Alias('testc', [ctestexec], "".join(["env LD_LIBRARY_PATH=", os.path.dirname(ctestexec[0].path), " ", ctestexec[0].path]))
+AlwaysBuild(ctest)
+testruns.append(ctest)
+
+Export("libhammer_static libhammer_shared")
+
+for b in env['bindings']:
+    env.SConscript(["bindings/%s/SConscript" % b])

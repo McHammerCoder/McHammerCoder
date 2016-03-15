@@ -1,0 +1,215 @@
+grammar Binary
+{ 
+    /*
+        None of the below shown productions is actually parsed the way they are
+        shown here. Instead the corresponding hammer-parser is applied whenever
+        the parser-generator encounters one of the below nonterminals.
+
+
+        In addition when the parser-generator encounters a sequence of Bit or UBit it
+        wont apply the bit parser each time as instead it applies the hammer parser that
+        parses the given ammount of bits.
+        Example:
+            Bits_3 = UBit UBit UBit;
+        results in
+            HParser* bits_3 = h_bits(3,false);
+
+        This has impact on the parse-tree that is generated in the end.
+        Example:
+            Bits = Bits_3 Bits_3;
+        would not result in h_bits(6,false); but in two times h_bits(3,false); 
+        and thus creates two leafs unless Bits_3 is defined as fragment.
+
+        The other way around
+            Bits = UBit UBit UBit UBit UBit UBit;
+        will be parsed as h_bits(6,false);. If they are supposed to represent two values they
+        need to be split into two none fragment productions as shown above.
+            
+    */
+
+    B0 = "0";
+    B1 = "1";
+
+    Bit = B0 | B1;
+    UBit = B0 | B1;
+
+    UInt_8 =  UBit UBit UBit UBit UBit UBit UBit UBit;
+    UInt_16 = UBit UBit UBit UBit UBit UBit UBit UBit
+              UBit UBit UBit UBit UBit UBit UBit UBit;
+    UInt_32 = UBit UBit UBit UBit UBit UBit UBit UBit
+              UBit UBit UBit UBit UBit UBit UBit UBit
+              UBit UBit UBit UBit UBit UBit UBit UBit
+              UBit UBit UBit UBit UBit UBit UBit UBit;
+    UInt_64 = UBit UBit UBit UBit UBit UBit UBit UBit
+              UBit UBit UBit UBit UBit UBit UBit UBit
+              UBit UBit UBit UBit UBit UBit UBit UBit
+              UBit UBit UBit UBit UBit UBit UBit UBit
+              UBit UBit UBit UBit UBit UBit UBit UBit
+              UBit UBit UBit UBit UBit UBit UBit UBit
+              UBit UBit UBit UBit UBit UBit UBit UBit
+              UBit UBit UBit UBit UBit UBit UBit UBit;
+   
+    Int_8 =  Bit Bit Bit Bit Bit Bit Bit Bit;
+    Int_16 = Bit Bit Bit Bit Bit Bit Bit Bit
+             Bit Bit Bit Bit Bit Bit Bit Bit;
+    Int_32 = Bit Bit Bit Bit Bit Bit Bit Bit
+             Bit Bit Bit Bit Bit Bit Bit Bit
+             Bit Bit Bit Bit Bit Bit Bit Bit
+             Bit Bit Bit Bit Bit Bit Bit Bit;
+    Int_64 = Bit Bit Bit Bit Bit Bit Bit Bit
+             Bit Bit Bit Bit Bit Bit Bit Bit
+             Bit Bit Bit Bit Bit Bit Bit Bit
+             Bit Bit Bit Bit Bit Bit Bit Bit
+             Bit Bit Bit Bit Bit Bit Bit Bit
+             Bit Bit Bit Bit Bit Bit Bit Bit
+             Bit Bit Bit Bit Bit Bit Bit Bit
+             Bit Bit Bit Bit Bit Bit Bit Bit;
+
+    /* 	
+        If a production extends Length then the corresponding Nonterminal is supposed 
+	to represent a number describing how often the next part is repeated
+        Example:
+           LenValue extends Length = Int_8;
+           Language = LenValue UInt_8;
+        Then the parser parses an 8 bit integer describing how often the parser has to
+        repeat parsing an 8 bit unsigned integer.
+        Whether the length-value is correct then is a context condition and thus not
+        subject of the parser-generation.
+    */
+    interface Length;
+}
+
+grammar DefaultCharSet extends Binary
+{
+    CH_X00 = B0 B0 B0 B0 B0 B0 B0 B0;
+
+    CH_SP = B0 B0 B1 B0 B0 B0 B0 B0;
+    CH_Minus = B0 B0 B1 B0 B1 B1 B0 B1;
+    CH_Dot = B0 B0 B1 B0 B1 B1 B1 B0;
+
+    CH_0 = B0 B0 B1 B1 B0 B0 B0 B0;
+    CH_1 = B0 B0 B1 B1 B0 B0 B0 B1;
+    CH_2 = B0 B0 B1 B1 B0 B0 B1 B0;
+    CH_3 = B0 B0 B1 B1 B0 B0 B1 B1;
+    CH_4 = B0 B0 B1 B1 B0 B1 B0 B0;
+    CH_5 = B0 B0 B1 B1 B0 B1 B0 B1;
+    CH_6 = B0 B0 B1 B1 B0 B1 B1 B0;
+    CH_7 = B0 B0 B1 B1 B0 B1 B1 B1;
+    CH_8 = B0 B0 B1 B1 B1 B0 B0 B0;
+    CH_9 = B0 B0 B1 B1 B1 B0 B0 B1;
+
+    CH_A = B0 B1 B0 B0 B0 B0 B0 B1;
+    CH_B = B0 B1 B0 B0 B0 B0 B1 B0;
+    CH_C = B0 B1 B0 B0 B0 B0 B1 B1;
+    CH_D = B0 B1 B0 B0 B0 B1 B0 B0;
+    CH_E = B0 B1 B0 B0 B0 B1 B0 B1;
+    CH_F = B0 B1 B0 B0 B0 B1 B1 B0;
+    CH_G = B0 B1 B0 B0 B0 B1 B1 B1;
+    CH_H = B0 B1 B0 B0 B1 B0 B0 B0;
+    CH_I = B0 B1 B0 B0 B1 B0 B0 B1;
+    CH_J = B0 B1 B0 B0 B1 B0 B1 B0;
+    CH_K = B0 B1 B0 B0 B1 B0 B1 B1;
+    CH_L = B0 B1 B0 B0 B1 B1 B0 B0;
+    CH_M = B0 B1 B0 B0 B1 B1 B0 B1;
+    CH_N = B0 B1 B0 B0 B1 B1 B1 B0;
+    CH_O = B0 B1 B0 B0 B1 B1 B1 B1;
+    CH_P = B0 B1 B0 B1 B0 B0 B0 B0;
+    CH_Q = B0 B1 B0 B1 B0 B0 B0 B1;
+    CH_R = B0 B1 B0 B1 B0 B0 B1 B0;
+    CH_S = B0 B1 B0 B1 B0 B0 B1 B1;
+    CH_T = B0 B1 B0 B1 B0 B1 B0 B0;
+    CH_U = B0 B1 B0 B1 B0 B1 B0 B1;
+    CH_V = B0 B1 B0 B1 B0 B1 B1 B0;
+    CH_W = B0 B1 B0 B1 B0 B1 B1 B1;
+    CH_X = B0 B1 B0 B1 B1 B0 B0 B0;
+    CH_Y = B0 B1 B0 B1 B1 B0 B0 B1;
+    CH_Z = B0 B1 B0 B1 B1 B0 B1 B0;
+
+    CH_a = B0 B1 B1 B0 B0 B0 B0 B1;
+    CH_b = B0 B1 B1 B0 B0 B0 B1 B0;
+    CH_c = B0 B1 B1 B0 B0 B0 B1 B1;
+    CH_d = B0 B1 B1 B0 B0 B1 B0 B0;
+    CH_e = B0 B1 B1 B0 B0 B1 B0 B1;
+    CH_f = B0 B1 B1 B0 B0 B1 B1 B0;
+    CH_g = B0 B1 B1 B0 B0 B1 B1 B1;
+    CH_h = B0 B1 B1 B0 B1 B0 B0 B0;
+    CH_i = B0 B1 B1 B0 B1 B0 B0 B1;
+    CH_j = B0 B1 B1 B0 B1 B0 B1 B0;
+    CH_k = B0 B1 B1 B0 B1 B0 B1 B1;
+    CH_l = B0 B1 B1 B0 B1 B1 B0 B0;
+    CH_m = B0 B1 B1 B0 B1 B1 B0 B1;
+    CH_n = B0 B1 B1 B0 B1 B1 B1 B0;
+    CH_o = B0 B1 B1 B0 B1 B1 B1 B1;
+    CH_p = B0 B1 B1 B1 B0 B0 B0 B0;
+    CH_q = B0 B1 B1 B1 B0 B0 B0 B1;
+    CH_r = B0 B1 B1 B1 B0 B0 B1 B0;
+    CH_s = B0 B1 B1 B1 B0 B0 B1 B1;
+    CH_t = B0 B1 B1 B1 B0 B1 B0 B0;
+    CH_u = B0 B1 B1 B1 B0 B1 B0 B1;
+    CH_v = B0 B1 B1 B1 B0 B1 B1 B0;
+    CH_w = B0 B1 B1 B1 B0 B1 B1 B1;
+    CH_x = B0 B1 B1 B1 B1 B0 B0 B0;
+    CH_y = B0 B1 B1 B1 B1 B0 B0 B1;
+    CH_z = B0 B1 B1 B1 B1 B0 B1 B0;
+}
+
+grammar Domain extends DefaultCharSet
+{
+    Letter = ( 'a'..'z' ) | ( 'A'..'Z' );
+    Digit = '0'..'9';
+    Let_dig = Letter | Digit;
+    Let_dig_hyp = Let_dig | '-';
+    interface Ldh_string;
+    Ldh_string = Let_dig_hyp Ldh_string | Let_dig;
+    Label = ( Let_dig Ldh_str ) | Let_dig;
+    Subdomain = Label ('.' Label)+;
+    Domain = ( Subdomain | ' ' );
+}
+
+grammar DNS extends Domain
+{
+    BitsU_1 = UBit;
+    BitsU_3 = UBit UBit UBit;
+    BitsU_4 = UBit UBit UBit UBit;
+    BitsU_16 = UBit UBit UBit UBit UBit UBit UBit UBit 
+               UBit UBit UBit UBit UBit UBit UBit UBit;
+
+    UInt_16_0000 = B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0;
+    UInt_16_0001 = B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B1;
+    // ***
+    UInt_16_FFFF = B1 B1 B1 B1 B1 B1 B1 B1 B1 B1 B1 B1 B1 B1 B1 B1;
+
+    external Domain;
+
+    Hdzero = BitsU_3 : { some action } ;
+    Header = BitsU_16 
+	     BitsU_1
+	     BitsU_4
+ 	     BitsU_1
+	     BitsU_1
+	     BitsU_1
+	     BitsU_1
+	     Hdzero
+	     BitsU_4
+	     UInt_16
+	     UInt_16
+	     UInt_16
+	     UInt_16;
+    
+    Type = ( UInt_16_0001 | .. | UInt_16_0016 );
+    QType = Type | ( UInt_16_00FC | .. | UInt_16_00FF );
+
+    Class = ( UInt_16_0001 | .. | UInt_16_0004 );
+    QClass = Class | UInt_16_FFFF; 
+
+    Len extends Length = ~(UInt_16_0000);
+    Label = Len UInt_8;
+    QName = Label+ '\x00';
+
+    Question = QName QType QClass;
+    RLen extends Length = UInt_16;
+    RData = RLen UInt_8;
+    RR = Domain Type Class UInt_32 RData;
+
+    Message = Header Question* RR*;
+}
