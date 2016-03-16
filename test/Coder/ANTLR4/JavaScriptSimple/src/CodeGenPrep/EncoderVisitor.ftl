@@ -1,5 +1,5 @@
 ${tc.signature("ast")}
-<#assign parserName = glex.getGlobalValue("ast").getSimpleName()?cap_first>
+<#assign parserName = ast.getName()?cap_first>
 
 import org.antlr.v4.runtime.Token;
 import org.antlr.v4.runtime.tree.TerminalNode;

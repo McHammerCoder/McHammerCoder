@@ -1,0 +1,2517 @@
+========================================================== Hookpoints
+Op    Type HP-/AHP Info
+call  EHP  HP:"JavaCopyright"
+set   ATHP AstInterfaceContent.ftl            <<:ASTCDInterface>>
+           ASTNodeBase.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!2!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!3!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!3!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!4!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!4!
+           DoCreateWithParams.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!3!
+           ErrorIfNull.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!4!
+           ErrorIfNull.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!5!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!6!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!7!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!7!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!8!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!8!
+           DoCreateWithParams.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!9!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!10!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!11!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!11!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!12!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!12!
+           DoCreateWithParams.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!13!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!14!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!15!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!15!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!16!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!16!
+           DoCreateWithParams.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!17!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!18!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!19!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!19!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!20!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!20!
+           DoCreateWithParams.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!21!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!22!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!23!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!23!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!24!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!24!
+           DoCreateWithParams.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!25!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!26!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!27!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!27!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!28!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!28!
+           DoCreateWithParams.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!29!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!30!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!31!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!31!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!32!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!32!
+           DoCreateWithParams.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!31!
+           ErrorIfNull.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!32!
+           ErrorIfNull.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!33!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!34!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!35!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!35!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!36!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!36!
+           DoCreateWithParams.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!37!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!38!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!39!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!39!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!40!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!40!
+           DoCreateWithParams.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!41!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!42!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!43!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!43!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!44!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!44!
+           DoCreateWithParams.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!45!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!46!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!47!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!47!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!48!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!48!
+           DoCreateWithParams.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!49!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!50!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!51!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!51!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!52!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!52!
+           DoCreateWithParams.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!53!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!54!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!55!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!55!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!56!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!56!
+           DoCreateWithParams.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!57!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!58!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!59!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!59!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!60!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!60!
+           DoCreateWithParams.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!59!
+           ErrorIfNull.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!60!
+           ErrorIfNull.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!61!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!62!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!63!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!63!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!64!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!64!
+           DoCreateWithParams.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!63!
+           ErrorIfNull.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!64!
+           ErrorIfNull.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!65!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!66!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!67!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!67!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!68!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!68!
+           DoCreateWithParams.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!67!
+           ErrorIfNull.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!68!
+           ErrorIfNull.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!69!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!70!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!71!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!71!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!72!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!72!
+           DoCreateWithParams.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!71!
+           ErrorIfNull.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!72!
+           ErrorIfNull.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!73!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!74!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!75!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!75!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!76!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!76!
+           DoCreateWithParams.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!75!
+           ErrorIfNull.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!76!
+           ErrorIfNull.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!77!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!78!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!79!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!79!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!80!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!80!
+           DoCreateWithParams.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!79!
+           ErrorIfNull.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!80!
+           ErrorIfNull.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!81!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!82!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!83!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!83!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!84!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!84!
+           DoCreateWithParams.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!83!
+           ErrorIfNull.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!84!
+           ErrorIfNull.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!85!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!86!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!87!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!87!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!88!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!88!
+           DoCreateWithParams.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!87!
+           ErrorIfNull.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!88!
+           ErrorIfNull.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!89!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!90!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!91!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!91!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!92!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!92!
+           DoCreateWithParams.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!91!
+           ErrorIfNull.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!92!
+           ErrorIfNull.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!93!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!94!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!95!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!95!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!96!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!96!
+           DoCreateWithParams.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!95!
+           ErrorIfNull.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!96!
+           ErrorIfNull.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!97!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!98!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!99!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!99!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!100!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!100!
+           DoCreateWithParams.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!99!
+           ErrorIfNull.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!100!
+           ErrorIfNull.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!101!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!102!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!103!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!103!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!104!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!104!
+           DoCreateWithParams.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!103!
+           ErrorIfNull.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!104!
+           ErrorIfNull.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!105!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!106!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!107!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!107!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!108!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!108!
+           DoCreateWithParams.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!107!
+           ErrorIfNull.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!108!
+           ErrorIfNull.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!109!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!110!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!111!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!111!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!112!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!112!
+           DoCreateWithParams.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!111!
+           ErrorIfNull.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!112!
+           ErrorIfNull.ftl
+set   ATHP ClassContent.ftl                   <<:ASTCDClass>>
+           AstNodeFactory.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!113!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!114!
+           DeepEquals.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!115!
+           "return deepEquals(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!116!
+           DeepEqualsWithComments.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!117!
+           "return deepEqualsWithComments(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!118!
+           EqualAttributes.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!119!
+           EqualsWithComments.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!120!
+           GetChildren.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!121!
+           RemoveChild.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!122!
+           "return new Builder(); "
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!123!
+           "return deepClone(_construct()); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!124!
+           DeepCloneWithParameters.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!125!
+           "return new ASTJavaScriptProgram(); "
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>
+           ConstructorAttributesSetter.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>
+           BuilderConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!126!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!127!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!128!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!129!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!129!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!130!
+           " return sourceElements.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!131!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!131!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!132!
+           " return symbol.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!133!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!133!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!134!
+           " return enclosingScope.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!135!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!136!
+           DeepEquals.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!137!
+           "return deepEquals(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!138!
+           DeepEqualsWithComments.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!139!
+           "return deepEqualsWithComments(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!140!
+           EqualAttributes.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!141!
+           EqualsWithComments.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!142!
+           GetChildren.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!143!
+           RemoveChild.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!144!
+           "return new Builder(); "
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!145!
+           "return deepClone(_construct()); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!146!
+           DeepCloneWithParameters.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!147!
+           "return new ASTSourceElements(); "
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!2!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!2!
+           ConstructorAttributesSetter.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!2!
+           BuilderConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!148!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!149!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!150!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!151!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!152!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!152!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!153!
+           " return symbol.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!154!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!154!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!155!
+           " return enclosingScope.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!156!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!157!
+           DeepEquals.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!158!
+           "return deepEquals(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!159!
+           DeepEqualsWithComments.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!160!
+           "return deepEqualsWithComments(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!161!
+           EqualAttributes.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!162!
+           EqualsWithComments.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!163!
+           GetChildren.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!164!
+           RemoveChild.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!165!
+           "return new Builder(); "
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!166!
+           "return deepClone(_construct()); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!167!
+           DeepCloneWithParameters.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!168!
+           "return new ASTSourceElement(); "
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!3!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!3!
+           ConstructorAttributesSetter.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!3!
+           BuilderConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!169!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!170!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!171!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!172!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!173!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!173!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!174!
+           " return symbol.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!175!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!175!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!176!
+           " return enclosingScope.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!177!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!178!
+           DeepEquals.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!179!
+           "return deepEquals(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!180!
+           DeepEqualsWithComments.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!181!
+           "return deepEqualsWithComments(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!182!
+           EqualAttributes.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!183!
+           EqualsWithComments.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!184!
+           GetChildren.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!185!
+           RemoveChild.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!186!
+           "return new Builder(); "
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!187!
+           "return deepClone(_construct()); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!188!
+           DeepCloneWithParameters.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!189!
+           "return new ASTStatement(); "
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!4!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!4!
+           ConstructorAttributesSetter.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!4!
+           BuilderConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!190!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!191!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!192!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!193!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!194!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!194!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!195!
+           " return symbol.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!196!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!196!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!197!
+           " return enclosingScope.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!198!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!199!
+           DeepEquals.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!200!
+           "return deepEquals(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!201!
+           DeepEqualsWithComments.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!202!
+           "return deepEqualsWithComments(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!203!
+           EqualAttributes.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!204!
+           EqualsWithComments.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!205!
+           GetChildren.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!206!
+           RemoveChild.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!207!
+           "return new Builder(); "
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!208!
+           "return deepClone(_construct()); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!209!
+           DeepCloneWithParameters.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!210!
+           "return new ASTStatements(); "
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!5!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!5!
+           ConstructorAttributesSetter.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!5!
+           BuilderConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!211!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!212!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!213!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!214!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!215!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!215!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!216!
+           " return symbol.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!217!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!217!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!218!
+           " return enclosingScope.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!219!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!220!
+           DeepEquals.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!221!
+           "return deepEquals(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!222!
+           DeepEqualsWithComments.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!223!
+           "return deepEqualsWithComments(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!224!
+           EqualAttributes.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!225!
+           EqualsWithComments.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!226!
+           GetChildren.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!227!
+           RemoveChild.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!228!
+           "return new Builder(); "
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!229!
+           "return deepClone(_construct()); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!230!
+           DeepCloneWithParameters.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!231!
+           "return new ASTVariableStatement(); "
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!6!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!6!
+           ConstructorAttributesSetter.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!6!
+           BuilderConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!232!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!233!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!234!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!235!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!236!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!237!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!238!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!239!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!240!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!241!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!242!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!242!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!243!
+           " return symbol.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!244!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!244!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!245!
+           " return enclosingScope.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!246!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!247!
+           DeepEquals.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!248!
+           "return deepEquals(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!249!
+           DeepEqualsWithComments.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!250!
+           "return deepEqualsWithComments(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!251!
+           EqualAttributes.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!252!
+           EqualsWithComments.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!253!
+           GetChildren.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!254!
+           RemoveChild.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!255!
+           "return new Builder(); "
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!256!
+           "return deepClone(_construct()); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!257!
+           DeepCloneWithParameters.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!258!
+           "return new ASTVariableDeclarations(); "
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!7!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!7!
+           ConstructorAttributesSetter.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!7!
+           BuilderConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!259!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!260!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!261!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!262!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!263!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!264!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!265!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!266!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!267!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!267!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!268!
+           " return symbol.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!269!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!269!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!270!
+           " return enclosingScope.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!271!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!272!
+           DeepEquals.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!273!
+           "return deepEquals(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!274!
+           DeepEqualsWithComments.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!275!
+           "return deepEqualsWithComments(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!276!
+           EqualAttributes.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!277!
+           EqualsWithComments.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!278!
+           GetChildren.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!279!
+           RemoveChild.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!280!
+           "return new Builder(); "
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!281!
+           "return deepClone(_construct()); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!282!
+           DeepCloneWithParameters.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!283!
+           "return new ASTVariableDeclaration(); "
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!8!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!8!
+           ConstructorAttributesSetter.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!8!
+           BuilderConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!284!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!285!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!286!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!287!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!288!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!289!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!289!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!290!
+           " return initialiser.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!291!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!291!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!292!
+           " return symbol.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!293!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!293!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!294!
+           " return enclosingScope.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!295!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!296!
+           DeepEquals.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!297!
+           "return deepEquals(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!298!
+           DeepEqualsWithComments.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!299!
+           "return deepEqualsWithComments(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!300!
+           EqualAttributes.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!301!
+           EqualsWithComments.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!302!
+           GetChildren.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!303!
+           RemoveChild.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!304!
+           "return new Builder(); "
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!305!
+           "return deepClone(_construct()); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!306!
+           DeepCloneWithParameters.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!307!
+           "return new ASTInitialiser(); "
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!9!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!9!
+           ConstructorAttributesSetter.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!9!
+           BuilderConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!308!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!309!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!310!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!311!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!312!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!313!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!314!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!315!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!316!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!316!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!317!
+           " return symbol.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!318!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!318!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!319!
+           " return enclosingScope.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!320!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!321!
+           DeepEquals.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!322!
+           "return deepEquals(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!323!
+           DeepEqualsWithComments.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!324!
+           "return deepEqualsWithComments(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!325!
+           EqualAttributes.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!326!
+           EqualsWithComments.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!327!
+           GetChildren.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!328!
+           RemoveChild.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!329!
+           "return new Builder(); "
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!330!
+           "return deepClone(_construct()); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!331!
+           DeepCloneWithParameters.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!332!
+           "return new ASTExpressionSequence(); "
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!10!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!10!
+           ConstructorAttributesSetter.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!10!
+           BuilderConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!333!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!334!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!335!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!336!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!337!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!338!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!339!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!340!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!341!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!341!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!342!
+           " return symbol.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!343!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!343!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!344!
+           " return enclosingScope.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!345!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!346!
+           DeepEquals.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!347!
+           "return deepEquals(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!348!
+           DeepEqualsWithComments.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!349!
+           "return deepEqualsWithComments(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!350!
+           EqualAttributes.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!351!
+           EqualsWithComments.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!352!
+           GetChildren.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!353!
+           RemoveChild.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!354!
+           "return new Builder(); "
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!355!
+           "return deepClone(_construct()); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!356!
+           DeepCloneWithParameters.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!357!
+           "return new ASTSingleExpression(); "
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!11!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!11!
+           ConstructorAttributesSetter.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!11!
+           BuilderConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!358!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!359!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!360!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!361!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!362!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!363!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!364!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!364!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!365!
+           " return symbol.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!366!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!366!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!367!
+           " return enclosingScope.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!368!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!369!
+           DeepEquals.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!370!
+           "return deepEquals(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!371!
+           DeepEqualsWithComments.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!372!
+           "return deepEqualsWithComments(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!373!
+           EqualAttributes.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!374!
+           EqualsWithComments.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!375!
+           GetChildren.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!376!
+           RemoveChild.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!377!
+           "return new Builder(); "
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!378!
+           "return deepClone(_construct()); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!379!
+           DeepCloneWithParameters.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!380!
+           "return new ASTLiteral(); "
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!12!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!12!
+           ConstructorAttributesSetter.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!12!
+           BuilderConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!381!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!382!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!383!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!384!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!385!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!385!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!386!
+           " return symbol.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!387!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!387!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!388!
+           " return enclosingScope.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!389!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!390!
+           DeepEquals.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!391!
+           "return deepEquals(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!392!
+           DeepEqualsWithComments.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!393!
+           "return deepEqualsWithComments(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!394!
+           EqualAttributes.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!395!
+           EqualsWithComments.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!396!
+           GetChildren.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!397!
+           RemoveChild.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!398!
+           "return new Builder(); "
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!399!
+           "return deepClone(_construct()); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!400!
+           DeepCloneWithParameters.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!401!
+           "return new ASTNumericLiteral(); "
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!13!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!13!
+           ConstructorAttributesSetter.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!13!
+           BuilderConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!402!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!403!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!404!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!405!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!406!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!406!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!407!
+           " return symbol.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!408!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!408!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!409!
+           " return enclosingScope.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!410!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!411!
+           DeepEquals.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!412!
+           "return deepEquals(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!413!
+           DeepEqualsWithComments.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!414!
+           "return deepEqualsWithComments(o); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!415!
+           EqualAttributes.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!416!
+           EqualsWithComments.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!417!
+           GetChildren.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!418!
+           RemoveChild.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!419!
+           "return new Builder(); "
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!420!
+           "return deepClone(_construct()); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!421!
+           DeepCloneWithParameters.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!422!
+           "return new ASTEOS(); "
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!14!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!14!
+           ConstructorAttributesSetter.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!14!
+           BuilderConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!423!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!424!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!425!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!426!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!427!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!427!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!428!
+           " return symbol.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!429!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!429!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!430!
+           " return enclosingScope.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!431!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!432!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!433!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!434!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!435!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!436!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!437!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!438!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!439!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!440!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!441!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!442!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!443!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!444!
+           Accept.ftl
+set   ATHP ClassContent.ftl                   <<:ASTCDClass>>!2!
+           AstListMethods.ftl
+set   ATHP AstImports.ftl                     <<:ASTCDClass>>!2!
+           ListImports.ftl
+set   ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!2!
+           AstSuperTypesList.ftl
+set   ATHP ClassContent.ftl                   <<:ASTCDClass>>!3!
+           AstListMethods.ftl
+set   ATHP AstImports.ftl                     <<:ASTCDClass>>!3!
+           ListImports.ftl
+set   ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!3!
+           AstSuperTypesList.ftl
+set   ATHP ClassContent.ftl                   <<:ASTCDClass>>!4!
+           AstListMethods.ftl
+set   ATHP AstImports.ftl                     <<:ASTCDClass>>!4!
+           ListImports.ftl
+set   ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!4!
+           AstSuperTypesList.ftl
+set   ATHP ClassContent.ftl                   <<:ASTCDClass>>!5!
+           AstListMethods.ftl
+set   ATHP AstImports.ftl                     <<:ASTCDClass>>!5!
+           ListImports.ftl
+set   ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!5!
+           AstSuperTypesList.ftl
+set   ATHP ClassContent.ftl                   <<:ASTCDClass>>!6!
+           AstListMethods.ftl
+set   ATHP AstImports.ftl                     <<:ASTCDClass>>!6!
+           ListImports.ftl
+set   ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!6!
+           AstSuperTypesList.ftl
+set   ATHP ClassContent.ftl                   <<:ASTCDClass>>!7!
+           AstListMethods.ftl
+set   ATHP AstImports.ftl                     <<:ASTCDClass>>!7!
+           ListImports.ftl
+set   ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!7!
+           AstSuperTypesList.ftl
+set   ATHP ClassContent.ftl                   <<:ASTCDClass>>!8!
+           AstListMethods.ftl
+set   ATHP AstImports.ftl                     <<:ASTCDClass>>!8!
+           ListImports.ftl
+set   ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!8!
+           AstSuperTypesList.ftl
+set   ATHP ClassContent.ftl                   <<:ASTCDClass>>!9!
+           AstListMethods.ftl
+set   ATHP AstImports.ftl                     <<:ASTCDClass>>!9!
+           ListImports.ftl
+set   ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!9!
+           AstSuperTypesList.ftl
+set   ATHP ClassContent.ftl                   <<:ASTCDClass>>!10!
+           AstListMethods.ftl
+set   ATHP AstImports.ftl                     <<:ASTCDClass>>!10!
+           ListImports.ftl
+set   ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!10!
+           AstSuperTypesList.ftl
+set   ATHP ClassContent.ftl                   <<:ASTCDClass>>!11!
+           AstListMethods.ftl
+set   ATHP AstImports.ftl                     <<:ASTCDClass>>!11!
+           ListImports.ftl
+set   ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!11!
+           AstSuperTypesList.ftl
+set   ATHP ClassContent.ftl                   <<:ASTCDClass>>!12!
+           AstListMethods.ftl
+set   ATHP AstImports.ftl                     <<:ASTCDClass>>!12!
+           ListImports.ftl
+set   ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!12!
+           AstSuperTypesList.ftl
+set   ATHP ClassContent.ftl                   <<:ASTCDClass>>!13!
+           AstListMethods.ftl
+set   ATHP AstImports.ftl                     <<:ASTCDClass>>!13!
+           ListImports.ftl
+set   ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!13!
+           AstSuperTypesList.ftl
+set   ATHP ClassContent.ftl                   <<:ASTCDClass>>!14!
+           AstListMethods.ftl
+set   ATHP AstImports.ftl                     <<:ASTCDClass>>!14!
+           ListImports.ftl
+set   ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!14!
+           AstSuperTypesList.ftl
+set   ATHP ClassContent.ftl                   <<:ASTCDClass>>!15!
+           AstListMethods.ftl
+set   ATHP AstImports.ftl                     <<:ASTCDClass>>!15!
+           ListImports.ftl
+set   ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!15!
+           AstSuperTypesList.ftl
+set   ATHP ClassContent.ftl                   <<:ASTCDClass>><1,0>!15!
+           ASTConstantsClass.ftl
+call  EHP  HP:"JavaCopyright"
+call  EHP  HP:"JavaCopyright"
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>
+           ConstructorParametersDeclaration.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>
+           ConstructorAttributesSetter.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!113!
+           Accept.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!114!
+           DeepEquals.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!115!
+           "return deepEquals(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!116!
+           DeepEqualsWithComments.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!117!
+           "return deepEqualsWithComments(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!118!
+           EqualAttributes.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!119!
+           EqualsWithComments.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!120!
+           GetChildren.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!121!
+           RemoveChild.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!122!
+           "return new Builder(); "
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!123!
+           "return deepClone(_construct()); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!124!
+           DeepCloneWithParameters.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!125!
+           "return new ASTJavaScriptProgram(); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!126!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!127!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!128!
+           Get.ftl
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!129!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!129!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!130!
+           " return sourceElements.isPresent(); "
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!131!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!131!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!132!
+           " return symbol.isPresent(); "
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!133!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!133!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!134!
+           " return enclosingScope.isPresent(); "
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>
+           BuilderConstructorParametersDeclaration.ftl
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!2!
+           ConstructorParametersDeclaration.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!2!
+           ConstructorAttributesSetter.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!135!
+           Accept.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!136!
+           DeepEquals.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!137!
+           "return deepEquals(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!138!
+           DeepEqualsWithComments.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!139!
+           "return deepEqualsWithComments(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!140!
+           EqualAttributes.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!141!
+           EqualsWithComments.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!142!
+           GetChildren.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!143!
+           RemoveChild.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!144!
+           "return new Builder(); "
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!145!
+           "return deepClone(_construct()); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!146!
+           DeepCloneWithParameters.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!147!
+           "return new ASTSourceElements(); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!148!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!149!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!150!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!151!
+           Set.ftl
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!152!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!152!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!153!
+           " return symbol.isPresent(); "
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!154!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!154!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!155!
+           " return enclosingScope.isPresent(); "
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!2!
+           BuilderConstructorParametersDeclaration.ftl
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!3!
+           ConstructorParametersDeclaration.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!3!
+           ConstructorAttributesSetter.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!156!
+           Accept.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!157!
+           DeepEquals.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!158!
+           "return deepEquals(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!159!
+           DeepEqualsWithComments.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!160!
+           "return deepEqualsWithComments(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!161!
+           EqualAttributes.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!162!
+           EqualsWithComments.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!163!
+           GetChildren.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!164!
+           RemoveChild.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!165!
+           "return new Builder(); "
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!166!
+           "return deepClone(_construct()); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!167!
+           DeepCloneWithParameters.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!168!
+           "return new ASTSourceElement(); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!169!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!170!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!171!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!172!
+           Set.ftl
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!173!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!173!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!174!
+           " return symbol.isPresent(); "
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!175!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!175!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!176!
+           " return enclosingScope.isPresent(); "
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!3!
+           BuilderConstructorParametersDeclaration.ftl
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!4!
+           ConstructorParametersDeclaration.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!4!
+           ConstructorAttributesSetter.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!177!
+           Accept.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!178!
+           DeepEquals.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!179!
+           "return deepEquals(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!180!
+           DeepEqualsWithComments.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!181!
+           "return deepEqualsWithComments(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!182!
+           EqualAttributes.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!183!
+           EqualsWithComments.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!184!
+           GetChildren.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!185!
+           RemoveChild.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!186!
+           "return new Builder(); "
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!187!
+           "return deepClone(_construct()); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!188!
+           DeepCloneWithParameters.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!189!
+           "return new ASTStatement(); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!190!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!191!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!192!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!193!
+           Set.ftl
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!194!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!194!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!195!
+           " return symbol.isPresent(); "
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!196!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!196!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!197!
+           " return enclosingScope.isPresent(); "
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!4!
+           BuilderConstructorParametersDeclaration.ftl
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!5!
+           ConstructorParametersDeclaration.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!5!
+           ConstructorAttributesSetter.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!198!
+           Accept.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!199!
+           DeepEquals.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!200!
+           "return deepEquals(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!201!
+           DeepEqualsWithComments.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!202!
+           "return deepEqualsWithComments(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!203!
+           EqualAttributes.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!204!
+           EqualsWithComments.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!205!
+           GetChildren.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!206!
+           RemoveChild.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!207!
+           "return new Builder(); "
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!208!
+           "return deepClone(_construct()); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!209!
+           DeepCloneWithParameters.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!210!
+           "return new ASTStatements(); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!211!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!212!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!213!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!214!
+           Set.ftl
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!215!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!215!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!216!
+           " return symbol.isPresent(); "
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!217!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!217!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!218!
+           " return enclosingScope.isPresent(); "
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!5!
+           BuilderConstructorParametersDeclaration.ftl
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!6!
+           ConstructorParametersDeclaration.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!6!
+           ConstructorAttributesSetter.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!219!
+           Accept.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!220!
+           DeepEquals.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!221!
+           "return deepEquals(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!222!
+           DeepEqualsWithComments.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!223!
+           "return deepEqualsWithComments(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!224!
+           EqualAttributes.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!225!
+           EqualsWithComments.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!226!
+           GetChildren.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!227!
+           RemoveChild.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!228!
+           "return new Builder(); "
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!229!
+           "return deepClone(_construct()); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!230!
+           DeepCloneWithParameters.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!231!
+           "return new ASTVariableStatement(); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!232!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!233!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!234!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!235!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!236!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!237!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!238!
+           Set.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!239!
+           Set.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!240!
+           Set.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!241!
+           Set.ftl
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!242!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!242!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!243!
+           " return symbol.isPresent(); "
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!244!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!244!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!245!
+           " return enclosingScope.isPresent(); "
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!6!
+           BuilderConstructorParametersDeclaration.ftl
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!7!
+           ConstructorParametersDeclaration.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!7!
+           ConstructorAttributesSetter.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!246!
+           Accept.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!247!
+           DeepEquals.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!248!
+           "return deepEquals(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!249!
+           DeepEqualsWithComments.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!250!
+           "return deepEqualsWithComments(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!251!
+           EqualAttributes.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!252!
+           EqualsWithComments.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!253!
+           GetChildren.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!254!
+           RemoveChild.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!255!
+           "return new Builder(); "
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!256!
+           "return deepClone(_construct()); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!257!
+           DeepCloneWithParameters.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!258!
+           "return new ASTVariableDeclarations(); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!259!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!260!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!261!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!262!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!263!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!264!
+           Set.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!265!
+           Set.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!266!
+           Set.ftl
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!267!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!267!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!268!
+           " return symbol.isPresent(); "
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!269!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!269!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!270!
+           " return enclosingScope.isPresent(); "
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!7!
+           BuilderConstructorParametersDeclaration.ftl
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!8!
+           ConstructorParametersDeclaration.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!8!
+           ConstructorAttributesSetter.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!271!
+           Accept.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!272!
+           DeepEquals.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!273!
+           "return deepEquals(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!274!
+           DeepEqualsWithComments.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!275!
+           "return deepEqualsWithComments(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!276!
+           EqualAttributes.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!277!
+           EqualsWithComments.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!278!
+           GetChildren.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!279!
+           RemoveChild.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!280!
+           "return new Builder(); "
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!281!
+           "return deepClone(_construct()); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!282!
+           DeepCloneWithParameters.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!283!
+           "return new ASTVariableDeclaration(); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!284!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!285!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!286!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!287!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!288!
+           Set.ftl
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!289!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!289!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!290!
+           " return initialiser.isPresent(); "
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!291!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!291!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!292!
+           " return symbol.isPresent(); "
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!293!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!293!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!294!
+           " return enclosingScope.isPresent(); "
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!8!
+           BuilderConstructorParametersDeclaration.ftl
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!9!
+           ConstructorParametersDeclaration.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!9!
+           ConstructorAttributesSetter.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!295!
+           Accept.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!296!
+           DeepEquals.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!297!
+           "return deepEquals(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!298!
+           DeepEqualsWithComments.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!299!
+           "return deepEqualsWithComments(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!300!
+           EqualAttributes.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!301!
+           EqualsWithComments.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!302!
+           GetChildren.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!303!
+           RemoveChild.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!304!
+           "return new Builder(); "
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!305!
+           "return deepClone(_construct()); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!306!
+           DeepCloneWithParameters.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!307!
+           "return new ASTInitialiser(); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!308!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!309!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!310!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!311!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!312!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!313!
+           Set.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!314!
+           Set.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!315!
+           Set.ftl
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!316!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!316!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!317!
+           " return symbol.isPresent(); "
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!318!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!318!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!319!
+           " return enclosingScope.isPresent(); "
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!9!
+           BuilderConstructorParametersDeclaration.ftl
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!10!
+           ConstructorParametersDeclaration.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!10!
+           ConstructorAttributesSetter.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!320!
+           Accept.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!321!
+           DeepEquals.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!322!
+           "return deepEquals(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!323!
+           DeepEqualsWithComments.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!324!
+           "return deepEqualsWithComments(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!325!
+           EqualAttributes.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!326!
+           EqualsWithComments.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!327!
+           GetChildren.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!328!
+           RemoveChild.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!329!
+           "return new Builder(); "
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!330!
+           "return deepClone(_construct()); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!331!
+           DeepCloneWithParameters.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!332!
+           "return new ASTExpressionSequence(); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!333!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!334!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!335!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!336!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!337!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!338!
+           Set.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!339!
+           Set.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!340!
+           Set.ftl
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!341!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!341!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!342!
+           " return symbol.isPresent(); "
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!343!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!343!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!344!
+           " return enclosingScope.isPresent(); "
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!10!
+           BuilderConstructorParametersDeclaration.ftl
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!11!
+           ConstructorParametersDeclaration.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!11!
+           ConstructorAttributesSetter.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!345!
+           Accept.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!346!
+           DeepEquals.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!347!
+           "return deepEquals(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!348!
+           DeepEqualsWithComments.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!349!
+           "return deepEqualsWithComments(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!350!
+           EqualAttributes.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!351!
+           EqualsWithComments.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!352!
+           GetChildren.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!353!
+           RemoveChild.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!354!
+           "return new Builder(); "
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!355!
+           "return deepClone(_construct()); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!356!
+           DeepCloneWithParameters.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!357!
+           "return new ASTSingleExpression(); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!358!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!359!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!360!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!361!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!362!
+           Set.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!363!
+           Set.ftl
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!364!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!364!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!365!
+           " return symbol.isPresent(); "
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!366!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!366!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!367!
+           " return enclosingScope.isPresent(); "
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!11!
+           BuilderConstructorParametersDeclaration.ftl
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!12!
+           ConstructorParametersDeclaration.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!12!
+           ConstructorAttributesSetter.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!368!
+           Accept.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!369!
+           DeepEquals.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!370!
+           "return deepEquals(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!371!
+           DeepEqualsWithComments.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!372!
+           "return deepEqualsWithComments(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!373!
+           EqualAttributes.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!374!
+           EqualsWithComments.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!375!
+           GetChildren.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!376!
+           RemoveChild.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!377!
+           "return new Builder(); "
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!378!
+           "return deepClone(_construct()); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!379!
+           DeepCloneWithParameters.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!380!
+           "return new ASTLiteral(); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!381!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!382!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!383!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!384!
+           Set.ftl
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!385!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!385!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!386!
+           " return symbol.isPresent(); "
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!387!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!387!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!388!
+           " return enclosingScope.isPresent(); "
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!12!
+           BuilderConstructorParametersDeclaration.ftl
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!13!
+           ConstructorParametersDeclaration.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!13!
+           ConstructorAttributesSetter.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!389!
+           Accept.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!390!
+           DeepEquals.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!391!
+           "return deepEquals(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!392!
+           DeepEqualsWithComments.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!393!
+           "return deepEqualsWithComments(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!394!
+           EqualAttributes.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!395!
+           EqualsWithComments.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!396!
+           GetChildren.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!397!
+           RemoveChild.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!398!
+           "return new Builder(); "
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!399!
+           "return deepClone(_construct()); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!400!
+           DeepCloneWithParameters.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!401!
+           "return new ASTNumericLiteral(); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!402!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!403!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!404!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!405!
+           Set.ftl
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!406!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!406!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!407!
+           " return symbol.isPresent(); "
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!408!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!408!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!409!
+           " return enclosingScope.isPresent(); "
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!13!
+           BuilderConstructorParametersDeclaration.ftl
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!14!
+           ConstructorParametersDeclaration.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!14!
+           ConstructorAttributesSetter.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!410!
+           Accept.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!411!
+           DeepEquals.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!412!
+           "return deepEquals(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!413!
+           DeepEqualsWithComments.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!414!
+           "return deepEqualsWithComments(o); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!415!
+           EqualAttributes.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!416!
+           EqualsWithComments.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!417!
+           GetChildren.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!418!
+           RemoveChild.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!419!
+           "return new Builder(); "
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!420!
+           "return deepClone(_construct()); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!421!
+           DeepCloneWithParameters.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!422!
+           "return new ASTEOS(); "
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!423!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!424!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!425!
+           Get.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!426!
+           Set.ftl
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!427!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!427!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!428!
+           " return symbol.isPresent(); "
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!429!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!429!
+           Set.ftl
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!430!
+           " return enclosingScope.isPresent(); "
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!14!
+           BuilderConstructorParametersDeclaration.ftl
+call  ATHP AstImports.ftl                     <<:ASTCDClass>>!2!
+           ListImports.ftl
+call  ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!2!
+           AstSuperTypesList.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!431!
+           Accept.ftl
+call  ATHP ClassContent.ftl                   <<:ASTCDClass>>!2!
+           AstListMethods.ftl
+call  ATHP AstImports.ftl                     <<:ASTCDClass>>!3!
+           ListImports.ftl
+call  ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!3!
+           AstSuperTypesList.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!432!
+           Accept.ftl
+call  ATHP ClassContent.ftl                   <<:ASTCDClass>>!3!
+           AstListMethods.ftl
+call  ATHP AstImports.ftl                     <<:ASTCDClass>>!4!
+           ListImports.ftl
+call  ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!4!
+           AstSuperTypesList.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!433!
+           Accept.ftl
+call  ATHP ClassContent.ftl                   <<:ASTCDClass>>!4!
+           AstListMethods.ftl
+call  ATHP AstImports.ftl                     <<:ASTCDClass>>!5!
+           ListImports.ftl
+call  ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!5!
+           AstSuperTypesList.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!434!
+           Accept.ftl
+call  ATHP ClassContent.ftl                   <<:ASTCDClass>>!5!
+           AstListMethods.ftl
+call  ATHP AstImports.ftl                     <<:ASTCDClass>>!6!
+           ListImports.ftl
+call  ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!6!
+           AstSuperTypesList.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!435!
+           Accept.ftl
+call  ATHP ClassContent.ftl                   <<:ASTCDClass>>!6!
+           AstListMethods.ftl
+call  ATHP AstImports.ftl                     <<:ASTCDClass>>!7!
+           ListImports.ftl
+call  ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!7!
+           AstSuperTypesList.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!436!
+           Accept.ftl
+call  ATHP ClassContent.ftl                   <<:ASTCDClass>>!7!
+           AstListMethods.ftl
+call  ATHP AstImports.ftl                     <<:ASTCDClass>>!8!
+           ListImports.ftl
+call  ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!8!
+           AstSuperTypesList.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!437!
+           Accept.ftl
+call  ATHP ClassContent.ftl                   <<:ASTCDClass>>!8!
+           AstListMethods.ftl
+call  ATHP AstImports.ftl                     <<:ASTCDClass>>!9!
+           ListImports.ftl
+call  ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!9!
+           AstSuperTypesList.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!438!
+           Accept.ftl
+call  ATHP ClassContent.ftl                   <<:ASTCDClass>>!9!
+           AstListMethods.ftl
+call  ATHP AstImports.ftl                     <<:ASTCDClass>>!10!
+           ListImports.ftl
+call  ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!10!
+           AstSuperTypesList.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!439!
+           Accept.ftl
+call  ATHP ClassContent.ftl                   <<:ASTCDClass>>!10!
+           AstListMethods.ftl
+call  ATHP AstImports.ftl                     <<:ASTCDClass>>!11!
+           ListImports.ftl
+call  ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!11!
+           AstSuperTypesList.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!440!
+           Accept.ftl
+call  ATHP ClassContent.ftl                   <<:ASTCDClass>>!11!
+           AstListMethods.ftl
+call  ATHP AstImports.ftl                     <<:ASTCDClass>>!12!
+           ListImports.ftl
+call  ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!12!
+           AstSuperTypesList.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!441!
+           Accept.ftl
+call  ATHP ClassContent.ftl                   <<:ASTCDClass>>!12!
+           AstListMethods.ftl
+call  ATHP AstImports.ftl                     <<:ASTCDClass>>!13!
+           ListImports.ftl
+call  ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!13!
+           AstSuperTypesList.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!442!
+           Accept.ftl
+call  ATHP ClassContent.ftl                   <<:ASTCDClass>>!13!
+           AstListMethods.ftl
+call  ATHP AstImports.ftl                     <<:ASTCDClass>>!14!
+           ListImports.ftl
+call  ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!14!
+           AstSuperTypesList.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!443!
+           Accept.ftl
+call  ATHP ClassContent.ftl                   <<:ASTCDClass>>!14!
+           AstListMethods.ftl
+call  ATHP AstImports.ftl                     <<:ASTCDClass>>!15!
+           ListImports.ftl
+call  ATHP AstSuperTypes.ftl                  <<:ASTCDClass>>!15!
+           AstSuperTypesList.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!444!
+           Accept.ftl
+call  ATHP ClassContent.ftl                   <<:ASTCDClass>>!15!
+           AstListMethods.ftl
+call  ATHP ClassContent.ftl                   <<:ASTCDClass>>
+           AstNodeFactory.ftl
+call  EHP  HP:"JavaCopyright"
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!2!
+           DoCreate.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!3!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!3!
+           CreateWithParams.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!4!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!4!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!5!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!6!
+           DoCreate.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!7!
+           CreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!8!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!9!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!10!
+           DoCreate.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!11!
+           CreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!12!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!13!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!14!
+           DoCreate.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!15!
+           CreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!16!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!17!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!18!
+           DoCreate.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!19!
+           CreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!20!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!21!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!22!
+           DoCreate.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!23!
+           CreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!24!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!25!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!26!
+           DoCreate.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!27!
+           CreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!28!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!29!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!30!
+           DoCreate.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!31!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!31!
+           CreateWithParams.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!32!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!32!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!33!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!34!
+           DoCreate.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!35!
+           CreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!36!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!37!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!38!
+           DoCreate.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!39!
+           CreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!40!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!41!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!42!
+           DoCreate.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!43!
+           CreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!44!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!45!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!46!
+           DoCreate.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!47!
+           CreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!48!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!49!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!50!
+           DoCreate.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!51!
+           CreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!52!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!53!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!54!
+           DoCreate.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!55!
+           CreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!56!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!57!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!58!
+           DoCreate.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!59!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!59!
+           CreateWithParams.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!60!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!60!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!61!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!62!
+           DoCreate.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!63!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!63!
+           CreateWithParams.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!64!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!64!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!65!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!66!
+           DoCreate.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!67!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!67!
+           CreateWithParams.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!68!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!68!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!69!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!70!
+           DoCreate.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!71!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!71!
+           CreateWithParams.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!72!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!72!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!73!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!74!
+           DoCreate.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!75!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!75!
+           CreateWithParams.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!76!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!76!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!77!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!78!
+           DoCreate.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!79!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!79!
+           CreateWithParams.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!80!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!80!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!81!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!82!
+           DoCreate.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!83!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!83!
+           CreateWithParams.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!84!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!84!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!85!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!86!
+           DoCreate.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!87!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!87!
+           CreateWithParams.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!88!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!88!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!89!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!90!
+           DoCreate.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!91!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!91!
+           CreateWithParams.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!92!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!92!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!93!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!94!
+           DoCreate.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!95!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!95!
+           CreateWithParams.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!96!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!96!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!97!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!98!
+           DoCreate.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!99!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!99!
+           CreateWithParams.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!100!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!100!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!101!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!102!
+           DoCreate.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!103!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!103!
+           CreateWithParams.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!104!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!104!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!105!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!106!
+           DoCreate.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!107!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!107!
+           CreateWithParams.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!108!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!108!
+           DoCreateWithParams.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!109!
+           Create.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!110!
+           DoCreate.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!111!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!111!
+           CreateWithParams.ftl
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!112!
+           ErrorIfNull.ftl
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!112!
+           DoCreateWithParams.ftl
+call  ATHP ClassContent.ftl                   <<:ASTCDClass>><1,0>!15!
+           ASTConstantsClass.ftl
+call  EHP  HP:"InterfaceContent:addComment"
+call  EHP  HP:"<Block>?InterfaceContent:addImports"
+call  ATHP AstInterfaceContent.ftl            <<:ASTCDInterface>>
+           ASTNodeBase.ftl
+call  EHP  HP:"JavaCopyright"
+call  EHP  HP:"JavaCopyright"
+call  EHP  HP:"JavaCopyright"
+call  EHP  HP:"JavaCopyright"
+call  EHP  HP:"JavaCopyright"
+call  EHP  HP:"JavaCopyright"
+========================================================== Explanation
+The events are the following:
+  - set         hook point assignment
+  - setr        template replacement by hook points
+  - setb        assignment of hook points that are called before the template 
+  - seta        assignment of hook points that are called after the template 
+  - call        hook point execution
+  - callr       execution of hook points that replaced a template
+  - callb       execution of hook points that are called before the template
+  - calla       execution of hook points that are called after the template
+Hookpoints: 
+  - SHP         StringHookPoint
+  - THP         TemplateHookPoint
+  - CHP         CodeHookPoint
+  - EHP         EmptyHookPoint = HookPoint is null
+  - ASHP        AST StringHookPoint
+  - ATHP        AST TemplateHookPoint
+  - ACHP        AST CodeHookPoint
+(EOF)

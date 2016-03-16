@@ -1,0 +1,446 @@
+========================================================== Node Tree + Extra Infos
++--<<JavaScriptSimple:MCGrammar>><7,0>                       (24x)
+   +--<<:ASTGrammarOption>><13,4>
+   |  +--<<:ASTFollowOptionList>>
+   |  +--<<:ASTAntlrOptionList>>
+   |     +--<<nostring:AntlrOption>><14,8>
+   |     +--<<nomlcomments:AntlrOption>><14,17>
+   |     +--<<noslcomments:AntlrOption>><14,30>
+   |     +--<<noident:AntlrOption>><14,43>
+   +--<<:ASTMCImportStatementList>>
+   +--<<:ASTGrammarReferenceList>>
+   +--<<:ASTLexProdList>>
+   |  +--<<SemiColon:LexProd>><91,4>
+   |  |  +--<<:ASTLexAltList>>
+   |  |     +--<<:ASTLexAlt>><91,39>
+   |  |        +--<<:ASTLexComponentList>>
+   |  |           +--<<:ASTLexChar>><91,39>
+   |  +--<<EQ:LexProd>><92,4>
+   |  |  +--<<:ASTLexAltList>>!2!
+   |  |     +--<<:ASTLexAlt>><92,22>
+   |  |        +--<<:ASTLexComponentList>>!2!
+   |  |           +--<<:ASTLexChar>><92,22>
+   |  +--<<KO:LexProd>><93,1>
+   |  |  +--<<:ASTLexAltList>>!3!
+   |  |     +--<<:ASTLexAlt>><93,19>
+   |  |        +--<<:ASTLexComponentList>>!3!
+   |  |           +--<<:ASTLexChar>><93,19>
+   |  +--<<Var:LexProd>><96,4>
+   |  |  +--<<:ASTLexAltList>>!4!
+   |  |     +--<<:ASTLexAlt>><96,23>
+   |  |        +--<<:ASTLexComponentList>>!4!
+   |  |           +--<<:ASTLexString>><96,23>
+   |  +--<<Identifier:LexProd>><100,4>
+   |  |  +--<<:ASTLexAltList>>!5!
+   |  |     +--<<:ASTLexAlt>><101,8>
+   |  |        +--<<:ASTLexComponentList>>!5!
+   |  |           +--<<:ASTLexBlock>><101,8>
+   |  |              +--<<:ASTLexAltList>>!6!
+   |  |                 +--<<:ASTLexAlt>><101,9>
+   |  |                    +--<<:ASTLexComponentList>>!6!
+   |  |                       +--<<IdentifierStart:LexNonTerminal>><101,9>
+   |  +--<<StringLiteral:LexProd>><104,4>
+   |  |  +--<<:ASTLexAltList>>!7!
+   |  |     +--<<:ASTLexAlt>><109,8>
+   |  |        +--<<:ASTLexComponentList>>!7!
+   |  |           +--<<:ASTLexString>><109,8>
+   |  |           +--<<:ASTLexBlock>><109,13>
+   |  |           |  +--<<:ASTLexAltList>>!8!
+   |  |           |     +--<<:ASTLexAlt>><109,14>
+   |  |           |        +--<<:ASTLexComponentList>>!8!
+   |  |           |           +--<<StringCharacter:LexNonTerminal>><109,14>
+   |  |           +--<<:ASTLexString>><109,32>
+   |  +--<<StringCharacter:LexProd>><137,4>
+   |  |  +--<<:ASTLexAltList>>!9!
+   |  |     +--<<:ASTLexAlt>><138,8>
+   |  |     |  +--<<:ASTLexComponentList>>!9!
+   |  |     |     +--<<:ASTLexBlock>><138,8>
+   |  |     |        +--<<:ASTLexAltList>>!10!
+   |  |     |           +--<<:ASTLexAlt>><138,10>
+   |  |     |           |  +--<<:ASTLexComponentList>>!10!
+   |  |     |           |     +--<<:ASTLexChar>><138,10>
+   |  |     |           +--<<:ASTLexAlt>><138,15>
+   |  |     |           |  +--<<:ASTLexComponentList>>!11!
+   |  |     |           |     +--<<:ASTLexChar>><138,15>
+   |  |     |           +--<<:ASTLexAlt>><138,19>
+   |  |     |           |  +--<<:ASTLexComponentList>>!12!
+   |  |     |           |     +--<<:ASTLexChar>><138,19>
+   |  |     |           +--<<:ASTLexAlt>><138,24>
+   |  |     |           |  +--<<:ASTLexComponentList>>!13!
+   |  |     |           |     +--<<:ASTLexChar>><138,24>
+   |  |     |           +--<<:ASTLexAlt>><138,29>
+   |  |     |              +--<<:ASTLexComponentList>>!14!
+   |  |     |                 +--<<:ASTLexChar>><138,29>
+   |  |     +--<<:ASTLexAlt>><139,10>
+   |  |        +--<<:ASTLexComponentList>>!15!
+   |  |           +--<<:ASTLexChar>><139,10>
+   |  |           +--<<EscapeSequence:LexNonTerminal>><139,15>
+   |  +--<<EscapeSequence:LexProd>><143,4>
+   |  |  +--<<:ASTLexAltList>>!11!
+   |  |     +--<<:ASTLexAlt>><144,8>
+   |  |     |  +--<<:ASTLexComponentList>>!16!
+   |  |     |     +--<<CharacterEscapeSequence:LexNonTerminal>><144,8>
+   |  |     +--<<:ASTLexAlt>><145,10>
+   |  |     |  +--<<:ASTLexComponentList>>!17!
+   |  |     |     +--<<HexEscapeSequence:LexNonTerminal>><145,10>
+   |  |     +--<<:ASTLexAlt>><146,10>
+   |  |        +--<<:ASTLexComponentList>>!18!
+   |  |           +--<<UnicodeEscapeSequence:LexNonTerminal>><146,10>
+   |  +--<<CharacterEscapeSequence:LexProd>><149,4>
+   |  |  +--<<:ASTLexAltList>>!12!
+   |  |     +--<<:ASTLexAlt>><150,8>
+   |  |        +--<<:ASTLexComponentList>>!19!
+   |  |           +--<<SingleEscapeCharacter:LexNonTerminal>><150,8>
+   |  +--<<HexEscapeSequence:LexProd>><153,4>
+   |  |  +--<<:ASTLexAltList>>!13!
+   |  |     +--<<:ASTLexAlt>><154,8>
+   |  |        +--<<:ASTLexComponentList>>!20!
+   |  |           +--<<:ASTLexChar>><154,8>
+   |  |           +--<<HexDigit:LexNonTerminal>><154,12>
+   |  |           +--<<HexDigit:LexNonTerminal>><154,21>
+   |  +--<<UnicodeEscapeSequence:LexProd>><157,4>
+   |  |  +--<<:ASTLexAltList>>!14!
+   |  |     +--<<:ASTLexAlt>><158,8>
+   |  |        +--<<:ASTLexComponentList>>!21!
+   |  |           +--<<:ASTLexChar>><158,8>
+   |  |           +--<<HexDigit:LexNonTerminal>><158,12>
+   |  |           +--<<HexDigit:LexNonTerminal>><158,21>
+   |  |           +--<<HexDigit:LexNonTerminal>><158,30>
+   |  |           +--<<HexDigit:LexNonTerminal>><158,39>
+   |  +--<<SingleEscapeCharacter:LexProd>><161,4>
+   |  |  +--<<:ASTLexAltList>>!15!
+   |  |     +--<<:ASTLexAlt>><162,8>
+   |  |        +--<<:ASTLexComponentList>>!22!
+   |  |           +--<<:ASTLexBlock>><162,8>
+   |  |              +--<<:ASTLexAltList>>!16!
+   |  |                 +--<<:ASTLexAlt>><162,9>
+   |  |                 |  +--<<:ASTLexComponentList>>!23!
+   |  |                 |     +--<<:ASTLexChar>><162,9>
+   |  |                 +--<<:ASTLexAlt>><162,14>
+   |  |                 |  +--<<:ASTLexComponentList>>!24!
+   |  |                 |     +--<<:ASTLexChar>><162,14>
+   |  |                 +--<<:ASTLexAlt>><162,18>
+   |  |                 |  +--<<:ASTLexComponentList>>!25!
+   |  |                 |     +--<<:ASTLexChar>><162,18>
+   |  |                 +--<<:ASTLexAlt>><162,23>
+   |  |                 |  +--<<:ASTLexComponentList>>!26!
+   |  |                 |     +--<<:ASTLexChar>><162,23>
+   |  |                 +--<<:ASTLexAlt>><162,27>
+   |  |                 |  +--<<:ASTLexComponentList>>!27!
+   |  |                 |     +--<<:ASTLexChar>><162,27>
+   |  |                 +--<<:ASTLexAlt>><162,31>
+   |  |                 |  +--<<:ASTLexComponentList>>!28!
+   |  |                 |     +--<<:ASTLexChar>><162,31>
+   |  |                 +--<<:ASTLexAlt>><162,35>
+   |  |                 |  +--<<:ASTLexComponentList>>!29!
+   |  |                 |     +--<<:ASTLexChar>><162,35>
+   |  |                 +--<<:ASTLexAlt>><162,39>
+   |  |                 |  +--<<:ASTLexComponentList>>!30!
+   |  |                 |     +--<<:ASTLexChar>><162,39>
+   |  |                 +--<<:ASTLexAlt>><162,43>
+   |  |                    +--<<:ASTLexComponentList>>!31!
+   |  |                       +--<<:ASTLexChar>><162,43>
+   |  +--<<EscapeCharacter:LexProd>><166,4>
+   |  |  +--<<:ASTLexAltList>>!17!
+   |  |     +--<<:ASTLexAlt>><167,8>
+   |  |     |  +--<<:ASTLexComponentList>>!32!
+   |  |     |     +--<<SingleEscapeCharacter:LexNonTerminal>><167,8>
+   |  |     +--<<:ASTLexAlt>><168,10>
+   |  |     |  +--<<:ASTLexComponentList>>!33!
+   |  |     |     +--<<DecimalDigit:LexNonTerminal>><168,10>
+   |  |     +--<<:ASTLexAlt>><169,10>
+   |  |        +--<<:ASTLexComponentList>>!34!
+   |  |           +--<<:ASTLexBlock>><169,10>
+   |  |              +--<<:ASTLexAltList>>!18!
+   |  |                 +--<<:ASTLexAlt>><169,11>
+   |  |                 |  +--<<:ASTLexComponentList>>!35!
+   |  |                 |     +--<<:ASTLexChar>><169,11>
+   |  |                 +--<<:ASTLexAlt>><169,15>
+   |  |                    +--<<:ASTLexComponentList>>!36!
+   |  |                       +--<<:ASTLexChar>><169,15>
+   |  +--<<DecimalDigit:LexProd>><181,4>
+   |  |  +--<<:ASTLexAltList>>!19!
+   |  |     +--<<:ASTLexAlt>><182,8>
+   |  |        +--<<:ASTLexComponentList>>!37!
+   |  |           +--<<:ASTLexCharRange>><182,8>
+   |  +--<<HexDigit:LexProd>><185,4>
+   |  |  +--<<:ASTLexAltList>>!20!
+   |  |     +--<<:ASTLexAlt>><186,8>
+   |  |        +--<<:ASTLexComponentList>>!38!
+   |  |           +--<<:ASTLexBlock>><186,8>
+   |  |              +--<<:ASTLexAltList>>!21!
+   |  |                 +--<<:ASTLexAlt>><186,9>
+   |  |                 |  +--<<:ASTLexComponentList>>!39!
+   |  |                 |     +--<<:ASTLexBlock>><186,9>
+   |  |                 |        +--<<:ASTLexAltList>>!22!
+   |  |                 |           +--<<:ASTLexAlt>><186,10>
+   |  |                 |              +--<<:ASTLexComponentList>>!40!
+   |  |                 |                 +--<<:ASTLexCharRange>><186,10>
+   |  |                 +--<<:ASTLexAlt>><186,20>
+   |  |                 |  +--<<:ASTLexComponentList>>!41!
+   |  |                 |     +--<<:ASTLexBlock>><186,20>
+   |  |                 |        +--<<:ASTLexAltList>>!23!
+   |  |                 |           +--<<:ASTLexAlt>><186,21>
+   |  |                 |              +--<<:ASTLexComponentList>>!42!
+   |  |                 |                 +--<<:ASTLexCharRange>><186,21>
+   |  |                 +--<<:ASTLexAlt>><186,31>
+   |  |                    +--<<:ASTLexComponentList>>!43!
+   |  |                       +--<<:ASTLexBlock>><186,31>
+   |  |                          +--<<:ASTLexAltList>>!24!
+   |  |                             +--<<:ASTLexAlt>><186,32>
+   |  |                                +--<<:ASTLexComponentList>>!44!
+   |  |                                   +--<<:ASTLexCharRange>><186,32>
+   |  +--<<DecimalIntegerLiteral:LexProd>><190,4>
+   |  |  +--<<:ASTLexAltList>>!25!
+   |  |     +--<<:ASTLexAlt>><191,8>
+   |  |     |  +--<<:ASTLexComponentList>>!45!
+   |  |     |     +--<<:ASTLexChar>><191,8>
+   |  |     +--<<:ASTLexAlt>><192,10>
+   |  |        +--<<:ASTLexComponentList>>!46!
+   |  |           +--<<:ASTLexBlock>><192,10>
+   |  |           |  +--<<:ASTLexAltList>>!26!
+   |  |           |     +--<<:ASTLexAlt>><192,11>
+   |  |           |        +--<<:ASTLexComponentList>>!47!
+   |  |           |           +--<<:ASTLexCharRange>><192,11>
+   |  |           +--<<:ASTLexBlock>><192,21>
+   |  |              +--<<:ASTLexAltList>>!27!
+   |  |                 +--<<:ASTLexAlt>><192,22>
+   |  |                    +--<<:ASTLexComponentList>>!48!
+   |  |                       +--<<DecimalDigit:LexNonTerminal>><192,22>
+   |  +--<<IdentifierStart:LexProd>><195,4>
+   |  |  +--<<:ASTLexAltList>>!28!
+   |  |     +--<<:ASTLexAlt>><196,8>
+   |  |        +--<<:ASTLexComponentList>>!49!
+   |  |           +--<<UnicodeLetter:LexNonTerminal>><196,8>
+   |  +--<<WS:LexProd>><199,4>
+   |  |  +--<<:ASTLexAltList>>!29!
+   |  |     +--<<:ASTLexAlt>><199,15>
+   |  |        +--<<:ASTLexComponentList>>!50!
+   |  |           +--<<:ASTLexBlock>><199,15>
+   |  |              +--<<:ASTLexAltList>>!30!
+   |  |                 +--<<:ASTLexAlt>><199,16>
+   |  |                 |  +--<<:ASTLexComponentList>>!51!
+   |  |                 |     +--<<:ASTLexChar>><199,16>
+   |  |                 +--<<:ASTLexAlt>><199,23>
+   |  |                 |  +--<<:ASTLexComponentList>>!52!
+   |  |                 |     +--<<:ASTLexChar>><199,23>
+   |  |                 +--<<:ASTLexAlt>><199,34>
+   |  |                 |  +--<<:ASTLexComponentList>>!53!
+   |  |                 |     +--<<:ASTLexChar>><199,34>
+   |  |                 +--<<:ASTLexAlt>><199,45>
+   |  |                 |  +--<<:ASTLexComponentList>>!54!
+   |  |                 |     +--<<:ASTLexChar>><199,45>
+   |  |                 +--<<:ASTLexAlt>><199,56>
+   |  |                    +--<<:ASTLexComponentList>>!55!
+   |  |                       +--<<:ASTLexChar>><199,56>
+   |  +--<<UnicodeLetter:LexProd>><200,4>
+   |     +--<<:ASTLexAltList>>!31!
+   |        +--<<:ASTLexAlt>><201,8>
+   |        |  +--<<:ASTLexComponentList>>!56!
+   |        |     +--<<:ASTLexBlock>><201,8>
+   |        |        +--<<:ASTLexAltList>>!32!
+   |        |           +--<<:ASTLexAlt>><201,9>
+   |        |              +--<<:ASTLexComponentList>>!57!
+   |        |                 +--<<:ASTLexCharRange>><201,9>
+   |        +--<<:ASTLexAlt>><202,10>
+   |        |  +--<<:ASTLexComponentList>>!58!
+   |        |     +--<<:ASTLexBlock>><202,10>
+   |        |        +--<<:ASTLexAltList>>!33!
+   |        |           +--<<:ASTLexAlt>><202,11>
+   |        |              +--<<:ASTLexComponentList>>!59!
+   |        |                 +--<<:ASTLexCharRange>><202,11>
+   |        +--<<:ASTLexAlt>><203,10>
+   |        |  +--<<:ASTLexComponentList>>!60!
+   |        |     +--<<:ASTLexChar>><203,10>
+   |        +--<<:ASTLexAlt>><204,10>
+   |        |  +--<<:ASTLexComponentList>>!61!
+   |        |     +--<<:ASTLexChar>><204,10>
+   |        +--<<:ASTLexAlt>><205,10>
+   |        |  +--<<:ASTLexComponentList>>!62!
+   |        |     +--<<:ASTLexChar>><205,10>
+   |        +--<<:ASTLexAlt>><206,10>
+   |        |  +--<<:ASTLexComponentList>>!63!
+   |        |     +--<<:ASTLexBlock>><206,10>
+   |        |        +--<<:ASTLexAltList>>!34!
+   |        |           +--<<:ASTLexAlt>><206,11>
+   |        |              +--<<:ASTLexComponentList>>!64!
+   |        |                 +--<<:ASTLexCharRange>><206,11>
+   |        +--<<:ASTLexAlt>><207,10>
+   |        |  +--<<:ASTLexComponentList>>!65!
+   |        |     +--<<:ASTLexBlock>><207,10>
+   |        |        +--<<:ASTLexAltList>>!35!
+   |        |           +--<<:ASTLexAlt>><207,11>
+   |        |              +--<<:ASTLexComponentList>>!66!
+   |        |                 +--<<:ASTLexCharRange>><207,11>
+   |        +--<<:ASTLexAlt>><208,10>
+   |           +--<<:ASTLexComponentList>>!67!
+   |              +--<<:ASTLexBlock>><208,10>
+   |                 +--<<:ASTLexAltList>>!36!
+   |                    +--<<:ASTLexAlt>><208,11>
+   |                       +--<<:ASTLexComponentList>>!68!
+   |                          +--<<:ASTLexCharRange>><208,11>
+   +--<<:ASTClassProdList>>
+   |  +--<<JavaScriptProgram:ClassProd>><20,4>               (2x)
+   |  |  +--<<:ASTRuleReferenceList>>
+   |  |  +--<<:ASTRuleReferenceList>>!2!
+   |  |  +--<<:ASTGenericTypeList>>
+   |  |  +--<<:ASTGenericTypeList>>!2!
+   |  |  +--<<:ASTAltList>>
+   |  |     +--<<:ASTAlt>><21,8>
+   |  |        +--<<:ASTRuleComponentList>>
+   |  |           +--<<SourceElements:NonTerminal>><21,8>
+   |  +--<<SourceElements:ClassProd>><24,4>                  (2x)
+   |  |  +--<<:ASTRuleReferenceList>>!3!
+   |  |  +--<<:ASTRuleReferenceList>>!4!
+   |  |  +--<<:ASTGenericTypeList>>!3!
+   |  |  +--<<:ASTGenericTypeList>>!4!
+   |  |  +--<<:ASTAltList>>!2!
+   |  |     +--<<:ASTAlt>><25,8>
+   |  |        +--<<:ASTRuleComponentList>>!2!
+   |  |           +--<<SourceElement:NonTerminal>><25,8>
+   |  +--<<SourceElement:ClassProd>><28,4>                   (2x)
+   |  |  +--<<:ASTRuleReferenceList>>!5!
+   |  |  +--<<:ASTRuleReferenceList>>!6!
+   |  |  +--<<:ASTGenericTypeList>>!5!
+   |  |  +--<<:ASTGenericTypeList>>!6!
+   |  |  +--<<:ASTAltList>>!3!
+   |  |     +--<<:ASTAlt>><29,8>
+   |  |        +--<<:ASTRuleComponentList>>!3!
+   |  |           +--<<Statement:NonTerminal>><29,8>
+   |  +--<<Statement:ClassProd>><33,4>                       (2x)
+   |  |  +--<<:ASTRuleReferenceList>>!7!
+   |  |  +--<<:ASTRuleReferenceList>>!8!
+   |  |  +--<<:ASTGenericTypeList>>!7!
+   |  |  +--<<:ASTGenericTypeList>>!8!
+   |  |  +--<<:ASTAltList>>!4!
+   |  |     +--<<:ASTAlt>><34,8>
+   |  |        +--<<:ASTRuleComponentList>>!4!
+   |  |           +--<<VariableStatement:NonTerminal>><34,8>
+   |  +--<<Statements:ClassProd>><37,4>                      (2x)
+   |  |  +--<<:ASTRuleReferenceList>>!9!
+   |  |  +--<<:ASTRuleReferenceList>>!10!
+   |  |  +--<<:ASTGenericTypeList>>!9!
+   |  |  +--<<:ASTGenericTypeList>>!10!
+   |  |  +--<<:ASTAltList>>!5!
+   |  |     +--<<:ASTAlt>><38,8>
+   |  |        +--<<:ASTRuleComponentList>>!5!
+   |  |           +--<<Statement:NonTerminal>><38,8>
+   |  +--<<VariableStatement:ClassProd>><41,4>               (2x)
+   |  |  +--<<:ASTRuleReferenceList>>!11!
+   |  |  +--<<:ASTRuleReferenceList>>!12!
+   |  |  +--<<:ASTGenericTypeList>>!11!
+   |  |  +--<<:ASTGenericTypeList>>!12!
+   |  |  +--<<:ASTAltList>>!6!
+   |  |     +--<<:ASTAlt>><42,8>
+   |  |        +--<<:ASTRuleComponentList>>!6!
+   |  |           +--<<Var:NonTerminal>><42,8>
+   |  |           +--<<WS:NonTerminal>><42,12>
+   |  |           +--<<VariableDeclarations:NonTerminal>><42,15>
+   |  |           +--<<EOS:NonTerminal>><42,36>
+   |  +--<<VariableDeclarations:ClassProd>><45,4>            (2x)
+   |  |  +--<<:ASTRuleReferenceList>>!13!
+   |  |  +--<<:ASTRuleReferenceList>>!14!
+   |  |  +--<<:ASTGenericTypeList>>!13!
+   |  |  +--<<:ASTGenericTypeList>>!14!
+   |  |  +--<<:ASTAltList>>!7!
+   |  |     +--<<:ASTAlt>><46,8>
+   |  |        +--<<:ASTRuleComponentList>>!7!
+   |  |           +--<<VariableDeclaration:NonTerminal>><46,8>
+   |  |           +--<<:ASTBlock>><46,48>
+   |  |              +--<<:ASTAltList>>!8!
+   |  |                 +--<<:ASTAlt>><46,50>
+   |  |                    +--<<:ASTRuleComponentList>>!8!
+   |  |                       +--<<KO:NonTerminal>><46,50>
+   |  |                       +--<<WS:NonTerminal>><46,53>
+   |  |                       +--<<VariableDeclaration:NonTerminal>><46,56>
+   |  +--<<VariableDeclaration:ClassProd>><49,4>             (2x)
+   |  |  +--<<:ASTRuleReferenceList>>!15!
+   |  |  +--<<:ASTRuleReferenceList>>!16!
+   |  |  +--<<:ASTGenericTypeList>>!15!
+   |  |  +--<<:ASTGenericTypeList>>!16!
+   |  |  +--<<:ASTAltList>>!9!
+   |  |     +--<<:ASTAlt>><50,8>
+   |  |        +--<<:ASTRuleComponentList>>!9!
+   |  |           +--<<Identifier:NonTerminal>><50,8>
+   |  |           +--<<Initialiser:NonTerminal>><50,19>
+   |  +--<<Initialiser:ClassProd>><53,4>                     (2x)
+   |  |  +--<<:ASTRuleReferenceList>>!17!
+   |  |  +--<<:ASTRuleReferenceList>>!18!
+   |  |  +--<<:ASTGenericTypeList>>!17!
+   |  |  +--<<:ASTGenericTypeList>>!18!
+   |  |  +--<<:ASTAltList>>!10!
+   |  |     +--<<:ASTAlt>><54,7>
+   |  |        +--<<:ASTRuleComponentList>>!10!
+   |  |           +--<<WS:NonTerminal>><54,7>
+   |  |           +--<<EQ:NonTerminal>><54,10>
+   |  |           +--<<SingleExpression:NonTerminal>><54,13>
+   |  +--<<ExpressionSequence:ClassProd>><60,4>              (2x)
+   |  |  +--<<:ASTRuleReferenceList>>!19!
+   |  |  +--<<:ASTRuleReferenceList>>!20!
+   |  |  +--<<:ASTGenericTypeList>>!19!
+   |  |  +--<<:ASTGenericTypeList>>!20!
+   |  |  +--<<:ASTAltList>>!11!
+   |  |     +--<<:ASTAlt>><61,8>
+   |  |        +--<<:ASTRuleComponentList>>!11!
+   |  |           +--<<SingleExpression:NonTerminal>><61,8>
+   |  |           +--<<:ASTBlock>><61,25>
+   |  |              +--<<:ASTAltList>>!12!
+   |  |                 +--<<:ASTAlt>><61,27>
+   |  |                    +--<<:ASTRuleComponentList>>!12!
+   |  |                       +--<<KO:NonTerminal>><61,27>
+   |  |                       +--<<WS:NonTerminal>><61,30>
+   |  |                       +--<<SingleExpression:NonTerminal>><61,33>
+   |  +--<<SingleExpression:ClassProd>><64,4>                (2x)
+   |  |  +--<<:ASTRuleReferenceList>>!21!
+   |  |  +--<<:ASTRuleReferenceList>>!22!
+   |  |  +--<<:ASTGenericTypeList>>!21!
+   |  |  +--<<:ASTGenericTypeList>>!22!
+   |  |  +--<<:ASTAltList>>!13!
+   |  |     +--<<:ASTAlt>><65,8>
+   |  |        +--<<:ASTRuleComponentList>>!13!
+   |  |           +--<<WS:NonTerminal>><65,8>
+   |  |           +--<<Literal:NonTerminal>><65,11>
+   |  +--<<Literal:ClassProd>><69,4>                         (2x)
+   |  |  +--<<:ASTRuleReferenceList>>!23!
+   |  |  +--<<:ASTRuleReferenceList>>!24!
+   |  |  +--<<:ASTGenericTypeList>>!23!
+   |  |  +--<<:ASTGenericTypeList>>!24!
+   |  |  +--<<:ASTAltList>>!14!
+   |  |     +--<<:ASTAlt>><70,8>
+   |  |        +--<<:ASTRuleComponentList>>!14!
+   |  |           +--<<StringLiteral:NonTerminal>><70,8>
+   |  +--<<NumericLiteral:ClassProd>><73,4>                  (2x)
+   |  |  +--<<:ASTRuleReferenceList>>!25!
+   |  |  +--<<:ASTRuleReferenceList>>!26!
+   |  |  +--<<:ASTGenericTypeList>>!25!
+   |  |  +--<<:ASTGenericTypeList>>!26!
+   |  |  +--<<:ASTAltList>>!15!
+   |  |     +--<<:ASTAlt>><75,8>
+   |  |        +--<<:ASTRuleComponentList>>!15!
+   |  |           +--<<DecimalIntegerLiteral:NonTerminal>><75,8>
+   |  +--<<EOS:ClassProd>><78,4>                             (2x)
+   |     +--<<:ASTRuleReferenceList>>!27!
+   |     +--<<:ASTRuleReferenceList>>!28!
+   |     +--<<:ASTGenericTypeList>>!27!
+   |     +--<<:ASTGenericTypeList>>!28!
+   |     +--<<:ASTAltList>>!16!
+   |        +--<<:ASTAlt>><79,8>
+   |           +--<<:ASTRuleComponentList>>!16!
+   |              +--<<SemiColon:NonTerminal>><79,8>
+   +--<<:ASTEnumProdList>>
+   +--<<:ASTExternalProdList>>
+   +--<<:ASTInterfaceProdList>>
+   +--<<:ASTAbstractProdList>>
+   +--<<:ASTASTRuleList>>
+   +--<<:ASTConceptList>>
+========================================================== Explanation
+Node Tree: this is the extended form: one with extra infos
+as sublines. The tree itself lists all AST nodes using their identifiers.
+Vertical line: list all the direct children of a node.
+Each node knows about:
+- #Visits through templates (in the raw version) looks like: (2x)
+- files generated originating from this node
+- templates called on this node
+Remark: a "null" as value in the tree means that the tree has been altered
+after parsing. --> this is not yet reflected in the protocol
+(EOF)

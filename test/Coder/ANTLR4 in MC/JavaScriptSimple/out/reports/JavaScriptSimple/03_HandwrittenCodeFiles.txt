@@ -1,0 +1,53 @@
+========================================================== Used Handwritten Code Files
+#Counts   File Name
+1x        javascriptsimple/_ast/Builder_ASTExpressionSequence.java
+1x        javascriptsimple/_ast/Builder_ASTNumericLiteral.java
+1x        javascriptsimple/_ast/ASTStatement.java
+1x        javascriptsimple/_ast/ASTVariableStatement.java
+1x        javascriptsimple/_ast/ASTJavaScriptProgram.java
+1x        javascriptsimple/_ast/ASTVariableDeclaration.java
+1x        javascriptsimple/_ast/Builder_ASTVariableDeclaration.java
+1x        javascriptsimple/_ast/ASTJavaScriptSimpleNode.java
+1x        javascriptsimple/_ast/ASTSourceElementsList.java
+1x        javascriptsimple/_ast/ASTVariableDeclarationsList.java
+1x        javascriptsimple/_ast/ASTStatementsList.java
+1x        javascriptsimple/_ast/ASTSingleExpressionList.java
+1x        javascriptsimple/_ast/Builder_ASTStatement.java
+2x        javascriptsimple/_ast/JavaScriptSimpleNodeFactory.java
+1x        javascriptsimple/_ast/ASTLiteralList.java
+1x        javascriptsimple/_ast/ASTSourceElement.java
+1x        javascriptsimple/_ast/ASTJavaScriptProgramList.java
+1x        javascriptsimple/_ast/ASTVariableStatementList.java
+1x        javascriptsimple/_ast/Builder_ASTInitialiser.java
+1x        javascriptsimple/_ast/ASTExpressionSequence.java
+1x        javascriptsimple/_ast/ASTConstantsJavaScriptSimple.java
+1x        javascriptsimple/_ast/ASTNumericLiteralList.java
+1x        javascriptsimple/_ast/ASTVariableDeclarationList.java
+1x        javascriptsimple/_ast/Builder_ASTSourceElements.java
+1x        javascriptsimple/_ast/ASTStatements.java
+1x        javascriptsimple/_ast/ASTVariableDeclarations.java
+1x        javascriptsimple/_ast/Builder_ASTEOS.java
+1x        javascriptsimple/_symboltable/JavaScriptSimpleLanguage.java
+1x        javascriptsimple/_ast/Builder_ASTVariableStatement.java
+1x        javascriptsimple/_ast/Builder_ASTVariableDeclarations.java
+1x        javascriptsimple/_ast/ASTExpressionSequenceList.java
+1x        javascriptsimple/_ast/Builder_ASTLiteral.java
+1x        javascriptsimple/_ast/ASTInitialiserList.java
+1x        javascriptsimple/_ast/ASTSingleExpression.java
+1x        javascriptsimple/_ast/ASTLiteral.java
+1x        javascriptsimple/_ast/ASTEOS.java
+1x        javascriptsimple/_ast/Builder_ASTSourceElement.java
+1x        javascriptsimple/_ast/Builder_ASTStatements.java
+1x        javascriptsimple/_ast/ASTSourceElements.java
+1x        javascriptsimple/_ast/ASTEOSList.java
+1x        javascriptsimple/_ast/Builder_ASTJavaScriptProgram.java
+1x        javascriptsimple/_symboltable/JavaScriptSimpleModelLoader.java
+1x        javascriptsimple/_ast/ASTInitialiser.java
+1x        javascriptsimple/_ast/ASTSourceElementList.java
+1x        javascriptsimple/_ast/ASTStatementList.java
+1x        javascriptsimple/_ast/ASTNumericLiteral.java
+1x        javascriptsimple/_ast/Builder_ASTSingleExpression.java
+========================================================== Unused Handwritten Code Files
+========================================================== Explanation
+   - Shows used and unused HWC files
+(EOF)

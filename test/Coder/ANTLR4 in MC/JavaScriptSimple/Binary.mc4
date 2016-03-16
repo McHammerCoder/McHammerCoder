@@ -1,0 +1,146 @@
+grammar Binary
+{ 
+    /*
+        None of the below shown productions is actually parsed the way they are
+        shown here. Instead the corresponding hammer-parser is applied whenever
+        the parser-generator encounters one of the below nonterminals.
+
+
+        In addition when the parser-generator encounters a sequence of Bit or UBit it
+        wont apply the bit parser each time as instead it applies the hammer parser that
+        parses the given ammount of bits.
+        Example:
+            Bits_3 = UBit UBit UBit;
+        results in
+            HParser* bits_3 = h_bits(3,false);
+
+        This has impact on the parse-tree that is generated in the end.
+        Example:
+            Bits = Bits_3 Bits_3;
+        would not result in h_bits(6,false); but in two times h_bits(3,false); 
+        and thus creates two leafs unless Bits_3 is defined as fragment.
+
+        The other way around
+            Bits = UBit UBit UBit UBit UBit UBit;
+        will be parsed as h_bits(6,false);. If they are supposed to represent two values they
+        need to be split into two none fragment productions as shown above.
+            
+    */
+
+    fragment token B0 = '0';
+    fragment token B1 = '1';
+
+    fragment token Bit =  B0 | B1;
+    fragment token UBit = B0 | B1;
+
+    token UInt_8 =  UBit UBit UBit UBit UBit UBit UBit UBit;
+    token UInt_16 = UBit UBit UBit UBit UBit UBit UBit UBit
+              	    UBit UBit UBit UBit UBit UBit UBit UBit;
+    token UInt_32 = UBit UBit UBit UBit UBit UBit UBit UBit
+              	    UBit UBit UBit UBit UBit UBit UBit UBit
+                    UBit UBit UBit UBit UBit UBit UBit UBit
+                    UBit UBit UBit UBit UBit UBit UBit UBit;
+    token UInt_64 = UBit UBit UBit UBit UBit UBit UBit UBit
+                    UBit UBit UBit UBit UBit UBit UBit UBit
+                    UBit UBit UBit UBit UBit UBit UBit UBit
+                    UBit UBit UBit UBit UBit UBit UBit UBit
+                    UBit UBit UBit UBit UBit UBit UBit UBit
+                    UBit UBit UBit UBit UBit UBit UBit UBit
+                    UBit UBit UBit UBit UBit UBit UBit UBit
+                    UBit UBit UBit UBit UBit UBit UBit UBit;
+   
+    token Int_8 =  Bit Bit Bit Bit Bit Bit Bit Bit;
+    token Int_16 = Bit Bit Bit Bit Bit Bit Bit Bit
+                   Bit Bit Bit Bit Bit Bit Bit Bit;
+    token Int_32 = Bit Bit Bit Bit Bit Bit Bit Bit
+                   Bit Bit Bit Bit Bit Bit Bit Bit
+                   Bit Bit Bit Bit Bit Bit Bit Bit
+                   Bit Bit Bit Bit Bit Bit Bit Bit;
+    token Int_64 = Bit Bit Bit Bit Bit Bit Bit Bit
+                   Bit Bit Bit Bit Bit Bit Bit Bit
+                   Bit Bit Bit Bit Bit Bit Bit Bit
+                   Bit Bit Bit Bit Bit Bit Bit Bit
+                   Bit Bit Bit Bit Bit Bit Bit Bit
+                   Bit Bit Bit Bit Bit Bit Bit Bit
+                   Bit Bit Bit Bit Bit Bit Bit Bit
+                   Bit Bit Bit Bit Bit Bit Bit Bit;
+
+    /* 	
+        If a production extends Length then the corresponding Nonterminal is supposed 
+	to represent a number describing how often the next part is repeated
+        Example:
+           LenValue extends Length = Int_8;
+           Language = LenValue UInt_8;
+        Then the parser parses an 8 bit integer describing how often the parser has to
+        repeat parsing an 8 bit unsigned integer.
+        Whether the length-value is correct then is a context condition and thus not
+        subject of the parser-generation.
+    */
+    interface Length;
+
+    //FillerLength implements Length = " ";
+
+    ///////////////////////////////////////////////////////////////////////////
+
+    fragment token Letter = ( 'a'..'z' | 'A'..'Z' );
+    fragment token Digit = '0'..'9';
+    fragment token Let_dig = Letter | Digit;
+    fragment token Let_dig_hyp = Let_dig | '-';
+    fragment token Ldh_string = Let_dig_hyp Ldh_string | Let_dig;
+    token Dot = '.';
+    token WS = ' ';
+    token Label = ( Let_dig Ldh_string ) | Let_dig;
+    Subdomain = Label (Dot Label)+;
+    Domain = ( Subdomain | WS );
+
+    ///////////////////////////////////////////////////////////////////////////
+
+    token BitsU_1 = UBit;
+    token BitsU_3 = UBit UBit UBit;
+    token BitsU_4 = UBit UBit UBit UBit;
+    token BitsU_16 = UBit UBit UBit UBit UBit UBit UBit UBit 
+                     UBit UBit UBit UBit UBit UBit UBit UBit;
+
+    token UInt_16_0000 = B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0;
+    token UInt_16_0001 = B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B1;
+    token UInt_16_0004 = B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B1 B0 B0;
+    token UInt_16_0016 = B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B0 B1 B0 B0 B0 B0;
+    token UInt_16_00FC = B0 B0 B0 B0 B0 B0 B0 B0 B1 B1 B1 B1 B1 B1 B0 B0;
+    token UInt_16_00FF = B0 B0 B0 B0 B0 B0 B0 B0 B1 B1 B1 B1 B1 B1 B1 B1;
+    // ***
+    token UInt_16_FFFF = B1 B1 B1 B1 B1 B1 B1 B1 B1 B1 B1 B1 B1 B1 B1 B1;
+
+    //external Domain;
+
+    Hdzero = BitsU_3;
+    Header = BitsU_16 
+	     	 BitsU_1
+	     	 BitsU_4
+ 	     	 BitsU_1
+	    	 BitsU_1
+	    	 BitsU_1
+	     	 BitsU_1
+	     	 Hdzero
+	     	 BitsU_4
+	     	 UInt_16
+	     	 UInt_16
+	     	 UInt_16
+	    	 UInt_16;
+    
+    Type = ( UInt_16_0001 | UInt_16_0016 );
+    QType = Type | ( UInt_16_00FC | UInt_16_00FF );
+
+    Class = ( UInt_16_0001 | UInt_16_0004 );
+    QClass = Class | UInt_16_FFFF; 
+
+    Len implements Length = UInt_16;
+    DNS_Label = Len UInt_8;
+    QName = DNS_Label+ WS;
+
+    Question = QName QType QClass;
+    RLen implements Length = UInt_16;
+    RData = RLen UInt_8;
+    RR = Domain Type Class UInt_32 RData;
+
+    Message = Header Question* RR*;
+}
