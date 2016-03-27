@@ -1,13 +1,9 @@
 grammar Hello;
-domain : ( subdomain | WS );
-subdomain : Label (Dot Label)+;
+hello : 'automaton' Name '{' (state | transition)* '}' ;
 
-Dot : '.';
-WS : ' ';
-Label : ( Let_dig Ldh_string ) | Let_dig;
+state : 'state' Name (('<<' 'initial' '>>' ) | ('<<' 'final' '>>' ))* 
+  ( ('{' (state | transition)* '}') | ';') ;
 
-fragment Letter : [a-z] | [A-Z];
-fragment Digit : [0-9];
-fragment Let_dig : Letter | Digit;
-fragment Let_dig_hyp : Let_dig | '-';
-fragment Ldh_string : Let_dig_hyp Ldh_string | Let_dig;
+transition : Name '-' Name '>' Name ';' ;
+
+Name : ([a-z] | [A-Z] | '_' | '$')([a-z] | [A-Z] | '_' | '$' | [0-9])*;

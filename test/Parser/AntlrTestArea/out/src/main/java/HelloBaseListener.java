@@ -16,25 +16,37 @@ public class HelloBaseListener implements HelloListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	public void enterDomain(HelloParser.DomainContext ctx) { }
+	public void enterHello(HelloParser.HelloContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	public void exitDomain(HelloParser.DomainContext ctx) { }
+	public void exitHello(HelloParser.HelloContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	public void enterSubdomain(HelloParser.SubdomainContext ctx) { }
+	public void enterState(HelloParser.StateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	public void exitSubdomain(HelloParser.SubdomainContext ctx) { }
+	public void exitState(HelloParser.StateContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	public void enterTransition(HelloParser.TransitionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	public void exitTransition(HelloParser.TransitionContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

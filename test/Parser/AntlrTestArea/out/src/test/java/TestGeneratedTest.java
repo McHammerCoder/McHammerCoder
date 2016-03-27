@@ -52,7 +52,7 @@ public class TestGeneratedTest
     	// create a CharStream that reads from standard input
     	ANTLRInputStream input;
 		try {
-			InputStream stream = new ByteArrayInputStream("www.google.com".getBytes(StandardCharsets.UTF_8));
+			InputStream stream = new ByteArrayInputStream("automatonName{}".getBytes(StandardCharsets.UTF_8));
 			input = new ANTLRInputStream(stream);
 			
 	    	// create a lexer that feeds off of input CharStream
@@ -61,7 +61,7 @@ public class TestGeneratedTest
 	    	CommonTokenStream tokens = new CommonTokenStream(lexer);
 	    	// create a parser that feeds off the tokens buffer
 	    	HelloParser parser = new HelloParser(tokens);
-	    	ParseTree tree = parser.domain(); // begin parsing at init rule
+	    	ParseTree tree = parser.hello(); // begin parsing at init rule
 	    	ruleNames = Arrays.asList(parser.getRuleNames());
 	    	
 	    	displayParseTree(tree);
