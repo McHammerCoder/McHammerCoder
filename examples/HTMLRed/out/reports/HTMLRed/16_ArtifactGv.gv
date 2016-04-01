@@ -1,0 +1,383 @@
+digraph {
+  subgraph cluster_de_monticore_types {
+    label = "de.monticore.types";
+    labeljust = l;
+    node[shape=cds];
+    Helper_de_monticore_types_TypesHelper [label="de.monticore.types.TypesHelper.java (18)"];
+  }
+  subgraph cluster_coder {
+    label = "coder";
+    labeljust = l;
+    node[shape=ellipse];
+    Template_coder_EncoderVisitor [label="coder.EncoderVisitor.ftl (1)"];
+    node[shape=ellipse];
+    Template_coder_Injector [label="coder.Injector.ftl (1)"];
+    node[shape=ellipse];
+    Template_coder_JavaScriptSimpleTool [label="coder.JavaScriptSimpleTool.ftl (1)"];
+    node[shape=ellipse];
+    Template_coder_Decoder [label="coder.Decoder.ftl (1)"];
+    node[shape=ellipse];
+    Template_coder_DecoderVisitor [label="coder.DecoderVisitor.ftl (1)"];
+    node[shape=ellipse];
+    Template_coder_Encoder [label="coder.Encoder.ftl (1)"];
+    node[shape=ellipse];
+    Template_coder_Range [label="coder.Range.ftl (1)"];
+  }
+  subgraph cluster_ast {
+    label = "ast";
+    labeljust = l;
+    subgraph cluster_ast_additionalmethods {
+      label = "ast.additionalmethods";
+      labeljust = l;
+      node[shape=ellipse];
+      Template_ast_additionalmethods_DeepEqualsWithComments [label="ast.additionalmethods.DeepEqualsWithComments.ftl (4)"];
+      node[shape=ellipse];
+      Template_ast_additionalmethods_EqualsWithComments [label="ast.additionalmethods.EqualsWithComments.ftl (4)"];
+      node[shape=ellipse];
+      Template_ast_additionalmethods_Set [label="ast.additionalmethods.Set.ftl (15)"];
+      node[shape=ellipse];
+      Template_ast_additionalmethods_Accept [label="ast.additionalmethods.Accept.ftl (4)"];
+      node[shape=ellipse];
+      Template_ast_additionalmethods_DeepCloneWithParameters [label="ast.additionalmethods.DeepCloneWithParameters.ftl (4)"];
+      node[shape=ellipse];
+      Template_ast_additionalmethods_DeepEqualsWithOrder [label="ast.additionalmethods.DeepEqualsWithOrder.ftl (4)"];
+      node[shape=ellipse];
+      Template_ast_additionalmethods_RemoveChild [label="ast.additionalmethods.RemoveChild.ftl (4)"];
+      node[shape=ellipse];
+      Template_ast_additionalmethods_EqualAttributes [label="ast.additionalmethods.EqualAttributes.ftl (4)"];
+      node[shape=ellipse];
+      Template_ast_additionalmethods_Get [label="ast.additionalmethods.Get.ftl (15)"];
+      node[shape=ellipse];
+      Template_ast_additionalmethods_GetChildren [label="ast.additionalmethods.GetChildren.ftl (4)"];
+    }
+    subgraph cluster_ast_factorymethods {
+      label = "ast.factorymethods";
+      labeljust = l;
+      node[shape=ellipse];
+      Template_ast_factorymethods_ErrorIfNull [label="ast.factorymethods.ErrorIfNull.ftl (2)"];
+      node[shape=ellipse];
+      Template_ast_factorymethods_Create [label="ast.factorymethods.Create.ftl (4)"];
+      node[shape=ellipse];
+      Template_ast_factorymethods_DoCreate [label="ast.factorymethods.DoCreate.ftl (4)"];
+      node[shape=ellipse];
+      Template_ast_factorymethods_DoCreateWithParams [label="ast.factorymethods.DoCreateWithParams.ftl (4)"];
+      node[shape=ellipse];
+      Template_ast_factorymethods_CreateWithParams [label="ast.factorymethods.CreateWithParams.ftl (4)"];
+    }
+    node[shape=ellipse];
+    Template_ast_ErrorIfNull [label="ast.ErrorIfNull.ftl (96)"];
+    node[shape=ellipse];
+    Template_ast_AstImports [label="ast.AstImports.ftl (4)"];
+    node[shape=ellipse];
+    Template_ast_Attribute [label="ast.Attribute.ftl (19)"];
+    node[shape=ellipse];
+    Template_ast_BuilderAttribute [label="ast.BuilderAttribute.ftl (7)"];
+    node[shape=ellipse];
+    Template_ast_Class [label="ast.Class.ftl (2)"];
+    node[shape=ellipse];
+    Template_ast_AstNodeFactory [label="ast.AstNodeFactory.ftl (1)"];
+    node[shape=ellipse];
+    Template_ast_BuilderConstructorParametersDeclaration [label="ast.BuilderConstructorParametersDeclaration.ftl (4)"];
+    node[shape=ellipse];
+    Template_ast_ASTNodeBase [label="ast.ASTNodeBase.ftl (1)"];
+    node[shape=ellipse];
+    Template_ast_ClassContent [label="ast.ClassContent.ftl (4)"];
+    node[shape=ellipse];
+    Template_ast_AstClass [label="ast.AstClass.ftl (4)"];
+    node[shape=ellipse];
+    Template_ast_ParametersDeclaration [label="ast.ParametersDeclaration.ftl (4)"];
+    node[shape=ellipse];
+    Template_ast_AstBuilder [label="ast.AstBuilder.ftl (4)"];
+    node[shape=ellipse];
+    Template_ast_AstInterface [label="ast.AstInterface.ftl (1)"];
+    node[shape=ellipse];
+    Template_ast_EmptyMethodBody [label="ast.EmptyMethodBody.ftl (4)"];
+    node[shape=ellipse];
+    Template_ast_Constructor [label="ast.Constructor.ftl (8)"];
+    node[shape=ellipse];
+    Template_ast_ASTConstantsClass [label="ast.ASTConstantsClass.ftl (1)"];
+    node[shape=ellipse];
+    Template_ast_ConstructorAttributesSetter [label="ast.ConstructorAttributesSetter.ftl (4)"];
+    node[shape=ellipse];
+    Template_ast_AstSuperTypes [label="ast.AstSuperTypes.ftl (4)"];
+    node[shape=ellipse];
+    Template_ast_ConstructorParametersDeclaration [label="ast.ConstructorParametersDeclaration.ftl (4)"];
+    node[shape=ellipse];
+    Template_ast_AstSuperInterfaces [label="ast.AstSuperInterfaces.ftl (4)"];
+    node[shape=ellipse];
+    Template_ast_AstBuilderAttributeSetter [label="ast.AstBuilderAttributeSetter.ftl (7)"];
+    node[shape=ellipse];
+    Template_ast_ClassMethod [label="ast.ClassMethod.ftl (110)"];
+  }
+  subgraph cluster_parser {
+    label = "parser";
+    labeljust = l;
+    node[shape=ellipse];
+    Template_parser_MCParserMethods [label="parser.MCParserMethods.ftl (4)"];
+    node[shape=ellipse];
+    Template_parser_Parser [label="parser.Parser.ftl (1)"];
+    node[shape=ellipse];
+    Template_parser_MCParser [label="parser.MCParser.ftl (1)"];
+    node[shape=ellipse];
+    Template_parser_ParserHeader [label="parser.ParserHeader.ftl (1)"];
+    node[shape=ellipse];
+    Template_parser_LexerMember [label="parser.LexerMember.ftl (1)"];
+  }
+  subgraph cluster_od {
+    label = "od";
+    labeljust = l;
+    node[shape=ellipse];
+    Template_od_DiagramVisitor [label="od.DiagramVisitor.ftl (1)"];
+  }
+  subgraph cluster_mchtree {
+    label = "mchtree";
+    labeljust = l;
+    node[shape=ellipse];
+    Template_mchtree_HARuleNode [label="mchtree.HARuleNode.ftl (1)"];
+    node[shape=ellipse];
+    Template_mchtree_TreeConverter [label="mchtree.TreeConverter.ftl (1)"];
+    node[shape=ellipse];
+    Template_mchtree_HARuleContext [label="mchtree.HARuleContext.ftl (1)"];
+    node[shape=ellipse];
+    Template_mchtree_HATerminalNode [label="mchtree.HATerminalNode.ftl (1)"];
+    node[shape=ellipse];
+    Template_mchtree_TreeHelper [label="mchtree.TreeHelper.ftl (1)"];
+    node[shape=ellipse];
+    Template_mchtree_HAParseTree [label="mchtree.HAParseTree.ftl (1)"];
+  }
+  subgraph cluster_htmlred__symboltable {
+    label = "htmlred._symboltable";
+    labeljust = l;
+    node[shape=note];
+    File_htmlred__symboltable_HTMLRedModelLoader [label="htmlred._symboltable.HTMLRedModelLoader.java (1)"];
+    node[shape=note];
+    File_htmlred__symboltable_HTMLRedLanguage [label="htmlred._symboltable.HTMLRedLanguage.java (1)"];
+  }
+  subgraph cluster_htmlred__mch_parser {
+    label = "htmlred._mch_parser";
+    labeljust = l;
+    subgraph cluster_htmlred__mch_parser_tree {
+      label = "htmlred._mch_parser.tree";
+      labeljust = l;
+      node[shape=note];
+      File_htmlred__mch_parser_tree_HATerminalNode [label="htmlred._mch_parser.tree.HATerminalNode.java (1)"];
+      node[shape=note];
+      File_htmlred__mch_parser_tree_HARuleContext [label="htmlred._mch_parser.tree.HARuleContext.java (1)"];
+      node[shape=note];
+      File_htmlred__mch_parser_tree_HTMLRedTreeHelper [label="htmlred._mch_parser.tree.HTMLRedTreeHelper.java (1)"];
+      node[shape=note];
+      File_htmlred__mch_parser_tree_HTMLRedTreeConverter [label="htmlred._mch_parser.tree.HTMLRedTreeConverter.java (1)"];
+      node[shape=note];
+      File_htmlred__mch_parser_tree_HARuleNode [label="htmlred._mch_parser.tree.HARuleNode.java (1)"];
+      node[shape=note];
+      File_htmlred__mch_parser_tree_HAParseTree [label="htmlred._mch_parser.tree.HAParseTree.java (1)"];
+    }
+    node[shape=note];
+    File_htmlred__mch_parser_HTMLRedParser [label="htmlred._mch_parser.HTMLRedParser.java (1)"];
+    node[shape=note];
+    File_htmlred__mch_parser_HTMLRedActions [label="htmlred._mch_parser.HTMLRedActions.java (1)"];
+    node[shape=note];
+    File_htmlred__mch_parser_com_upstandinghackers_hammer_Hammer [label="htmlred._mch_parser.com_upstandinghackers_hammer_Hammer.c (1)"];
+  }
+  subgraph cluster_htmlred__parser {
+    label = "htmlred._parser";
+    labeljust = l;
+    node[shape=note];
+    File_htmlred__parser_HTMLRedParser [label="htmlred._parser.HTMLRedParser.java (1)"];
+    node[shape=note];
+    File_htmlred__parser_HTMLRedAntlr [label="htmlred._parser.HTMLRedAntlr.g4 (1)"];
+  }
+  subgraph cluster_htmlred__od {
+    label = "htmlred._od";
+    labeljust = l;
+    node[shape=note];
+    File_htmlred__od_HTMLRed2OD [label="htmlred._od.HTMLRed2OD.java (1)"];
+  }
+  subgraph cluster_htmlred__coder {
+    label = "htmlred._coder";
+    labeljust = l;
+    node[shape=note];
+    File_htmlred__coder_HTMLRedRange [label="htmlred._coder.HTMLRedRange.java (1)"];
+    node[shape=note];
+    File_htmlred__coder_HTMLRedDecoder [label="htmlred._coder.HTMLRedDecoder.java (1)"];
+    node[shape=note];
+    File_htmlred__coder_HTMLRedEncoder [label="htmlred._coder.HTMLRedEncoder.java (1)"];
+    node[shape=note];
+    File_htmlred__coder_HTMLRedDecoderVisitor [label="htmlred._coder.HTMLRedDecoderVisitor.java (1)"];
+    node[shape=note];
+    File_htmlred__coder_HTMLRedEncoderVisitor [label="htmlred._coder.HTMLRedEncoderVisitor.java (1)"];
+    node[shape=note];
+    File_htmlred__coder_HTMLRedSimpleTool [label="htmlred._coder.HTMLRedSimpleTool.java (1)"];
+    node[shape=note];
+    File_htmlred__coder_HTMLRedInjector [label="htmlred._coder.HTMLRedInjector.java (1)"];
+  }
+  subgraph cluster_htmlred__visitor {
+    label = "htmlred._visitor";
+    labeljust = l;
+    node[shape=note];
+    File_htmlred__visitor_HTMLRedParentAwareVisitor [label="htmlred._visitor.HTMLRedParentAwareVisitor.java (1)"];
+    node[shape=note];
+    File_htmlred__visitor_HTMLRedInheritanceVisitor [label="htmlred._visitor.HTMLRedInheritanceVisitor.java (1)"];
+    node[shape=note];
+    File_htmlred__visitor_CommonHTMLRedDelegatorVisitor [label="htmlred._visitor.CommonHTMLRedDelegatorVisitor.java (1)"];
+    node[shape=note];
+    File_htmlred__visitor_HTMLRedVisitor [label="htmlred._visitor.HTMLRedVisitor.java (1)"];
+    node[shape=note];
+    File_htmlred__visitor_HTMLRedDelegatorVisitor [label="htmlred._visitor.HTMLRedDelegatorVisitor.java (1)"];
+  }
+  subgraph cluster_htmlred__ast {
+    label = "htmlred._ast";
+    labeljust = l;
+    node[shape=note];
+    File_htmlred__ast_ASTI [label="htmlred._ast.ASTI.java (1)"];
+    node[shape=note];
+    File_htmlred__ast_ASTB [label="htmlred._ast.ASTB.java (1)"];
+    node[shape=note];
+    File_htmlred__ast_HTMLRedNodeFactory [label="htmlred._ast.HTMLRedNodeFactory.java (1)"];
+    node[shape=note];
+    File_htmlred__ast_ASTHTMLRedNode [label="htmlred._ast.ASTHTMLRedNode.java (1)"];
+    node[shape=note];
+    File_htmlred__ast_ASTP [label="htmlred._ast.ASTP.java (1)"];
+    node[shape=note];
+    File_htmlred__ast_ASTAlternatives [label="htmlred._ast.ASTAlternatives.java (1)"];
+    node[shape=note];
+    File_htmlred__ast_ASTConstantsHTMLRed [label="htmlred._ast.ASTConstantsHTMLRed.java (1)"];
+  }
+  subgraph cluster_htmlred__cocos {
+    label = "htmlred._cocos";
+    labeljust = l;
+    node[shape=note];
+    File_htmlred__cocos_HTMLRedASTPCoCo [label="htmlred._cocos.HTMLRedASTPCoCo.java (1)"];
+    node[shape=note];
+    File_htmlred__cocos_HTMLRedASTHTMLRedNodeCoCo [label="htmlred._cocos.HTMLRedASTHTMLRedNodeCoCo.java (1)"];
+    node[shape=note];
+    File_htmlred__cocos_HTMLRedASTAlternativesCoCo [label="htmlred._cocos.HTMLRedASTAlternativesCoCo.java (1)"];
+    node[shape=note];
+    File_htmlred__cocos_HTMLRedASTICoCo [label="htmlred._cocos.HTMLRedASTICoCo.java (1)"];
+    node[shape=note];
+    File_htmlred__cocos_HTMLRedASTBCoCo [label="htmlred._cocos.HTMLRedASTBCoCo.java (1)"];
+    node[shape=note];
+    File_htmlred__cocos_HTMLRedCoCoChecker [label="htmlred._cocos.HTMLRedCoCoChecker.java (1)"];
+  }
+  subgraph cluster_mchparser {
+    label = "mchparser";
+    labeljust = l;
+    node[shape=ellipse];
+    Template_mchparser_Actions [label="mchparser.Actions.ftl (1)"];
+    node[shape=ellipse];
+    Template_mchparser_Parser [label="mchparser.Parser.ftl (1)"];
+    node[shape=ellipse];
+    Template_mchparser_com_upstandinghackers_hammer_Hammer [label="mchparser.com_upstandinghackers_hammer_Hammer.ftl (1)"];
+  }
+  subgraph cluster_visitor {
+    label = "visitor";
+    labeljust = l;
+    node[shape=ellipse];
+    Template_visitor_DelegatorVisitor [label="visitor.DelegatorVisitor.ftl (1)"];
+    node[shape=ellipse];
+    Template_visitor_SimpleVisitor [label="visitor.SimpleVisitor.ftl (1)"];
+    node[shape=ellipse];
+    Template_visitor_InheritanceVisitor [label="visitor.InheritanceVisitor.ftl (1)"];
+    node[shape=ellipse];
+    Template_visitor_ParentAwareVisitor [label="visitor.ParentAwareVisitor.ftl (1)"];
+    node[shape=ellipse];
+    Template_visitor_CommonDelegatorVisitor [label="visitor.CommonDelegatorVisitor.ftl (1)"];
+  }
+  subgraph cluster_cocos {
+    label = "cocos";
+    labeljust = l;
+    node[shape=ellipse];
+    Template_cocos_CoCoChecker [label="cocos.CoCoChecker.ftl (1)"];
+    node[shape=ellipse];
+    Template_cocos_CoCoInterface [label="cocos.CoCoInterface.ftl (5)"];
+  }
+  subgraph cluster_symboltable {
+    label = "symboltable";
+    labeljust = l;
+    node[shape=ellipse];
+    Template_symboltable_ModelLoader [label="symboltable.ModelLoader.ftl (1)"];
+    node[shape=ellipse];
+    Template_symboltable_ModelingLanguage [label="symboltable.ModelingLanguage.ftl (1)"];
+  }
+  Template_coder_EncoderVisitor -> File_htmlred__coder_HTMLRedEncoderVisitor;
+  Template_coder_Injector -> File_htmlred__coder_HTMLRedInjector;
+  Template_coder_JavaScriptSimpleTool -> File_htmlred__coder_HTMLRedSimpleTool;
+  Template_coder_Decoder -> File_htmlred__coder_HTMLRedDecoder;
+  Template_coder_DecoderVisitor -> File_htmlred__coder_HTMLRedDecoderVisitor;
+  Template_coder_Encoder -> File_htmlred__coder_HTMLRedEncoder;
+  Template_coder_Range -> File_htmlred__coder_HTMLRedRange;
+  Template_ast_BuilderAttribute -> Helper_de_monticore_types_TypesHelper;
+  Template_ast_Class -> File_htmlred__ast_ASTConstantsHTMLRed;
+  Template_ast_Class -> Template_ast_AstNodeFactory;
+  Template_ast_Class -> File_htmlred__ast_HTMLRedNodeFactory;
+  Template_ast_Class -> Template_ast_ASTConstantsClass;
+  Template_ast_AstNodeFactory -> Template_ast_ClassMethod;
+  Template_ast_AstNodeFactory -> Template_ast_Attribute;
+  Template_ast_AstClass -> Template_ast_AstImports;
+  Template_ast_AstClass -> File_htmlred__ast_ASTAlternatives;
+  Template_ast_AstClass -> File_htmlred__ast_ASTP;
+  Template_ast_AstClass -> Template_ast_ClassMethod;
+  Template_ast_AstClass -> Template_ast_AstBuilder;
+  Template_ast_AstClass -> File_htmlred__ast_ASTB;
+  Template_ast_AstClass -> Template_ast_Attribute;
+  Template_ast_AstClass -> File_htmlred__ast_ASTI;
+  Template_ast_AstClass -> Template_ast_AstSuperTypes;
+  Template_ast_AstClass -> Template_ast_ClassContent;
+  Template_ast_AstClass -> Template_ast_Constructor;
+  Template_ast_AstBuilder -> Template_ast_AstBuilderAttributeSetter;
+  Template_ast_AstBuilder -> Template_ast_BuilderConstructorParametersDeclaration;
+  Template_ast_AstBuilder -> Template_ast_BuilderAttribute;
+  Template_ast_AstInterface -> Template_ast_ASTNodeBase;
+  Template_ast_AstInterface -> File_htmlred__ast_ASTHTMLRedNode;
+  Template_ast_Constructor -> Template_ast_ConstructorAttributesSetter;
+  Template_ast_Constructor -> Template_ast_EmptyMethodBody;
+  Template_ast_Constructor -> Template_ast_ParametersDeclaration;
+  Template_ast_Constructor -> Template_ast_ConstructorParametersDeclaration;
+  Template_ast_AstSuperTypes -> Template_ast_AstSuperInterfaces;
+  Template_ast_ConstructorParametersDeclaration -> Helper_de_monticore_types_TypesHelper;
+  Template_ast_AstBuilderAttributeSetter -> Helper_de_monticore_types_TypesHelper;
+  Template_ast_ClassMethod -> Template_ast_additionalmethods_GetChildren;
+  Template_ast_ClassMethod -> Template_ast_additionalmethods_DeepEqualsWithComments;
+  Template_ast_ClassMethod -> Template_ast_additionalmethods_DeepCloneWithParameters;
+  Template_ast_ClassMethod -> Template_ast_additionalmethods_RemoveChild;
+  Template_ast_ClassMethod -> Template_ast_additionalmethods_DeepEqualsWithOrder;
+  Template_ast_ClassMethod -> Template_ast_factorymethods_ErrorIfNull;
+  Template_ast_ClassMethod -> Template_ast_factorymethods_DoCreate;
+  Template_ast_ClassMethod -> Template_ast_factorymethods_CreateWithParams;
+  Template_ast_ClassMethod -> Template_ast_factorymethods_Create;
+  Template_ast_ClassMethod -> Template_ast_ErrorIfNull;
+  Template_ast_ClassMethod -> Template_ast_additionalmethods_Accept;
+  Template_ast_ClassMethod -> Template_ast_additionalmethods_EqualAttributes;
+  Template_ast_ClassMethod -> Template_ast_additionalmethods_Get;
+  Template_ast_ClassMethod -> Template_ast_factorymethods_DoCreateWithParams;
+  Template_ast_ClassMethod -> Template_ast_additionalmethods_Set;
+  Template_ast_ClassMethod -> Template_ast_additionalmethods_EqualsWithComments;
+  Template_parser_Parser -> Template_parser_LexerMember;
+  Template_parser_Parser -> File_htmlred__parser_HTMLRedAntlr;
+  Template_parser_Parser -> Template_parser_ParserHeader;
+  Template_parser_MCParser -> Template_parser_MCParserMethods;
+  Template_parser_MCParser -> File_htmlred__parser_HTMLRedParser;
+  Template_od_DiagramVisitor -> File_htmlred__od_HTMLRed2OD;
+  Template_mchtree_HARuleNode -> File_htmlred__mch_parser_tree_HARuleNode;
+  Template_mchtree_TreeConverter -> File_htmlred__mch_parser_tree_HTMLRedTreeConverter;
+  Template_mchtree_HARuleContext -> File_htmlred__mch_parser_tree_HARuleContext;
+  Template_mchtree_HATerminalNode -> File_htmlred__mch_parser_tree_HATerminalNode;
+  Template_mchtree_TreeHelper -> File_htmlred__mch_parser_tree_HTMLRedTreeHelper;
+  Template_mchtree_HAParseTree -> File_htmlred__mch_parser_tree_HAParseTree;
+  Template_mchparser_Actions -> File_htmlred__mch_parser_HTMLRedActions;
+  Template_mchparser_Parser -> File_htmlred__mch_parser_HTMLRedParser;
+  Template_mchparser_com_upstandinghackers_hammer_Hammer -> File_htmlred__mch_parser_com_upstandinghackers_hammer_Hammer;
+  Template_visitor_DelegatorVisitor -> File_htmlred__visitor_HTMLRedDelegatorVisitor;
+  Template_visitor_SimpleVisitor -> File_htmlred__visitor_HTMLRedVisitor;
+  Template_visitor_InheritanceVisitor -> File_htmlred__visitor_HTMLRedInheritanceVisitor;
+  Template_visitor_ParentAwareVisitor -> File_htmlred__visitor_HTMLRedParentAwareVisitor;
+  Template_visitor_CommonDelegatorVisitor -> File_htmlred__visitor_CommonHTMLRedDelegatorVisitor;
+  Template_cocos_CoCoChecker -> File_htmlred__cocos_HTMLRedCoCoChecker;
+  Template_cocos_CoCoInterface -> File_htmlred__cocos_HTMLRedASTICoCo;
+  Template_cocos_CoCoInterface -> File_htmlred__cocos_HTMLRedASTPCoCo;
+  Template_cocos_CoCoInterface -> File_htmlred__cocos_HTMLRedASTHTMLRedNodeCoCo;
+  Template_cocos_CoCoInterface -> File_htmlred__cocos_HTMLRedASTAlternativesCoCo;
+  Template_cocos_CoCoInterface -> File_htmlred__cocos_HTMLRedASTBCoCo;
+  Template_symboltable_ModelLoader -> File_htmlred__symboltable_HTMLRedModelLoader;
+  Template_symboltable_ModelingLanguage -> File_htmlred__symboltable_HTMLRedLanguage;
+}

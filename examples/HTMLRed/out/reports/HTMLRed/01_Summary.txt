@@ -1,0 +1,61 @@
+========================================================== Summary
+errors:                                  0
+warnings:                                0
+generated files:                         39
+instantiations:                          18
+template includes:                       0
+template writes:                         0
+used standard templates:                 68
+unused standard templates:               107
+used handwritten templates:              0
+unused handwritten templates:            0
+max template depth:                      4
+max AST depth:                           5
+AST node instances:                      44
+AST node types:                          11
+AST node visits:                         459
+variables:                               10
+variable assignments:                    15
+AST hook point sets:                     147
+AST hook point calls:                    139
+code hook point sets:                    0
+code hook point calls:                   0
+template hook point sets:                0
+template hook point calls:               0
+string hook point sets:                  0
+string hook point calls:                 0
+empty hook point called:                 3
+empty hook point calls:                  13
+========================================================== Explanation
+Summary of all reports:
+ -errors: Number of errors during the process
+ -warnings: Number of warnings during the process
+ -generated files: Number of generated files
+ -instantiations: Number of instantiated objects
+ -template includes: Number of templates being included
+ -template writes: Number of templates being used
+ -used standard templates: Number of templates being used
+ -unused standard templates: Number of templates being unused
+ -used handwritten templates: Number of handwritten templates being used
+ -unused handwritten templates: Number of handwritten templates being unused
+ -max template depth: Maximal depth of the template call hierarchy
+ -max AST depth: Maximal depth of the AST
+ -AST node instances: Number of instantiated AST nodes
+ -AST node types: Number of used AST node types
+ -AST node visits: Number of AST node visits
+ -variables: Variable names that got a value during the process
+ -variable assignments: Number of values assigned to variables
+ -AST hook point sets: Number of AST specific replacements
+ -AST hook point calls: Number of AST hook point calls
+ -code hook point sets: Number of code hook points set including
+    template replacements, set before and set after template statements
+ -code hook point calls: Number of code hook point calls
+ -template hook point sets: Number of template hook points set including
+    template replacements, set before and set after template statements
+ -template hook point calls: Number of template hook point calls
+ -string hook point sets: Number of string hook points set including
+    template replacements, set before and set after template statements
+ -string hook point calls: Number of string hook point calls
+ -empty hook point called: Number of empty hook point called
+ -empty hook point calls: Number of empty hook point calls
+(EOF)

@@ -16,60 +16,60 @@ public class HelloBaseListener implements HelloListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	public void enterHello(HelloParser.HelloContext ctx) { }
+	@Override public void enterHello(HelloParser.HelloContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	public void exitHello(HelloParser.HelloContext ctx) { }
+	@Override public void exitHello(HelloParser.HelloContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	public void enterState(HelloParser.StateContext ctx) { }
+	@Override public void enterState(HelloParser.StateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	public void exitState(HelloParser.StateContext ctx) { }
+	@Override public void exitState(HelloParser.StateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	public void enterTransition(HelloParser.TransitionContext ctx) { }
+	@Override public void enterTransition(HelloParser.TransitionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	public void exitTransition(HelloParser.TransitionContext ctx) { }
+	@Override public void exitTransition(HelloParser.TransitionContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	public void enterEveryRule(ParserRuleContext ctx) { }
+	@Override public void enterEveryRule(ParserRuleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	public void exitEveryRule(ParserRuleContext ctx) { }
+	@Override public void exitEveryRule(ParserRuleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	public void visitTerminal(TerminalNode node) { }
+	@Override public void visitTerminal(TerminalNode node) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	public void visitErrorNode(ErrorNode node) { }
+	@Override public void visitErrorNode(ErrorNode node) { }
 }

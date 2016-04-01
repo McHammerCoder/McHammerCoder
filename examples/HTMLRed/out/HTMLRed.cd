@@ -1,0 +1,26 @@
+classdiagram HTMLRed{
+
+  public interface ASTHTMLRedNode;
+
+  public class ASTP{
+    protected java.util.List<HTMLRed.ASTAlternatives> alternativess;
+  }
+
+  public class ASTAlternatives{
+    protected Optional<HTMLRed.ASTP> p;
+    protected Optional<HTMLRed.ASTB> b;
+    protected Optional<HTMLRed.ASTI> i;
+    protected Optional<String> tEXTB;
+  }
+
+  public class ASTB{
+    protected String text;
+  }
+
+  public class ASTI{
+    protected String text;
+  }
+
+  enum ASTConstantsHTMLRed;
+
+}

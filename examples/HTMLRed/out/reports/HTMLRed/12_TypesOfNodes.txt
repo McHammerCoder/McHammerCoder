@@ -1,0 +1,54 @@
+======================================== Types of Nodes (all)
+#Objects  #Visits  Nonterminal-Name
+8x        0x       Alt
+1x        0x       Block
+0x        33x      CDAttribute
+0x        154x     CDClass
+0x        7x       CDCompilationUnit
+0x        16x      CDConstructor
+0x        3x       CDInterface
+0x        176x     CDMethod
+4x        0x       ClassProd
+8x        0x       LexAlt
+1x        0x       LexBlock
+4x        0x       LexChar
+3x        0x       LexCharRange
+1x        0x       LexProd
+1x        26x      MCGrammar
+7x        0x       NonTerminal
+6x        0x       Terminal
+======================================== Types of Nodes (With Source Pos)
+#Objects  #Visits  Nonterminal-Name
+8x        0x       Alt
+1x        0x       Block
+0x        12x      CDAttribute
+0x        6x       CDClass
+0x        176x     CDMethod
+4x        0x       ClassProd
+8x        0x       LexAlt
+1x        0x       LexBlock
+4x        0x       LexChar
+3x        0x       LexCharRange
+1x        0x       LexProd
+1x        26x      MCGrammar
+7x        0x       NonTerminal
+6x        0x       Terminal
+======================================== Types of Nodes (No Source Pos)
+#Objects  #Visits  Nonterminal-Name
+0x        21x      CDAttribute
+0x        148x     CDClass
+0x        7x       CDCompilationUnit
+0x        16x      CDConstructor
+0x        3x       CDInterface
+========================================================== Explanation
+Types of Nodes: Shows a List of all AST-Node-Types that occur in the final AST.
+Types of Nodes (with Source Position): Shows the subset of all AST Node Types
+which occurred in the initial AST after the parsing step.
+Types of Nodes (without Source Position): Shows the subset of all AST Node Types
+which have been added to the initial AST after the parsing step (e.g. by model
+transformation).
+For each AST type entry in the lists the following information is reported: 
+ - #Objects:  number of its instances of the corresponding AST type
+ - #Visits:   how often nodes of that type have been visited by a
+ call/includeTemplate
+(EOF)

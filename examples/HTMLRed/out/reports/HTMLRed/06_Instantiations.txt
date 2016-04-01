@@ -1,0 +1,8 @@
+========================================================== Instantiations
+#Instantiations  JavaType
+18x              TypesHelper
+========================================================== Explanation
+This is the list of instantiated java type (triggered by the TC).
+- #Instantiations: how often an object of the corresponding type has
+                   been instantiated.
+(EOF)

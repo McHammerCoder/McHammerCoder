@@ -1,0 +1,1642 @@
+========================================================== Detailed Report
+setv       parserHelper
+setv       nameHelper
++tpl(1T)   Parser.ftl                         <<HTMLRed:MCGrammar>><5,0>
++tpl(2T)   ParserHeader.ftl                   <<HTMLRed:MCGrammar>><5,0>
+-tpl(2T)   ParserHeader.ftl                   <<HTMLRed:MCGrammar>><5,0>
++tpl(2T)   LexerMember.ftl                    <<HTMLRed:MCGrammar>><5,0>
+-tpl(2T)   LexerMember.ftl                    <<HTMLRed:MCGrammar>><5,0>
+-tpl(1T)   Parser.ftl                         <<HTMLRed:MCGrammar>><5,0>
++file      HTMLRedAntlr.g4                    <<HTMLRed:MCGrammar>><5,0>
+           Parser.ftl
+-file      htmlred._parser.HTMLRedAntlr.g4    Parser.ftl
+           <<HTMLRed:MCGrammar>><5,0>
+setv       parserHelper
+setv       nameHelper
++tpl(1T)   MCParser.ftl                       <<HTMLRed:MCGrammar>><5,0>
+call  EHP  HP:"JavaCopyright"
++tpl(2T)   MCParserMethods.ftl                <<HTMLRed:MCGrammar>><5,0>
+-tpl(2T)   MCParserMethods.ftl                <<HTMLRed:MCGrammar>><5,0>
++tpl(2T)   MCParserMethods.ftl                <<HTMLRed:MCGrammar>><5,0>
+-tpl(2T)   MCParserMethods.ftl                <<HTMLRed:MCGrammar>><5,0>
++tpl(2T)   MCParserMethods.ftl                <<HTMLRed:MCGrammar>><5,0>
+-tpl(2T)   MCParserMethods.ftl                <<HTMLRed:MCGrammar>><5,0>
++tpl(2T)   MCParserMethods.ftl                <<HTMLRed:MCGrammar>><5,0>
+-tpl(2T)   MCParserMethods.ftl                <<HTMLRed:MCGrammar>><5,0>
+-tpl(1T)   MCParser.ftl                       <<HTMLRed:MCGrammar>><5,0>
++file      HTMLRedParser.java                 <<HTMLRed:MCGrammar>><5,0>
+           MCParser.ftl
+-file      htmlred._parser.HTMLRedParser.java MCParser.ftl
+           <<HTMLRed:MCGrammar>><5,0>
+setv       genHelper
++tpl(1T)   Parser.ftl                         <<HTMLRed:MCGrammar>><5,0>
+-tpl(1T)   Parser.ftl                         <<HTMLRed:MCGrammar>><5,0>
++file      HTMLRedParser.java                 <<HTMLRed:MCGrammar>><5,0>
+           Parser.ftl
+-file      htmlred._mch_parser.HTMLRedParser.java Parser.ftl
+           <<HTMLRed:MCGrammar>><5,0>
++tpl(1T)   Actions.ftl                        <<HTMLRed:MCGrammar>><5,0>
+-tpl(1T)   Actions.ftl                        <<HTMLRed:MCGrammar>><5,0>
++file      HTMLRedActions.java                <<HTMLRed:MCGrammar>><5,0>
+           Actions.ftl
+-file      htmlred._mch_parser.HTMLRedActions.java Actions.ftl
+           <<HTMLRed:MCGrammar>><5,0>
++tpl(1T)   HAParseTree.ftl                    <<HTMLRed:MCGrammar>><5,0>
+-tpl(1T)   HAParseTree.ftl                    <<HTMLRed:MCGrammar>><5,0>
++file      HAParseTree.java                   <<HTMLRed:MCGrammar>><5,0>
+           HAParseTree.ftl
+-file      htmlred._mch_parser.tree.HAParseTree.java HAParseTree.ftl
+           <<HTMLRed:MCGrammar>><5,0>
++tpl(1T)   HARuleContext.ftl                  <<HTMLRed:MCGrammar>><5,0>
+-tpl(1T)   HARuleContext.ftl                  <<HTMLRed:MCGrammar>><5,0>
++file      HARuleContext.java                 <<HTMLRed:MCGrammar>><5,0>
+           HARuleContext.ftl
+-file      htmlred._mch_parser.tree.HARuleContext.java HARuleContext.ftl
+           <<HTMLRed:MCGrammar>><5,0>
++tpl(1T)   HARuleNode.ftl                     <<HTMLRed:MCGrammar>><5,0>
+-tpl(1T)   HARuleNode.ftl                     <<HTMLRed:MCGrammar>><5,0>
++file      HARuleNode.java                    <<HTMLRed:MCGrammar>><5,0>
+           HARuleNode.ftl
+-file      htmlred._mch_parser.tree.HARuleNode.java HARuleNode.ftl
+           <<HTMLRed:MCGrammar>><5,0>
++tpl(1T)   HATerminalNode.ftl                 <<HTMLRed:MCGrammar>><5,0>
+-tpl(1T)   HATerminalNode.ftl                 <<HTMLRed:MCGrammar>><5,0>
++file      HATerminalNode.java                <<HTMLRed:MCGrammar>><5,0>
+           HATerminalNode.ftl
+-file      htmlred._mch_parser.tree.HATerminalNode.java HATerminalNode.ftl
+           <<HTMLRed:MCGrammar>><5,0>
++tpl(1T)   TreeConverter.ftl                  <<HTMLRed:MCGrammar>><5,0>
+-tpl(1T)   TreeConverter.ftl                  <<HTMLRed:MCGrammar>><5,0>
++file      HTMLRedTreeConverter.java          <<HTMLRed:MCGrammar>><5,0>
+           TreeConverter.ftl
+-file      htmlred._mch_parser.tree.HTMLRedTreeConverter.java TreeConverter.ftl
+           <<HTMLRed:MCGrammar>><5,0>
++tpl(1T)   TreeHelper.ftl                     <<HTMLRed:MCGrammar>><5,0>
+-tpl(1T)   TreeHelper.ftl                     <<HTMLRed:MCGrammar>><5,0>
++file      HTMLRedTreeHelper.java             <<HTMLRed:MCGrammar>><5,0>
+           TreeHelper.ftl
+-file      htmlred._mch_parser.tree.HTMLRedTreeHelper.java TreeHelper.ftl
+           <<HTMLRed:MCGrammar>><5,0>
++tpl(1T)   com_upstandinghackers_hammer_Hammer.ftl <<HTMLRed:MCGrammar>><5,0>
+-tpl(1T)   com_upstandinghackers_hammer_Hammer.ftl <<HTMLRed:MCGrammar>><5,0>
++file      com_upstandinghackers_hammer_Hammer.c <<HTMLRed:MCGrammar>><5,0>
+           com_upstandinghackers_hammer_Hammer.ftl
+-file      htmlred._mch_parser.com_upstandinghackers_hammer_Hammer.c com_upstandinghackers_hammer_Hammer.ftl
+           <<HTMLRed:MCGrammar>><5,0>
+set   ATHP AstInterfaceContent.ftl            <<:ASTCDInterface>>
+           ASTNodeBase.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!2!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!3!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!3!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!4!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!4!
+           DoCreateWithParams.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!5!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!6!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!7!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!7!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!8!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!8!
+           DoCreateWithParams.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!7!
+           ErrorIfNull.ftl
+set   ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!8!
+           ErrorIfNull.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!9!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!10!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!11!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!11!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!12!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!12!
+           DoCreateWithParams.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!13!
+           Create.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!14!
+           DoCreate.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!15!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!15!
+           CreateWithParams.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDMethod>><1,0>!16!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!16!
+           DoCreateWithParams.ftl
+set   ATHP ClassContent.ftl                   <<:ASTCDClass>>
+           AstNodeFactory.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>
+           ConstructorAttributesSetter.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>
+           BuilderConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!17!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!18!
+           DeepEqualsWithOrder.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!19!
+           "return deepEquals(o, true); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!20!
+           DeepEqualsWithComments.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!21!
+           "return deepEqualsWithComments(o, true); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!22!
+           EqualAttributes.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!23!
+           EqualsWithComments.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!24!
+           GetChildren.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!25!
+           RemoveChild.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!26!
+           "return new Builder(); "
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!27!
+           "return deepClone(_construct()); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!28!
+           DeepCloneWithParameters.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!29!
+           "return new ASTP(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!30!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!31!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!32!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!33!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!34!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!34!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!35!
+           " return symbol.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!36!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!36!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!37!
+           " return enclosingScope.isPresent(); "
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!2!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!2!
+           ConstructorAttributesSetter.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!2!
+           BuilderConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!38!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!39!
+           DeepEqualsWithOrder.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!40!
+           "return deepEquals(o, true); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!41!
+           DeepEqualsWithComments.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!42!
+           "return deepEqualsWithComments(o, true); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!43!
+           EqualAttributes.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!44!
+           EqualsWithComments.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!45!
+           GetChildren.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!46!
+           RemoveChild.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!47!
+           "return new Builder(); "
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!48!
+           "return deepClone(_construct()); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!49!
+           DeepCloneWithParameters.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!50!
+           "return new ASTAlternatives(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!51!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!52!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!53!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!54!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!55!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!56!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!57!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!57!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!58!
+           " return p.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!59!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!59!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!60!
+           " return b.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!61!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!61!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!62!
+           " return i.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!63!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!63!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!64!
+           " return tEXTB.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!65!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!65!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!66!
+           " return symbol.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!67!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!67!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!68!
+           " return enclosingScope.isPresent(); "
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!3!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!3!
+           ConstructorAttributesSetter.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!3!
+           BuilderConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!69!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!70!
+           DeepEqualsWithOrder.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!71!
+           "return deepEquals(o, true); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!72!
+           DeepEqualsWithComments.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!73!
+           "return deepEqualsWithComments(o, true); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!74!
+           EqualAttributes.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!75!
+           EqualsWithComments.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!76!
+           GetChildren.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!77!
+           RemoveChild.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!78!
+           "return new Builder(); "
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!79!
+           "return deepClone(_construct()); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!80!
+           DeepCloneWithParameters.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!81!
+           "return new ASTB(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!82!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!83!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!84!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!85!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!86!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!86!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!87!
+           " return symbol.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!88!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!88!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!89!
+           " return enclosingScope.isPresent(); "
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!4!
+           ConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!4!
+           ConstructorAttributesSetter.ftl
+set   ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!4!
+           BuilderConstructorParametersDeclaration.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!90!
+           Accept.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!91!
+           DeepEqualsWithOrder.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!92!
+           "return deepEquals(o, true); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!93!
+           DeepEqualsWithComments.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!94!
+           "return deepEqualsWithComments(o, true); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!95!
+           EqualAttributes.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!96!
+           EqualsWithComments.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!97!
+           GetChildren.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!98!
+           RemoveChild.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!99!
+           "return new Builder(); "
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!100!
+           "return deepClone(_construct()); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!101!
+           DeepCloneWithParameters.ftl
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!102!
+           "return new ASTI(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!103!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!104!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!105!
+           Get.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!106!
+           Set.ftl
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!107!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!107!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!108!
+           " return symbol.isPresent(); "
+set   ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!109!
+           Set.ftl
+set   ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!109!
+           ""
+set   ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!110!
+           " return enclosingScope.isPresent(); "
+set   ATHP ClassContent.ftl                   <<:ASTCDClass>><1,0>!5!
+           ASTConstantsClass.ftl
+setv       stHelper
+setv       nameHelper
+setv       skipSTGen
++tpl(1T)   ModelingLanguage.ftl               <<HTMLRed:MCGrammar>><5,0>
+call  EHP  HP:"JavaCopyright"
+-tpl(1T)   ModelingLanguage.ftl               <<HTMLRed:MCGrammar>><5,0>
++file      HTMLRedLanguage.java               <<HTMLRed:MCGrammar>><5,0>
+           ModelingLanguage.ftl
+-file      htmlred._symboltable.HTMLRedLanguage.java ModelingLanguage.ftl
+           <<HTMLRed:MCGrammar>><5,0>
++tpl(1T)   ModelLoader.ftl                    <<HTMLRed:MCGrammar>><5,0>
+call  EHP  HP:"JavaCopyright"
+-tpl(1T)   ModelLoader.ftl                    <<HTMLRed:MCGrammar>><5,0>
++file      HTMLRedModelLoader.java            <<HTMLRed:MCGrammar>><5,0>
+           ModelLoader.ftl
+-file      htmlred._symboltable.HTMLRedModelLoader.java ModelLoader.ftl
+           <<HTMLRed:MCGrammar>><5,0>
+setv       astHelper
+setv       javaNameHelper
+setv       nameHelper
++tpl(1T)   AstClass.ftl                       <<:ASTCDClass>>!2!
++tpl(2T)   AstImports.ftl                     <<:ASTCDClass>>!2!
+-tpl(2T)   AstImports.ftl                     <<:ASTCDClass>>!2!
++tpl(2T)   AstSuperTypes.ftl                  <<:ASTCDClass>>!2!
++tpl(3T)   AstSuperInterfaces.ftl             <<:ASTCDClass>>!2!
+-tpl(3T)   AstSuperInterfaces.ftl             <<:ASTCDClass>>!2!
+-tpl(2T)   AstSuperTypes.ftl                  <<:ASTCDClass>>!2!
++tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>>
+-tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>>
++tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>
+-tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>
++tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>!2!
+-tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>!2!
++tpl(2T)   Constructor.ftl                    <<:ASTCDClass>>!2!
++tpl(3T)   ParametersDeclaration.ftl          <<:ASTCDConstructor>>!5!
+-tpl(3T)   ParametersDeclaration.ftl          <<:ASTCDConstructor>>!5!
++tpl(3T)   EmptyMethodBody.ftl                <<:ASTCDConstructor>>!5!
+-tpl(3T)   EmptyMethodBody.ftl                <<:ASTCDConstructor>>!5!
+-tpl(2T)   Constructor.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   Constructor.ftl                    <<:ASTCDClass>>!2!
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>
+           ConstructorParametersDeclaration.ftl
++tpl(3T)   ConstructorParametersDeclaration.ftl <<:ASTCDConstructor>>
+inst       de.monticore.types.TypesHelper     []
+-tpl(3T)   ConstructorParametersDeclaration.ftl <<:ASTCDConstructor>>
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>
+           ConstructorAttributesSetter.ftl
++tpl(3T)   ConstructorAttributesSetter.ftl    <<:ASTCDConstructor>>
+-tpl(3T)   ConstructorAttributesSetter.ftl    <<:ASTCDConstructor>>
+-tpl(2T)   Constructor.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!17!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!17!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!17!
+           Accept.ftl
++tpl(3T)   Accept.ftl                         <<:ASTCDMethod>><1,0>!17!
+-tpl(3T)   Accept.ftl                         <<:ASTCDMethod>><1,0>!17!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!18!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!18!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!18!
+           DeepEqualsWithOrder.ftl
++tpl(3T)   DeepEqualsWithOrder.ftl            <<:ASTCDMethod>><1,0>!18!
+-tpl(3T)   DeepEqualsWithOrder.ftl            <<:ASTCDMethod>><1,0>!18!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!19!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!19!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!19!
+           "return deepEquals(o, true); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!20!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!20!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!20!
+           DeepEqualsWithComments.ftl
++tpl(3T)   DeepEqualsWithComments.ftl         <<:ASTCDMethod>><1,0>!20!
+-tpl(3T)   DeepEqualsWithComments.ftl         <<:ASTCDMethod>><1,0>!20!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!21!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!21!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!21!
+           "return deepEqualsWithComments(o, true); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!22!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!22!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!22!
+           EqualAttributes.ftl
++tpl(3T)   EqualAttributes.ftl                <<:ASTCDMethod>><1,0>!22!
+-tpl(3T)   EqualAttributes.ftl                <<:ASTCDMethod>><1,0>!22!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!23!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!23!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!23!
+           EqualsWithComments.ftl
++tpl(3T)   EqualsWithComments.ftl             <<:ASTCDMethod>><1,0>!23!
+-tpl(3T)   EqualsWithComments.ftl             <<:ASTCDMethod>><1,0>!23!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!24!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!24!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!24!
+           GetChildren.ftl
++tpl(3T)   GetChildren.ftl                    <<:ASTCDMethod>><1,0>!24!
+-tpl(3T)   GetChildren.ftl                    <<:ASTCDMethod>><1,0>!24!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!25!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!25!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!25!
+           RemoveChild.ftl
++tpl(3T)   RemoveChild.ftl                    <<:ASTCDMethod>><1,0>!25!
+-tpl(3T)   RemoveChild.ftl                    <<:ASTCDMethod>><1,0>!25!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!26!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!26!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!26!
+           "return new Builder(); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!27!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!27!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!27!
+           "return deepClone(_construct()); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!28!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!28!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!28!
+           DeepCloneWithParameters.ftl
++tpl(3T)   DeepCloneWithParameters.ftl        <<:ASTCDMethod>><1,0>!28!
+-tpl(3T)   DeepCloneWithParameters.ftl        <<:ASTCDMethod>><1,0>!28!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!29!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!29!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!29!
+           "return new ASTP(); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!30!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!30!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!30!
+           Get.ftl
++tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!30!
+-tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!30!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!31!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!31!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!31!
+           Get.ftl
++tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!31!
+-tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!31!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!32!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!32!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!32!
+           Get.ftl
++tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!32!
+-tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!32!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!33!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!33!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!33!
+           Set.ftl
++tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!33!
+-tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!33!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!34!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!34!
+           Set.ftl
++tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!34!
+-tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!34!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!35!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!35!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!35!
+           " return symbol.isPresent(); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!36!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!36!
+           Set.ftl
++tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!36!
+-tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!36!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!37!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!37!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!37!
+           " return enclosingScope.isPresent(); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!2!
++tpl(2T)   ClassContent.ftl                   <<:ASTCDClass>>!2!
+-tpl(2T)   ClassContent.ftl                   <<:ASTCDClass>>!2!
++tpl(2T)   AstBuilder.ftl                     <<:ASTCDClass>>!2!
++tpl(3T)   BuilderAttribute.ftl               <<:ASTCDAttribute>>
+inst       de.monticore.types.TypesHelper     []
+-tpl(3T)   BuilderAttribute.ftl               <<:ASTCDAttribute>>
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>
+           BuilderConstructorParametersDeclaration.ftl
++tpl(3T)   BuilderConstructorParametersDeclaration.ftl <<:ASTCDClass>><1,0>
+-tpl(3T)   BuilderConstructorParametersDeclaration.ftl <<:ASTCDClass>><1,0>
++tpl(3T)   AstBuilderAttributeSetter.ftl      <<:ASTCDAttribute>>
+inst       de.monticore.types.TypesHelper     []
+-tpl(3T)   AstBuilderAttributeSetter.ftl      <<:ASTCDAttribute>>
+-tpl(2T)   AstBuilder.ftl                     <<:ASTCDClass>>!2!
+-tpl(1T)   AstClass.ftl                       <<:ASTCDClass>>!2!
++file      ASTP.java                          <<:ASTCDClass>>!2!
+           AstClass.ftl
+-file      htmlred._ast.ASTP.java             AstClass.ftl
+           <<:ASTCDClass>>!2!
++tpl(1T)   AstClass.ftl                       <<:ASTCDClass>>!3!
++tpl(2T)   AstImports.ftl                     <<:ASTCDClass>>!3!
+-tpl(2T)   AstImports.ftl                     <<:ASTCDClass>>!3!
++tpl(2T)   AstSuperTypes.ftl                  <<:ASTCDClass>>!3!
++tpl(3T)   AstSuperInterfaces.ftl             <<:ASTCDClass>>!3!
+-tpl(3T)   AstSuperInterfaces.ftl             <<:ASTCDClass>>!3!
+-tpl(2T)   AstSuperTypes.ftl                  <<:ASTCDClass>>!3!
++tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>>!2!
+-tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>>!2!
++tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>>!3!
+-tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>>!3!
++tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>>!4!
+-tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>>!4!
++tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>>!5!
+-tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>>!5!
++tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>!3!
+-tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>!3!
++tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>!4!
+-tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>!4!
++tpl(2T)   Constructor.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ParametersDeclaration.ftl          <<:ASTCDConstructor>>!6!
+-tpl(3T)   ParametersDeclaration.ftl          <<:ASTCDConstructor>>!6!
++tpl(3T)   EmptyMethodBody.ftl                <<:ASTCDConstructor>>!6!
+-tpl(3T)   EmptyMethodBody.ftl                <<:ASTCDConstructor>>!6!
+-tpl(2T)   Constructor.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   Constructor.ftl                    <<:ASTCDClass>>!3!
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!2!
+           ConstructorParametersDeclaration.ftl
++tpl(3T)   ConstructorParametersDeclaration.ftl <<:ASTCDConstructor>>!2!
+inst       de.monticore.types.TypesHelper     []
+-tpl(3T)   ConstructorParametersDeclaration.ftl <<:ASTCDConstructor>>!2!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!2!
+           ConstructorAttributesSetter.ftl
++tpl(3T)   ConstructorAttributesSetter.ftl    <<:ASTCDConstructor>>!2!
+-tpl(3T)   ConstructorAttributesSetter.ftl    <<:ASTCDConstructor>>!2!
+-tpl(2T)   Constructor.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!38!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!38!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!38!
+           Accept.ftl
++tpl(3T)   Accept.ftl                         <<:ASTCDMethod>><1,0>!38!
+-tpl(3T)   Accept.ftl                         <<:ASTCDMethod>><1,0>!38!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!39!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!39!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!39!
+           DeepEqualsWithOrder.ftl
++tpl(3T)   DeepEqualsWithOrder.ftl            <<:ASTCDMethod>><1,0>!39!
+-tpl(3T)   DeepEqualsWithOrder.ftl            <<:ASTCDMethod>><1,0>!39!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!40!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!40!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!40!
+           "return deepEquals(o, true); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!41!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!41!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!41!
+           DeepEqualsWithComments.ftl
++tpl(3T)   DeepEqualsWithComments.ftl         <<:ASTCDMethod>><1,0>!41!
+-tpl(3T)   DeepEqualsWithComments.ftl         <<:ASTCDMethod>><1,0>!41!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!42!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!42!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!42!
+           "return deepEqualsWithComments(o, true); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!43!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!43!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!43!
+           EqualAttributes.ftl
++tpl(3T)   EqualAttributes.ftl                <<:ASTCDMethod>><1,0>!43!
+-tpl(3T)   EqualAttributes.ftl                <<:ASTCDMethod>><1,0>!43!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!44!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!44!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!44!
+           EqualsWithComments.ftl
++tpl(3T)   EqualsWithComments.ftl             <<:ASTCDMethod>><1,0>!44!
+-tpl(3T)   EqualsWithComments.ftl             <<:ASTCDMethod>><1,0>!44!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!45!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!45!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!45!
+           GetChildren.ftl
++tpl(3T)   GetChildren.ftl                    <<:ASTCDMethod>><1,0>!45!
+-tpl(3T)   GetChildren.ftl                    <<:ASTCDMethod>><1,0>!45!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!46!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!46!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!46!
+           RemoveChild.ftl
++tpl(3T)   RemoveChild.ftl                    <<:ASTCDMethod>><1,0>!46!
+-tpl(3T)   RemoveChild.ftl                    <<:ASTCDMethod>><1,0>!46!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!47!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!47!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!47!
+           "return new Builder(); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!48!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!48!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!48!
+           "return deepClone(_construct()); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!49!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!49!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!49!
+           DeepCloneWithParameters.ftl
++tpl(3T)   DeepCloneWithParameters.ftl        <<:ASTCDMethod>><1,0>!49!
+-tpl(3T)   DeepCloneWithParameters.ftl        <<:ASTCDMethod>><1,0>!49!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!50!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!50!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!50!
+           "return new ASTAlternatives(); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!51!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!51!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!51!
+           Get.ftl
++tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!51!
+-tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!51!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!52!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!52!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!52!
+           Get.ftl
++tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!52!
+-tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!52!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!53!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!53!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!53!
+           Get.ftl
++tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!53!
+-tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!53!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!54!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!54!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!54!
+           Get.ftl
++tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!54!
+-tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!54!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!55!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!55!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!55!
+           Get.ftl
++tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!55!
+-tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!55!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!56!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!56!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!56!
+           Get.ftl
++tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!56!
+-tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!56!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!57!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!57!
+           Set.ftl
++tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!57!
+-tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!57!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!58!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!58!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!58!
+           " return p.isPresent(); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!59!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!59!
+           Set.ftl
++tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!59!
+-tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!59!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!60!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!60!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!60!
+           " return b.isPresent(); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!61!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!61!
+           Set.ftl
++tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!61!
+-tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!61!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!62!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!62!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!62!
+           " return i.isPresent(); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!63!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!63!
+           Set.ftl
++tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!63!
+-tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!63!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!64!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!64!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!64!
+           " return tEXTB.isPresent(); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!65!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!65!
+           Set.ftl
++tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!65!
+-tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!65!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!66!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!66!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!66!
+           " return symbol.isPresent(); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!67!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!67!
+           Set.ftl
++tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!67!
+-tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!67!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!68!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!68!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!68!
+           " return enclosingScope.isPresent(); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!3!
++tpl(2T)   ClassContent.ftl                   <<:ASTCDClass>>!3!
+-tpl(2T)   ClassContent.ftl                   <<:ASTCDClass>>!3!
++tpl(2T)   AstBuilder.ftl                     <<:ASTCDClass>>!3!
++tpl(3T)   BuilderAttribute.ftl               <<:ASTCDAttribute>>!2!
+inst       de.monticore.types.TypesHelper     []
+-tpl(3T)   BuilderAttribute.ftl               <<:ASTCDAttribute>>!2!
++tpl(3T)   BuilderAttribute.ftl               <<:ASTCDAttribute>>!3!
+inst       de.monticore.types.TypesHelper     []
+-tpl(3T)   BuilderAttribute.ftl               <<:ASTCDAttribute>>!3!
++tpl(3T)   BuilderAttribute.ftl               <<:ASTCDAttribute>>!4!
+inst       de.monticore.types.TypesHelper     []
+-tpl(3T)   BuilderAttribute.ftl               <<:ASTCDAttribute>>!4!
++tpl(3T)   BuilderAttribute.ftl               <<:ASTCDAttribute>>!5!
+inst       de.monticore.types.TypesHelper     []
+-tpl(3T)   BuilderAttribute.ftl               <<:ASTCDAttribute>>!5!
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!2!
+           BuilderConstructorParametersDeclaration.ftl
++tpl(3T)   BuilderConstructorParametersDeclaration.ftl <<:ASTCDClass>><1,0>!2!
+-tpl(3T)   BuilderConstructorParametersDeclaration.ftl <<:ASTCDClass>><1,0>!2!
++tpl(3T)   AstBuilderAttributeSetter.ftl      <<:ASTCDAttribute>>!2!
+inst       de.monticore.types.TypesHelper     []
+-tpl(3T)   AstBuilderAttributeSetter.ftl      <<:ASTCDAttribute>>!2!
++tpl(3T)   AstBuilderAttributeSetter.ftl      <<:ASTCDAttribute>>!3!
+inst       de.monticore.types.TypesHelper     []
+-tpl(3T)   AstBuilderAttributeSetter.ftl      <<:ASTCDAttribute>>!3!
++tpl(3T)   AstBuilderAttributeSetter.ftl      <<:ASTCDAttribute>>!4!
+inst       de.monticore.types.TypesHelper     []
+-tpl(3T)   AstBuilderAttributeSetter.ftl      <<:ASTCDAttribute>>!4!
++tpl(3T)   AstBuilderAttributeSetter.ftl      <<:ASTCDAttribute>>!5!
+inst       de.monticore.types.TypesHelper     []
+-tpl(3T)   AstBuilderAttributeSetter.ftl      <<:ASTCDAttribute>>!5!
+-tpl(2T)   AstBuilder.ftl                     <<:ASTCDClass>>!3!
+-tpl(1T)   AstClass.ftl                       <<:ASTCDClass>>!3!
++file      ASTAlternatives.java               <<:ASTCDClass>>!3!
+           AstClass.ftl
+-file      htmlred._ast.ASTAlternatives.java  AstClass.ftl
+           <<:ASTCDClass>>!3!
++tpl(1T)   AstClass.ftl                       <<:ASTCDClass>>!4!
++tpl(2T)   AstImports.ftl                     <<:ASTCDClass>>!4!
+-tpl(2T)   AstImports.ftl                     <<:ASTCDClass>>!4!
++tpl(2T)   AstSuperTypes.ftl                  <<:ASTCDClass>>!4!
++tpl(3T)   AstSuperInterfaces.ftl             <<:ASTCDClass>>!4!
+-tpl(3T)   AstSuperInterfaces.ftl             <<:ASTCDClass>>!4!
+-tpl(2T)   AstSuperTypes.ftl                  <<:ASTCDClass>>!4!
++tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>>!6!
+-tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>>!6!
++tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>!5!
+-tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>!5!
++tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>!6!
+-tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>!6!
++tpl(2T)   Constructor.ftl                    <<:ASTCDClass>>!4!
++tpl(3T)   ParametersDeclaration.ftl          <<:ASTCDConstructor>>!7!
+-tpl(3T)   ParametersDeclaration.ftl          <<:ASTCDConstructor>>!7!
++tpl(3T)   EmptyMethodBody.ftl                <<:ASTCDConstructor>>!7!
+-tpl(3T)   EmptyMethodBody.ftl                <<:ASTCDConstructor>>!7!
+-tpl(2T)   Constructor.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   Constructor.ftl                    <<:ASTCDClass>>!4!
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!3!
+           ConstructorParametersDeclaration.ftl
++tpl(3T)   ConstructorParametersDeclaration.ftl <<:ASTCDConstructor>>!3!
+inst       de.monticore.types.TypesHelper     []
+-tpl(3T)   ConstructorParametersDeclaration.ftl <<:ASTCDConstructor>>!3!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!3!
+           ConstructorAttributesSetter.ftl
++tpl(3T)   ConstructorAttributesSetter.ftl    <<:ASTCDConstructor>>!3!
+-tpl(3T)   ConstructorAttributesSetter.ftl    <<:ASTCDConstructor>>!3!
+-tpl(2T)   Constructor.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!69!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!69!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!69!
+           Accept.ftl
++tpl(3T)   Accept.ftl                         <<:ASTCDMethod>><1,0>!69!
+-tpl(3T)   Accept.ftl                         <<:ASTCDMethod>><1,0>!69!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!70!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!70!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!70!
+           DeepEqualsWithOrder.ftl
++tpl(3T)   DeepEqualsWithOrder.ftl            <<:ASTCDMethod>><1,0>!70!
+-tpl(3T)   DeepEqualsWithOrder.ftl            <<:ASTCDMethod>><1,0>!70!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!71!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!71!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!71!
+           "return deepEquals(o, true); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!72!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!72!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!72!
+           DeepEqualsWithComments.ftl
++tpl(3T)   DeepEqualsWithComments.ftl         <<:ASTCDMethod>><1,0>!72!
+-tpl(3T)   DeepEqualsWithComments.ftl         <<:ASTCDMethod>><1,0>!72!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!73!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!73!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!73!
+           "return deepEqualsWithComments(o, true); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!74!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!74!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!74!
+           EqualAttributes.ftl
++tpl(3T)   EqualAttributes.ftl                <<:ASTCDMethod>><1,0>!74!
+-tpl(3T)   EqualAttributes.ftl                <<:ASTCDMethod>><1,0>!74!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!75!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!75!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!75!
+           EqualsWithComments.ftl
++tpl(3T)   EqualsWithComments.ftl             <<:ASTCDMethod>><1,0>!75!
+-tpl(3T)   EqualsWithComments.ftl             <<:ASTCDMethod>><1,0>!75!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!76!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!76!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!76!
+           GetChildren.ftl
++tpl(3T)   GetChildren.ftl                    <<:ASTCDMethod>><1,0>!76!
+-tpl(3T)   GetChildren.ftl                    <<:ASTCDMethod>><1,0>!76!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!77!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!77!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!77!
+           RemoveChild.ftl
++tpl(3T)   RemoveChild.ftl                    <<:ASTCDMethod>><1,0>!77!
+-tpl(3T)   RemoveChild.ftl                    <<:ASTCDMethod>><1,0>!77!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!78!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!78!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!78!
+           "return new Builder(); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!79!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!79!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!79!
+           "return deepClone(_construct()); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!80!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!80!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!80!
+           DeepCloneWithParameters.ftl
++tpl(3T)   DeepCloneWithParameters.ftl        <<:ASTCDMethod>><1,0>!80!
+-tpl(3T)   DeepCloneWithParameters.ftl        <<:ASTCDMethod>><1,0>!80!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!81!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!81!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!81!
+           "return new ASTB(); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!82!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!82!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!82!
+           Get.ftl
++tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!82!
+-tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!82!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!83!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!83!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!83!
+           Get.ftl
++tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!83!
+-tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!83!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!84!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!84!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!84!
+           Get.ftl
++tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!84!
+-tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!84!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!85!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!85!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!85!
+           Set.ftl
++tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!85!
+-tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!85!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!86!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!86!
+           Set.ftl
++tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!86!
+-tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!86!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!87!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!87!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!87!
+           " return symbol.isPresent(); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!88!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!88!
+           Set.ftl
++tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!88!
+-tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!88!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!89!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!89!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!89!
+           " return enclosingScope.isPresent(); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!4!
++tpl(2T)   ClassContent.ftl                   <<:ASTCDClass>>!4!
+-tpl(2T)   ClassContent.ftl                   <<:ASTCDClass>>!4!
++tpl(2T)   AstBuilder.ftl                     <<:ASTCDClass>>!4!
++tpl(3T)   BuilderAttribute.ftl               <<:ASTCDAttribute>>!6!
+inst       de.monticore.types.TypesHelper     []
+-tpl(3T)   BuilderAttribute.ftl               <<:ASTCDAttribute>>!6!
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!3!
+           BuilderConstructorParametersDeclaration.ftl
++tpl(3T)   BuilderConstructorParametersDeclaration.ftl <<:ASTCDClass>><1,0>!3!
+-tpl(3T)   BuilderConstructorParametersDeclaration.ftl <<:ASTCDClass>><1,0>!3!
++tpl(3T)   AstBuilderAttributeSetter.ftl      <<:ASTCDAttribute>>!6!
+inst       de.monticore.types.TypesHelper     []
+-tpl(3T)   AstBuilderAttributeSetter.ftl      <<:ASTCDAttribute>>!6!
+-tpl(2T)   AstBuilder.ftl                     <<:ASTCDClass>>!4!
+-tpl(1T)   AstClass.ftl                       <<:ASTCDClass>>!4!
++file      ASTB.java                          <<:ASTCDClass>>!4!
+           AstClass.ftl
+-file      htmlred._ast.ASTB.java             AstClass.ftl
+           <<:ASTCDClass>>!4!
++tpl(1T)   AstClass.ftl                       <<:ASTCDClass>>!5!
++tpl(2T)   AstImports.ftl                     <<:ASTCDClass>>!5!
+-tpl(2T)   AstImports.ftl                     <<:ASTCDClass>>!5!
++tpl(2T)   AstSuperTypes.ftl                  <<:ASTCDClass>>!5!
++tpl(3T)   AstSuperInterfaces.ftl             <<:ASTCDClass>>!5!
+-tpl(3T)   AstSuperInterfaces.ftl             <<:ASTCDClass>>!5!
+-tpl(2T)   AstSuperTypes.ftl                  <<:ASTCDClass>>!5!
++tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>>!7!
+-tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>>!7!
++tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>!7!
+-tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>!7!
++tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>!8!
+-tpl(2T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>!8!
++tpl(2T)   Constructor.ftl                    <<:ASTCDClass>>!5!
++tpl(3T)   ParametersDeclaration.ftl          <<:ASTCDConstructor>>!8!
+-tpl(3T)   ParametersDeclaration.ftl          <<:ASTCDConstructor>>!8!
++tpl(3T)   EmptyMethodBody.ftl                <<:ASTCDConstructor>>!8!
+-tpl(3T)   EmptyMethodBody.ftl                <<:ASTCDConstructor>>!8!
+-tpl(2T)   Constructor.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   Constructor.ftl                    <<:ASTCDClass>>!5!
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDConstructor>>!4!
+           ConstructorParametersDeclaration.ftl
++tpl(3T)   ConstructorParametersDeclaration.ftl <<:ASTCDConstructor>>!4!
+inst       de.monticore.types.TypesHelper     []
+-tpl(3T)   ConstructorParametersDeclaration.ftl <<:ASTCDConstructor>>!4!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDConstructor>>!4!
+           ConstructorAttributesSetter.ftl
++tpl(3T)   ConstructorAttributesSetter.ftl    <<:ASTCDConstructor>>!4!
+-tpl(3T)   ConstructorAttributesSetter.ftl    <<:ASTCDConstructor>>!4!
+-tpl(2T)   Constructor.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!90!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!90!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!90!
+           Accept.ftl
++tpl(3T)   Accept.ftl                         <<:ASTCDMethod>><1,0>!90!
+-tpl(3T)   Accept.ftl                         <<:ASTCDMethod>><1,0>!90!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!91!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!91!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!91!
+           DeepEqualsWithOrder.ftl
++tpl(3T)   DeepEqualsWithOrder.ftl            <<:ASTCDMethod>><1,0>!91!
+-tpl(3T)   DeepEqualsWithOrder.ftl            <<:ASTCDMethod>><1,0>!91!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!92!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!92!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!92!
+           "return deepEquals(o, true); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!93!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!93!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!93!
+           DeepEqualsWithComments.ftl
++tpl(3T)   DeepEqualsWithComments.ftl         <<:ASTCDMethod>><1,0>!93!
+-tpl(3T)   DeepEqualsWithComments.ftl         <<:ASTCDMethod>><1,0>!93!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!94!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!94!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!94!
+           "return deepEqualsWithComments(o, true); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!95!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!95!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!95!
+           EqualAttributes.ftl
++tpl(3T)   EqualAttributes.ftl                <<:ASTCDMethod>><1,0>!95!
+-tpl(3T)   EqualAttributes.ftl                <<:ASTCDMethod>><1,0>!95!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!96!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!96!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!96!
+           EqualsWithComments.ftl
++tpl(3T)   EqualsWithComments.ftl             <<:ASTCDMethod>><1,0>!96!
+-tpl(3T)   EqualsWithComments.ftl             <<:ASTCDMethod>><1,0>!96!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!97!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!97!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!97!
+           GetChildren.ftl
++tpl(3T)   GetChildren.ftl                    <<:ASTCDMethod>><1,0>!97!
+-tpl(3T)   GetChildren.ftl                    <<:ASTCDMethod>><1,0>!97!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!98!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!98!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!98!
+           RemoveChild.ftl
++tpl(3T)   RemoveChild.ftl                    <<:ASTCDMethod>><1,0>!98!
+-tpl(3T)   RemoveChild.ftl                    <<:ASTCDMethod>><1,0>!98!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!99!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!99!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!99!
+           "return new Builder(); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!100!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!100!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!100!
+           "return deepClone(_construct()); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!101!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!101!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!101!
+           DeepCloneWithParameters.ftl
++tpl(3T)   DeepCloneWithParameters.ftl        <<:ASTCDMethod>><1,0>!101!
+-tpl(3T)   DeepCloneWithParameters.ftl        <<:ASTCDMethod>><1,0>!101!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!102!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!102!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!102!
+           "return new ASTI(); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!103!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!103!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!103!
+           Get.ftl
++tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!103!
+-tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!103!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!104!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!104!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!104!
+           Get.ftl
++tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!104!
+-tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!104!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!105!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!105!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!105!
+           Get.ftl
++tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!105!
+-tpl(3T)   Get.ftl                            <<:ASTCDMethod>><1,0>!105!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!106!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!106!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!106!
+           Set.ftl
++tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!106!
+-tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!106!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!107!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!107!
+           Set.ftl
++tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!107!
+-tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!107!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!108!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!108!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!108!
+           " return symbol.isPresent(); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
+call  ASHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!109!
+           ""
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!109!
+           Set.ftl
++tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!109!
+-tpl(3T)   Set.ftl                            <<:ASTCDMethod>><1,0>!109!
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!110!
+-tpl(3T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!110!
+call  ASHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!110!
+           " return enclosingScope.isPresent(); "
+-tpl(2T)   ClassMethod.ftl                    <<:ASTCDClass>>!5!
++tpl(2T)   ClassContent.ftl                   <<:ASTCDClass>>!5!
+-tpl(2T)   ClassContent.ftl                   <<:ASTCDClass>>!5!
++tpl(2T)   AstBuilder.ftl                     <<:ASTCDClass>>!5!
++tpl(3T)   BuilderAttribute.ftl               <<:ASTCDAttribute>>!7!
+inst       de.monticore.types.TypesHelper     []
+-tpl(3T)   BuilderAttribute.ftl               <<:ASTCDAttribute>>!7!
+call  ATHP ParametersDeclaration.ftl          <<:ASTCDClass>><1,0>!4!
+           BuilderConstructorParametersDeclaration.ftl
++tpl(3T)   BuilderConstructorParametersDeclaration.ftl <<:ASTCDClass>><1,0>!4!
+-tpl(3T)   BuilderConstructorParametersDeclaration.ftl <<:ASTCDClass>><1,0>!4!
++tpl(3T)   AstBuilderAttributeSetter.ftl      <<:ASTCDAttribute>>!7!
+inst       de.monticore.types.TypesHelper     []
+-tpl(3T)   AstBuilderAttributeSetter.ftl      <<:ASTCDAttribute>>!7!
+-tpl(2T)   AstBuilder.ftl                     <<:ASTCDClass>>!5!
+-tpl(1T)   AstClass.ftl                       <<:ASTCDClass>>!5!
++file      ASTI.java                          <<:ASTCDClass>>!5!
+           AstClass.ftl
+-file      htmlred._ast.ASTI.java             AstClass.ftl
+           <<:ASTCDClass>>!5!
++tpl(1T)   Class.ftl                          <<:ASTCDClass>>
+call  ATHP ClassContent.ftl                   <<:ASTCDClass>>
+           AstNodeFactory.ftl
++tpl(2T)   AstNodeFactory.ftl                 <<:ASTCDClass>>
+call  EHP  HP:"JavaCopyright"
++tpl(3T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>!9!
+-tpl(3T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>!9!
++tpl(3T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>!10!
+-tpl(3T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>!10!
++tpl(3T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>!11!
+-tpl(3T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>!11!
++tpl(3T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>!12!
+-tpl(3T)   Attribute.ftl                      <<:ASTCDAttribute>><1,0>!12!
++tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>
+-tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>
+           Create.ftl
++tpl(4T)   Create.ftl                         <<:ASTCDMethod>><1,0>
+-tpl(4T)   Create.ftl                         <<:ASTCDMethod>><1,0>
+-tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!2!
+-tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!2!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!2!
+           DoCreate.ftl
++tpl(4T)   DoCreate.ftl                       <<:ASTCDMethod>><1,0>!2!
+-tpl(4T)   DoCreate.ftl                       <<:ASTCDMethod>><1,0>!2!
+-tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!3!
+-tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!3!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!3!
+           CreateWithParams.ftl
++tpl(4T)   CreateWithParams.ftl               <<:ASTCDMethod>><1,0>!3!
+-tpl(4T)   CreateWithParams.ftl               <<:ASTCDMethod>><1,0>!3!
+-tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!4!
+-tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!4!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!4!
+           DoCreateWithParams.ftl
++tpl(4T)   DoCreateWithParams.ftl             <<:ASTCDMethod>><1,0>!4!
+-tpl(4T)   DoCreateWithParams.ftl             <<:ASTCDMethod>><1,0>!4!
+-tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!5!
+-tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!5!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!5!
+           Create.ftl
++tpl(4T)   Create.ftl                         <<:ASTCDMethod>><1,0>!5!
+-tpl(4T)   Create.ftl                         <<:ASTCDMethod>><1,0>!5!
+-tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!6!
+-tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!6!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!6!
+           DoCreate.ftl
++tpl(4T)   DoCreate.ftl                       <<:ASTCDMethod>><1,0>!6!
+-tpl(4T)   DoCreate.ftl                       <<:ASTCDMethod>><1,0>!6!
+-tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!7!
+           ErrorIfNull.ftl
++tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!7!
+-tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!7!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!7!
+           CreateWithParams.ftl
++tpl(4T)   CreateWithParams.ftl               <<:ASTCDMethod>><1,0>!7!
+-tpl(4T)   CreateWithParams.ftl               <<:ASTCDMethod>><1,0>!7!
+-tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
+call  ATHP ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!8!
+           ErrorIfNull.ftl
++tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!8!
+-tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!8!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!8!
+           DoCreateWithParams.ftl
++tpl(4T)   DoCreateWithParams.ftl             <<:ASTCDMethod>><1,0>!8!
+-tpl(4T)   DoCreateWithParams.ftl             <<:ASTCDMethod>><1,0>!8!
+-tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!9!
+-tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!9!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!9!
+           Create.ftl
++tpl(4T)   Create.ftl                         <<:ASTCDMethod>><1,0>!9!
+-tpl(4T)   Create.ftl                         <<:ASTCDMethod>><1,0>!9!
+-tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!10!
+-tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!10!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!10!
+           DoCreate.ftl
++tpl(4T)   DoCreate.ftl                       <<:ASTCDMethod>><1,0>!10!
+-tpl(4T)   DoCreate.ftl                       <<:ASTCDMethod>><1,0>!10!
+-tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!11!
+-tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!11!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!11!
+           CreateWithParams.ftl
++tpl(4T)   CreateWithParams.ftl               <<:ASTCDMethod>><1,0>!11!
+-tpl(4T)   CreateWithParams.ftl               <<:ASTCDMethod>><1,0>!11!
+-tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!12!
+-tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!12!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!12!
+           DoCreateWithParams.ftl
++tpl(4T)   DoCreateWithParams.ftl             <<:ASTCDMethod>><1,0>!12!
+-tpl(4T)   DoCreateWithParams.ftl             <<:ASTCDMethod>><1,0>!12!
+-tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!13!
+-tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!13!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!13!
+           Create.ftl
++tpl(4T)   Create.ftl                         <<:ASTCDMethod>><1,0>!13!
+-tpl(4T)   Create.ftl                         <<:ASTCDMethod>><1,0>!13!
+-tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!14!
+-tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!14!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!14!
+           DoCreate.ftl
++tpl(4T)   DoCreate.ftl                       <<:ASTCDMethod>><1,0>!14!
+-tpl(4T)   DoCreate.ftl                       <<:ASTCDMethod>><1,0>!14!
+-tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!15!
+-tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!15!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!15!
+           CreateWithParams.ftl
++tpl(4T)   CreateWithParams.ftl               <<:ASTCDMethod>><1,0>!15!
+-tpl(4T)   CreateWithParams.ftl               <<:ASTCDMethod>><1,0>!15!
+-tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
++tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!16!
+-tpl(4T)   ErrorIfNull.ftl                    <<:ASTCDMethod>><1,0>!16!
+call  ATHP EmptyMethodBody.ftl                <<:ASTCDMethod>><1,0>!16!
+           DoCreateWithParams.ftl
++tpl(4T)   DoCreateWithParams.ftl             <<:ASTCDMethod>><1,0>!16!
+-tpl(4T)   DoCreateWithParams.ftl             <<:ASTCDMethod>><1,0>!16!
+-tpl(3T)   ClassMethod.ftl                    <<:ASTCDClass>>
+-tpl(2T)   AstNodeFactory.ftl                 <<:ASTCDClass>>
+-tpl(1T)   Class.ftl                          <<:ASTCDClass>>
++file      HTMLRedNodeFactory.java            <<:ASTCDClass>>
+           Class.ftl
+-file      htmlred._ast.HTMLRedNodeFactory.java Class.ftl
+           <<:ASTCDClass>>
++tpl(1T)   Class.ftl                          <<:ASTCDClass>><1,0>!5!
+call  ATHP ClassContent.ftl                   <<:ASTCDClass>><1,0>!5!
+           ASTConstantsClass.ftl
++tpl(2T)   ASTConstantsClass.ftl              <<:ASTCDClass>><1,0>!5!
+-tpl(2T)   ASTConstantsClass.ftl              <<:ASTCDClass>><1,0>!5!
+-tpl(1T)   Class.ftl                          <<:ASTCDClass>><1,0>!5!
++file      ASTConstantsHTMLRed.java           <<:ASTCDClass>><1,0>!5!
+           Class.ftl
+-file      htmlred._ast.ASTConstantsHTMLRed.java Class.ftl
+           <<:ASTCDClass>><1,0>!5!
++tpl(1T)   AstInterface.ftl                   <<:ASTCDInterface>>
+call  EHP  HP:"InterfaceContent:addComment"
+call  EHP  HP:"<Block>?InterfaceContent:addImports"
+call  ATHP AstInterfaceContent.ftl            <<:ASTCDInterface>>
+           ASTNodeBase.ftl
++tpl(2T)   ASTNodeBase.ftl                    <<:ASTCDInterface>>
+-tpl(2T)   ASTNodeBase.ftl                    <<:ASTCDInterface>>
+-tpl(1T)   AstInterface.ftl                   <<:ASTCDInterface>>
++file      ASTHTMLRedNode.java                <<:ASTCDInterface>>
+           AstInterface.ftl
+-file      htmlred._ast.ASTHTMLRedNode.java   AstInterface.ftl
+           <<:ASTCDInterface>>
+setv       visitorHelper
++tpl(1T)   SimpleVisitor.ftl                  <<:ASTCDCompilationUnit>>
+call  EHP  HP:"JavaCopyright"
+-tpl(1T)   SimpleVisitor.ftl                  <<:ASTCDCompilationUnit>>
++file      HTMLRedVisitor.java                <<:ASTCDCompilationUnit>>
+           SimpleVisitor.ftl
+-file      htmlred._visitor.HTMLRedVisitor.java SimpleVisitor.ftl
+           <<:ASTCDCompilationUnit>>
++tpl(1T)   InheritanceVisitor.ftl             <<:ASTCDCompilationUnit>>
+call  EHP  HP:"JavaCopyright"
+-tpl(1T)   InheritanceVisitor.ftl             <<:ASTCDCompilationUnit>>
++file      HTMLRedInheritanceVisitor.java     <<:ASTCDCompilationUnit>>
+           InheritanceVisitor.ftl
+-file      htmlred._visitor.HTMLRedInheritanceVisitor.java InheritanceVisitor.ftl
+           <<:ASTCDCompilationUnit>>
++tpl(1T)   ParentAwareVisitor.ftl             <<:ASTCDCompilationUnit>>
+call  EHP  HP:"JavaCopyright"
+-tpl(1T)   ParentAwareVisitor.ftl             <<:ASTCDCompilationUnit>>
++file      HTMLRedParentAwareVisitor.java     <<:ASTCDCompilationUnit>>
+           ParentAwareVisitor.ftl
+-file      htmlred._visitor.HTMLRedParentAwareVisitor.java ParentAwareVisitor.ftl
+           <<:ASTCDCompilationUnit>>
++tpl(1T)   DelegatorVisitor.ftl               <<:ASTCDCompilationUnit>>
+call  EHP  HP:"JavaCopyright"
+-tpl(1T)   DelegatorVisitor.ftl               <<:ASTCDCompilationUnit>>
++file      HTMLRedDelegatorVisitor.java       <<:ASTCDCompilationUnit>>
+           DelegatorVisitor.ftl
+-file      htmlred._visitor.HTMLRedDelegatorVisitor.java DelegatorVisitor.ftl
+           <<:ASTCDCompilationUnit>>
++tpl(1T)   CommonDelegatorVisitor.ftl         <<:ASTCDCompilationUnit>>
+call  EHP  HP:"JavaCopyright"
+-tpl(1T)   CommonDelegatorVisitor.ftl         <<:ASTCDCompilationUnit>>
++file      CommonHTMLRedDelegatorVisitor.java <<:ASTCDCompilationUnit>>
+           CommonDelegatorVisitor.ftl
+-file      htmlred._visitor.CommonHTMLRedDelegatorVisitor.java CommonDelegatorVisitor.ftl
+           <<:ASTCDCompilationUnit>>
+setv       coCoHelper
++tpl(1T)   CoCoInterface.ftl                  <<:ASTCDClass>>!2!
+-tpl(1T)   CoCoInterface.ftl                  <<:ASTCDClass>>!2!
++file      HTMLRedASTPCoCo.java               <<:ASTCDClass>>!2!
+           CoCoInterface.ftl
+-file      htmlred._cocos.HTMLRedASTPCoCo.javaCoCoInterface.ftl
+           <<:ASTCDClass>>!2!
++tpl(1T)   CoCoInterface.ftl                  <<:ASTCDClass>>!3!
+-tpl(1T)   CoCoInterface.ftl                  <<:ASTCDClass>>!3!
++file      HTMLRedASTAlternativesCoCo.java    <<:ASTCDClass>>!3!
+           CoCoInterface.ftl
+-file      htmlred._cocos.HTMLRedASTAlternativesCoCo.java CoCoInterface.ftl
+           <<:ASTCDClass>>!3!
++tpl(1T)   CoCoInterface.ftl                  <<:ASTCDClass>>!4!
+-tpl(1T)   CoCoInterface.ftl                  <<:ASTCDClass>>!4!
++file      HTMLRedASTBCoCo.java               <<:ASTCDClass>>!4!
+           CoCoInterface.ftl
+-file      htmlred._cocos.HTMLRedASTBCoCo.javaCoCoInterface.ftl
+           <<:ASTCDClass>>!4!
++tpl(1T)   CoCoInterface.ftl                  <<:ASTCDClass>>!5!
+-tpl(1T)   CoCoInterface.ftl                  <<:ASTCDClass>>!5!
++file      HTMLRedASTICoCo.java               <<:ASTCDClass>>!5!
+           CoCoInterface.ftl
+-file      htmlred._cocos.HTMLRedASTICoCo.javaCoCoInterface.ftl
+           <<:ASTCDClass>>!5!
++tpl(1T)   CoCoInterface.ftl                  <<:ASTCDInterface>>
+-tpl(1T)   CoCoInterface.ftl                  <<:ASTCDInterface>>
++file      HTMLRedASTHTMLRedNodeCoCo.java     <<:ASTCDInterface>>
+           CoCoInterface.ftl
+-file      htmlred._cocos.HTMLRedASTHTMLRedNodeCoCo.java CoCoInterface.ftl
+           <<:ASTCDInterface>>
++tpl(1T)   CoCoChecker.ftl                    <<:ASTCDCompilationUnit>>
+call  EHP  HP:"JavaCopyright"
+-tpl(1T)   CoCoChecker.ftl                    <<:ASTCDCompilationUnit>>
++file      HTMLRedCoCoChecker.java            <<:ASTCDCompilationUnit>>
+           CoCoChecker.ftl
+-file      htmlred._cocos.HTMLRedCoCoChecker.java CoCoChecker.ftl
+           <<:ASTCDCompilationUnit>>
+setv       odHelper
++tpl(1T)   DiagramVisitor.ftl                 <<:ASTCDCompilationUnit>>
+call  EHP  HP:"JavaCopyright"
+-tpl(1T)   DiagramVisitor.ftl                 <<:ASTCDCompilationUnit>>
++file      HTMLRed2OD.java                    <<:ASTCDCompilationUnit>>
+           DiagramVisitor.ftl
+-file      htmlred._od.HTMLRed2OD.java        DiagramVisitor.ftl
+           <<:ASTCDCompilationUnit>>
+setv       genHelper
++tpl(1T)   Decoder.ftl                        <<HTMLRed:MCGrammar>><5,0>
+-tpl(1T)   Decoder.ftl                        <<HTMLRed:MCGrammar>><5,0>
++file      HTMLRedDecoder.java                <<HTMLRed:MCGrammar>><5,0>
+           Decoder.ftl
+-file      htmlred._coder.HTMLRedDecoder.java Decoder.ftl
+           <<HTMLRed:MCGrammar>><5,0>
++tpl(1T)   DecoderVisitor.ftl                 <<HTMLRed:MCGrammar>><5,0>
+-tpl(1T)   DecoderVisitor.ftl                 <<HTMLRed:MCGrammar>><5,0>
++file      HTMLRedDecoderVisitor.java         <<HTMLRed:MCGrammar>><5,0>
+           DecoderVisitor.ftl
+-file      htmlred._coder.HTMLRedDecoderVisitor.java DecoderVisitor.ftl
+           <<HTMLRed:MCGrammar>><5,0>
++tpl(1T)   Encoder.ftl                        <<HTMLRed:MCGrammar>><5,0>
+-tpl(1T)   Encoder.ftl                        <<HTMLRed:MCGrammar>><5,0>
++file      HTMLRedEncoder.java                <<HTMLRed:MCGrammar>><5,0>
+           Encoder.ftl
+-file      htmlred._coder.HTMLRedEncoder.java Encoder.ftl
+           <<HTMLRed:MCGrammar>><5,0>
++tpl(1T)   EncoderVisitor.ftl                 <<HTMLRed:MCGrammar>><5,0>
+-tpl(1T)   EncoderVisitor.ftl                 <<HTMLRed:MCGrammar>><5,0>
++file      HTMLRedEncoderVisitor.java         <<HTMLRed:MCGrammar>><5,0>
+           EncoderVisitor.ftl
+-file      htmlred._coder.HTMLRedEncoderVisitor.java EncoderVisitor.ftl
+           <<HTMLRed:MCGrammar>><5,0>
++tpl(1T)   Injector.ftl                       <<HTMLRed:MCGrammar>><5,0>
+-tpl(1T)   Injector.ftl                       <<HTMLRed:MCGrammar>><5,0>
++file      HTMLRedInjector.java               <<HTMLRed:MCGrammar>><5,0>
+           Injector.ftl
+-file      htmlred._coder.HTMLRedInjector.javaInjector.ftl
+           <<HTMLRed:MCGrammar>><5,0>
++tpl(1T)   Range.ftl                          <<HTMLRed:MCGrammar>><5,0>
+-tpl(1T)   Range.ftl                          <<HTMLRed:MCGrammar>><5,0>
++file      HTMLRedRange.java                  <<HTMLRed:MCGrammar>><5,0>
+           Range.ftl
+-file      htmlred._coder.HTMLRedRange.java   Range.ftl
+           <<HTMLRed:MCGrammar>><5,0>
++tpl(1T)   JavaScriptSimpleTool.ftl           <<HTMLRed:MCGrammar>><5,0>
+-tpl(1T)   JavaScriptSimpleTool.ftl           <<HTMLRed:MCGrammar>><5,0>
++file      HTMLRedSimpleTool.java             <<HTMLRed:MCGrammar>><5,0>
+           JavaScriptSimpleTool.ftl
+-file      htmlred._coder.HTMLRedSimpleTool.java JavaScriptSimpleTool.ftl
+           <<HTMLRed:MCGrammar>><5,0>
+
+
+========================================================== Explanation
+
+A fine grained report of all the events happening. The events are the following:
+warn        issued warning
+err         issued error
+inst        instantiation
+setv        ... variable assignment
+addv        ... this is an extension (addValue), the extension is shown only
++file       generated file is opened
+-file       ... closed
++tpl        template called/included
+-tpl        ... ends
+set         hook point assignment
+setr        template replacement by hook points
+setb        assignment of hook points that are called before the template 
+seta        assignment of hook points that are called after the template 
+call        hook point execution
+callr       execution of hook points that replaced a template
+callb       execution of hook points that are called before the template
+calla       execution of hook points that are called after the template
+
+hook points are sepreated into
+* SHP       string hook point
+* THP       template hook point
+* CHP       code hook point
+* EHP       empty hook point
+* ASHP      AST string hook point
+* ATHP      AST template hook point
+* ACHP      AST code hook point
+
+for tpl events each line comes with
+* the shortname of the template
+* the AST it operates on
+* the current depth of the template hierarchy (xT)
+(EOF)

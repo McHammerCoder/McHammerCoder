@@ -1,0 +1,88 @@
+========================================================== Generated Files
+Filename                                AST-Node
+HTMLRedAntlr.g4                         <<HTMLRed:MCGrammar>><5,0>
+                                        Parser.ftl
+HTMLRedParser.java                      <<HTMLRed:MCGrammar>><5,0>
+                                        MCParser.ftl
+HTMLRedParser.java                      <<HTMLRed:MCGrammar>><5,0>
+                                        Parser.ftl
+HTMLRedActions.java                     <<HTMLRed:MCGrammar>><5,0>
+                                        Actions.ftl
+HAParseTree.java                        <<HTMLRed:MCGrammar>><5,0>
+                                        HAParseTree.ftl
+HARuleContext.java                      <<HTMLRed:MCGrammar>><5,0>
+                                        HARuleContext.ftl
+HARuleNode.java                         <<HTMLRed:MCGrammar>><5,0>
+                                        HARuleNode.ftl
+HATerminalNode.java                     <<HTMLRed:MCGrammar>><5,0>
+                                        HATerminalNode.ftl
+HTMLRedTreeConverter.java               <<HTMLRed:MCGrammar>><5,0>
+                                        TreeConverter.ftl
+HTMLRedTreeHelper.java                  <<HTMLRed:MCGrammar>><5,0>
+                                        TreeHelper.ftl
+com_upstandinghackers_hammer_Hammer.c   <<HTMLRed:MCGrammar>><5,0>
+                                        com_upstandinghackers_hammer_Hammer.ftl
+HTMLRedLanguage.java                    <<HTMLRed:MCGrammar>><5,0>
+                                        ModelingLanguage.ftl
+HTMLRedModelLoader.java                 <<HTMLRed:MCGrammar>><5,0>
+                                        ModelLoader.ftl
+ASTP.java                               <<:ASTCDClass>>!2!
+                                        AstClass.ftl
+ASTAlternatives.java                    <<:ASTCDClass>>!3!
+                                        AstClass.ftl
+ASTB.java                               <<:ASTCDClass>>!4!
+                                        AstClass.ftl
+ASTI.java                               <<:ASTCDClass>>!5!
+                                        AstClass.ftl
+HTMLRedNodeFactory.java                 <<:ASTCDClass>>
+                                        Class.ftl
+ASTConstantsHTMLRed.java                <<:ASTCDClass>><1,0>!5!
+                                        Class.ftl
+ASTHTMLRedNode.java                     <<:ASTCDInterface>>
+                                        AstInterface.ftl
+HTMLRedVisitor.java                     <<:ASTCDCompilationUnit>>
+                                        SimpleVisitor.ftl
+HTMLRedInheritanceVisitor.java          <<:ASTCDCompilationUnit>>
+                                        InheritanceVisitor.ftl
+HTMLRedParentAwareVisitor.java          <<:ASTCDCompilationUnit>>
+                                        ParentAwareVisitor.ftl
+HTMLRedDelegatorVisitor.java            <<:ASTCDCompilationUnit>>
+                                        DelegatorVisitor.ftl
+CommonHTMLRedDelegatorVisitor.java      <<:ASTCDCompilationUnit>>
+                                        CommonDelegatorVisitor.ftl
+HTMLRedASTPCoCo.java                    <<:ASTCDClass>>!2!
+                                        CoCoInterface.ftl
+HTMLRedASTAlternativesCoCo.java         <<:ASTCDClass>>!3!
+                                        CoCoInterface.ftl
+HTMLRedASTBCoCo.java                    <<:ASTCDClass>>!4!
+                                        CoCoInterface.ftl
+HTMLRedASTICoCo.java                    <<:ASTCDClass>>!5!
+                                        CoCoInterface.ftl
+HTMLRedASTHTMLRedNodeCoCo.java          <<:ASTCDInterface>>
+                                        CoCoInterface.ftl
+HTMLRedCoCoChecker.java                 <<:ASTCDCompilationUnit>>
+                                        CoCoChecker.ftl
+HTMLRed2OD.java                         <<:ASTCDCompilationUnit>>
+                                        DiagramVisitor.ftl
+HTMLRedDecoder.java                     <<HTMLRed:MCGrammar>><5,0>
+                                        Decoder.ftl
+HTMLRedDecoderVisitor.java              <<HTMLRed:MCGrammar>><5,0>
+                                        DecoderVisitor.ftl
+HTMLRedEncoder.java                     <<HTMLRed:MCGrammar>><5,0>
+                                        Encoder.ftl
+HTMLRedEncoderVisitor.java              <<HTMLRed:MCGrammar>><5,0>
+                                        EncoderVisitor.ftl
+HTMLRedInjector.java                    <<HTMLRed:MCGrammar>><5,0>
+                                        Injector.ftl
+HTMLRedRange.java                       <<HTMLRed:MCGrammar>><5,0>
+                                        Range.ftl
+HTMLRedSimpleTool.java                  <<HTMLRed:MCGrammar>><5,0>
+                                        JavaScriptSimpleTool.ftl
+========================================================== Explanation
+Generated Files: the list of generated files in the order they are generated.
+Each file knows:
+- Template       responsible for the file creation
+- AST            Node which is passed to the template as ast variable
+- Model Position If the ast node is created as a direct result of parsing a model,
+                 the position of the model element is reported in the form <Line, Column>
+(EOF)
