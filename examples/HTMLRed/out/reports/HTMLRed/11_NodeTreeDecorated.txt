@@ -44,8 +44,8 @@
                           generates "HTMLRedInjector.java"
                           template Range.ftl
                           generates "HTMLRedRange.java"
-                          template JavaScriptSimpleTool.ftl
-                          generates "HTMLRedSimpleTool.java"
+                          template Tool.ftl
+                          generates "HTMLRedTool.java"
    +--<<TEXTB:LexProd>><27,8>
    |  +--<<:ASTLexAlt>><27,22>
    |  |  +--<<:ASTLexBlock>><27,22>

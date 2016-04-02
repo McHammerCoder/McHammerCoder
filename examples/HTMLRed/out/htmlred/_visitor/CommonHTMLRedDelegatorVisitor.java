@@ -23,7 +23,7 @@ public class CommonHTMLRedDelegatorVisitor implements HTMLRedDelegatorVisitor {
   public void setRealThis(HTMLRedVisitor realThis) {
     if (this.realThis != realThis) {
       if (!(realThis instanceof HTMLRedDelegatorVisitor)) {
-          Log.error("0xA7111_851 realThis of HTMLRedDelegatorVisitor must be HTMLRedDelegatorVisitor itself.");
+          Log.error("0xA7111_090 realThis of HTMLRedDelegatorVisitor must be HTMLRedDelegatorVisitor itself.");
       }
       this.realThis = (HTMLRedDelegatorVisitor) realThis;
       // register the known delegates to the realThis (and therby also set their new realThis)

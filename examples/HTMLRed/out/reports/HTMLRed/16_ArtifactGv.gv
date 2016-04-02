@@ -9,11 +9,11 @@ digraph {
     label = "coder";
     labeljust = l;
     node[shape=ellipse];
+    Template_coder_Tool [label="coder.Tool.ftl (1)"];
+    node[shape=ellipse];
     Template_coder_EncoderVisitor [label="coder.EncoderVisitor.ftl (1)"];
     node[shape=ellipse];
     Template_coder_Injector [label="coder.Injector.ftl (1)"];
-    node[shape=ellipse];
-    Template_coder_JavaScriptSimpleTool [label="coder.JavaScriptSimpleTool.ftl (1)"];
     node[shape=ellipse];
     Template_coder_Decoder [label="coder.Decoder.ftl (1)"];
     node[shape=ellipse];
@@ -197,6 +197,8 @@ digraph {
     label = "htmlred._coder";
     labeljust = l;
     node[shape=note];
+    File_htmlred__coder_HTMLRedTool [label="htmlred._coder.HTMLRedTool.java (1)"];
+    node[shape=note];
     File_htmlred__coder_HTMLRedRange [label="htmlred._coder.HTMLRedRange.java (1)"];
     node[shape=note];
     File_htmlred__coder_HTMLRedDecoder [label="htmlred._coder.HTMLRedDecoder.java (1)"];
@@ -206,8 +208,6 @@ digraph {
     File_htmlred__coder_HTMLRedDecoderVisitor [label="htmlred._coder.HTMLRedDecoderVisitor.java (1)"];
     node[shape=note];
     File_htmlred__coder_HTMLRedEncoderVisitor [label="htmlred._coder.HTMLRedEncoderVisitor.java (1)"];
-    node[shape=note];
-    File_htmlred__coder_HTMLRedSimpleTool [label="htmlred._coder.HTMLRedSimpleTool.java (1)"];
     node[shape=note];
     File_htmlred__coder_HTMLRedInjector [label="htmlred._coder.HTMLRedInjector.java (1)"];
   }
@@ -299,9 +299,9 @@ digraph {
     node[shape=ellipse];
     Template_symboltable_ModelingLanguage [label="symboltable.ModelingLanguage.ftl (1)"];
   }
+  Template_coder_Tool -> File_htmlred__coder_HTMLRedTool;
   Template_coder_EncoderVisitor -> File_htmlred__coder_HTMLRedEncoderVisitor;
   Template_coder_Injector -> File_htmlred__coder_HTMLRedInjector;
-  Template_coder_JavaScriptSimpleTool -> File_htmlred__coder_HTMLRedSimpleTool;
   Template_coder_Decoder -> File_htmlred__coder_HTMLRedDecoder;
   Template_coder_DecoderVisitor -> File_htmlred__coder_HTMLRedDecoderVisitor;
   Template_coder_Encoder -> File_htmlred__coder_HTMLRedEncoder;

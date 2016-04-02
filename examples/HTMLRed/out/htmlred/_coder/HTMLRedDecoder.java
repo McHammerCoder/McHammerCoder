@@ -4,22 +4,16 @@
 
 package htmlred._coder;
 
-import org.antlr.v4.runtime.Token;
-import org.antlr.v4.runtime.tree.TerminalNode;
-import org.antlr.v4.runtime.Lexer;
-import org.antlr.v4.runtime.TokenStream;
 import org.antlr.v4.runtime.*;
-import java.util.Arrays;
-import java.util.HashMap;
 import java.util.Map;
 
 /*
 Visit functions need to be generated - move them to a seperate part e.g. DecodeVisitor and EncodeVisitor
 */
 
-public class Decoder{
+public class HTMLRedDecoder{
 
-	private Encoder encoder = new Encoder();
+	private HTMLRedEncoder encoder = new HTMLRedEncoder();
 
 /*public boolean canBeDecoded(String toTest){ //Checks if a string can be decoded
 	@SuppressWarnings("unchecked")

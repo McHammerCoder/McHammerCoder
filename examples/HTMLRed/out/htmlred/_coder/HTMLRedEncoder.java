@@ -4,21 +4,19 @@
 
 package htmlred._coder;
 
-
 import org.antlr.v4.runtime.Token;
-import org.antlr.v4.runtime.tree.TerminalNode;
-import org.antlr.v4.runtime.Lexer;
-import org.antlr.v4.runtime.TokenStream;
 import org.antlr.v4.runtime.*;
-import HTMLRed._parser.HTMLRedLexer;
+import htmlred._parser.HTMLRedAntlrLexer;
+
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.lang.Math;
 
-public class Encoder{
+public class HTMLRedEncoder{
 
-	private ArrayList<Range> ranges = new ArrayList<Range>();
+	private ArrayList<HTMLRedRange> ranges = new ArrayList<HTMLRedRange>();
 	private Map<String, String> encodingMap = new HashMap<String, String>(); 
 	public String startEncoding = "";
 
@@ -28,23 +26,23 @@ public class Encoder{
 			
  	 // Start of 'ASTLexProd'
 		/*ASTLexProd TEXTB*/
-		ranges.add(new Range('a' ,'z' , false));
-		ranges.add(new Range('A' ,'Z' , false));
-		ranges.add(new Range('_' ,'_' , false));
-		ranges.add(new Range('0' ,'9' , false));
-		ranges.add(new Range(' ' ,' ' , false));
-		ranges.add(new Range('#' ,'#' , false));
-		ranges.add(new Range('$' ,'$' , false));
+		ranges.add(new HTMLRedRange('a' ,'z' , false));
+		ranges.add(new HTMLRedRange('A' ,'Z' , false));
+		ranges.add(new HTMLRedRange('_' ,'_' , false));
+		ranges.add(new HTMLRedRange('0' ,'9' , false));
+		ranges.add(new HTMLRedRange(' ' ,' ' , false));
+		ranges.add(new HTMLRedRange('#' ,'#' , false));
+		ranges.add(new HTMLRedRange('$' ,'$' , false));
 	  // End of 'ASTLexProd'
 
-	return Range.union(ranges);	
+	return HTMLRedRange.union(ranges);	
 
 	}
 
 
-	public HTMLRedLexer lex(String string){
+	public HTMLRedAntlrLexer lex(String string){
 		ANTLRInputStream input = new ANTLRInputStream(string);
-		HTMLRedLexer lexer = new HTMLRedLexer(input);
+		HTMLRedAntlrLexer lexer = new HTMLRedAntlrLexer(input);
 		return lexer;
 
 	}
@@ -100,7 +98,7 @@ public class Encoder{
 
 
 	public boolean typeCheck(int type, String string){
-		HTMLRedLexer lexer = lex(string);
+		HTMLRedAntlrLexer lexer = lex(string);
 		Token nextToken =lexer.nextToken();
 
 		if(type == nextToken.getType() && lexer.nextToken().getType() == Token.EOF){
@@ -123,7 +121,7 @@ public class Encoder{
 			}
 		}
 
-			HTMLRedLexer lexer = lex(alphanumeric[i]);
+			HTMLRedAntlrLexer lexer = lex(alphanumeric[i]);
 			lexer.removeErrorListeners(); //Removes strange error output in the console - we dont need it!
 			if(lexer.nextToken().getType() != Token.EOF){
 				usableSymbols[i] = alphanumeric[i];
@@ -213,7 +211,7 @@ public class Encoder{
 		return res;
 	}
 
-	public Map getEncoding(){ //Returns the map if none exists one is created
+	public Map<String, String> getEncoding(){ //Returns the map if none exists one is created
 	if(encodingMap.size() != 0){
  	return encodingMap;
 		}

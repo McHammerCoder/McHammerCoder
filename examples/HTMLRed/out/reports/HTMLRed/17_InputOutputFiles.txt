@@ -1,6 +1,6 @@
 ========================================================== Input files
-/home/laptop/repositories/McHammerCoder/examples/HTMLRed/HTMLRed.mc4 state 671dbe81f538126e122c61a728fa6603
-/home/laptop/repositories/McHammerCoder/examples/HTMLRed/out sub HTMLRed.cd state ca5f80ab05d8a0003bb5243a3d0a6089
+/home/aether/Desktop/McHammerCoder/examples/HTMLRed/HTMLRed.mc4 state 671dbe81f538126e122c61a728fa6603
+/home/aether/Desktop/McHammerCoder/examples/HTMLRed/out sub HTMLRed.cd state ca5f80ab05d8a0003bb5243a3d0a6089
 ====================================================== Handwritten files
  sub htmlred/_parser/HTMLRedParser.java
  sub htmlred/_ast/HTMLRedNodeFactory.java
@@ -37,7 +37,7 @@ htmlred/_coder/HTMLRedEncoder.java
 htmlred/_coder/HTMLRedEncoderVisitor.java
 htmlred/_coder/HTMLRedInjector.java
 htmlred/_coder/HTMLRedRange.java
-htmlred/_coder/HTMLRedSimpleTool.java
+htmlred/_coder/HTMLRedTool.java
 htmlred/_mch_parser/HTMLRedActions.java
 htmlred/_mch_parser/HTMLRedParser.java
 htmlred/_mch_parser/com_upstandinghackers_hammer_Hammer.c

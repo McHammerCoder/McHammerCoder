@@ -11,12 +11,14 @@ import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.TokenStream;
 import org.antlr.v4.runtime.*;
 
-public class EncoderVisitor extends HTMLRedBaseListener {
+import HTMLRed._parser.*;
 
-private Encoder encoder = new Encoder();
+public class HTMLRedEncoderVisitor extends HTMLRedAntlrBaseListener {
+
+	private HTMLRedEncoder encoder = new HTMLRedEncoder();
 
 
-@Override public void visitTerminal(TerminalNode node) {
+	public void visitTerminal(TerminalNode node) {
 		CommonToken token = (CommonToken)node.getPayload();
 	
 		if(encoder.check(token)){

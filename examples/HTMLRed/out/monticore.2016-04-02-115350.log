@@ -1,0 +1,270 @@
+2016-04-02 11:53:51 [DEBUG] MAIN --------------------------------
+2016-04-02 11:53:51 [DEBUG] MAIN MontiCore
+2016-04-02 11:53:51 [DEBUG] MAIN  - eating your models since 2005
+2016-04-02 11:53:51 [DEBUG] MAIN --------------------------------
+2016-04-02 11:53:51 [DEBUG] MAIN Grammar argument    : [HTMLRed.mc4]
+2016-04-02 11:53:51 [DEBUG] MAIN Grammar files       : [/home/aether/Desktop/McHammerCoder/examples/HTMLRed/HTMLRed.mc4]
+2016-04-02 11:53:51 [DEBUG] MAIN Modelpath           : [file:/home/aether/Desktop/McHammerCoder/examples/HTMLRed/monticore-cli.jar, file:/home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/]
+2016-04-02 11:53:51 [DEBUG] MAIN Output dir          : out
+2016-04-02 11:53:51 [DEBUG] MAIN Handcoded argument  : []
+2016-04-02 11:53:51 [DEBUG] MAIN Handcoded files     : [empty iterable path]
+2016-04-02 11:53:51 [DEBUG] d.s.commons.logging.Log Switching logging component from de.se_rwth.commons.logging.Slf4jLog to de.monticore.generating.templateengine.reporting.Reporting
+2016-04-02 11:53:51 [DEBUG] d.m.i.IncrementalChecker There is no input output report for /home/aether/Desktop/McHammerCoder/examples/HTMLRed/HTMLRed.mc4
+2016-04-02 11:53:51 [INFO]  d.m.i.IncrementalChecker Changes detected for /home/aether/Desktop/McHammerCoder/examples/HTMLRed/HTMLRed.mc4. Regenerating...
+2016-04-02 11:53:51 [DEBUG] d.m.g.t.GrammarTransformer Change the name of P list-attribute: Alternatives
+2016-04-02 11:53:52 [DEBUG] d.m.g.t.r.c.ReportingRepository going to scan these urls:
+file:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunjce_provider.jar
+file:/home/aether/Desktop/McHammerCoder/examples/HTMLRed/monticore-cli.jar
+file:/usr/lib/jvm/java-8-oracle/jre/lib/ext/localedata.jar
+file:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunec.jar
+file:/usr/lib/jvm/java-8-oracle/jre/lib/ext/jaccess.jar
+file:/usr/lib/jvm/java-8-oracle/jre/lib/ext/nashorn.jar
+file:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunpkcs11.jar
+file:/usr/lib/jvm/java-8-oracle/jre/lib/ext/jfxrt.jar
+file:/usr/lib/jvm/java-8-oracle/jre/lib/ext/dnsns.jar
+file:/usr/lib/jvm/java-8-oracle/jre/lib/ext/cldrdata.jar
+file:/usr/lib/jvm/java-8-oracle/jre/lib/ext/zipfs.jar
+2016-04-02 11:53:52 [DEBUG] d.m.g.t.r.c.ReportingRepository Reflections took 88 ms to scan 11 urls, producing 1012 keys and 1124 values 
+2016-04-02 11:53:52 [DEBUG] MCGrammarSymbolTableCreator Building Symboltable for Grammar: HTMLRed
+2016-04-02 11:53:52 [DEBUG] MCGrammarSymbolTableCreator Step 1: Load symbol tables of supergrammars
+2016-04-02 11:53:52 [DEBUG] MCGrammarSymbolTableCreator Level 3x: Consider follow options
+2016-04-02 11:53:52 [DEBUG] MCGrammarSymbolTableCreator Step 3d: Consider interfaces and abstract rules that override the standard
+2016-04-02 11:53:52 [DEBUG] MCGrammarSymbolTableCreator Step 4a: Check all occurences of types and production references in the AST
+2016-04-02 11:53:52 [DEBUG] CD4AnalysisSymbolTableCreator Building Symboltable for CD: HTMLRed
+2016-04-02 11:53:52 [DEBUG] CD4AnalysisSymbolTableCreator Finished build of symboltable for CD: HTMLRed
+2016-04-02 11:53:52 [DEBUG] ParserGenerator Start parser generation for the grammar HTMLRed
+2016-04-02 11:53:52 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template de.monticore.generating.templateengine.freemarker.Aliases
+2016-04-02 11:53:52 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template parser.Parser
+2016-04-02 11:53:52 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template parser.ParserHeader
+2016-04-02 11:53:52 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template parser.LexerMember
+2016-04-02 11:53:52 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_parser/HTMLRedAntlr.g4 written successfully!
+2016-04-02 11:53:52 [DEBUG] ParserGenerator Start Antlr generation for the antlr file /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_parser/HTMLRedAntlr.g4
+2016-04-02 11:53:53 [DEBUG] ParserGenerator End parser generation for the grammar HTMLRed
+2016-04-02 11:53:53 [DEBUG] d.m.c.m.TransformationHelper Checking existence of handwritten class htmlred._parser.HTMLRedParser by searching for htmlred/_parser/HTMLRedParser.java
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template de.monticore.generating.templateengine.freemarker.Aliases
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template parser.MCParser
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template parser.MCParserMethods
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_parser/HTMLRedParser.java written successfully!
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template de.monticore.generating.templateengine.freemarker.Aliases
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template mchparser.Parser
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_mch_parser/HTMLRedParser.java written successfully!
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template mchparser.Actions
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_mch_parser/HTMLRedActions.java written successfully!
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template mchtree.HAParseTree
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_mch_parser/tree/HAParseTree.java written successfully!
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template mchtree.HARuleContext
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_mch_parser/tree/HARuleContext.java written successfully!
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template mchtree.HARuleNode
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_mch_parser/tree/HARuleNode.java written successfully!
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template mchtree.HATerminalNode
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_mch_parser/tree/HATerminalNode.java written successfully!
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template mchtree.TreeConverter
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_mch_parser/tree/HTMLRedTreeConverter.java written successfully!
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template mchtree.TreeHelper
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_mch_parser/tree/HTMLRedTreeHelper.java written successfully!
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template mchparser.com_upstandinghackers_hammer_Hammer
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_mch_parser/com_upstandinghackers_hammer_Hammer.c written successfully!
+2016-04-02 11:53:53 [DEBUG] GlobalScope Model for 'htmlred._ast.ASTAlternatives' already exists. No need to load it.
+2016-04-02 11:53:53 [DEBUG] GlobalScope Model for 'htmlred._ast.ASTAlternatives' already exists. No need to load it.
+2016-04-02 11:53:53 [DEBUG] GeneratorHelper CD or Java type couldn't be resolved: htmlred._ast.ASTAlternatives
+2016-04-02 11:53:53 [DEBUG] GlobalScope Model for 'htmlred._ast.ASTP' already exists. No need to load it.
+2016-04-02 11:53:53 [DEBUG] GlobalScope Model for 'htmlred._ast.ASTP' already exists. No need to load it.
+2016-04-02 11:53:53 [DEBUG] GlobalScope Model for 'htmlred._ast.ASTP' already exists. No need to load it.
+2016-04-02 11:53:53 [DEBUG] GeneratorHelper CD or Java type couldn't be resolved: htmlred._ast.ASTP
+2016-04-02 11:53:53 [DEBUG] GlobalScope Model for 'htmlred._ast.ASTB' already exists. No need to load it.
+2016-04-02 11:53:53 [DEBUG] GlobalScope Model for 'htmlred._ast.ASTB' already exists. No need to load it.
+2016-04-02 11:53:53 [DEBUG] GlobalScope Model for 'htmlred._ast.ASTB' already exists. No need to load it.
+2016-04-02 11:53:53 [DEBUG] GeneratorHelper CD or Java type couldn't be resolved: htmlred._ast.ASTB
+2016-04-02 11:53:53 [DEBUG] GlobalScope Model for 'htmlred._ast.ASTI' already exists. No need to load it.
+2016-04-02 11:53:53 [DEBUG] GlobalScope Model for 'htmlred._ast.ASTI' already exists. No need to load it.
+2016-04-02 11:53:53 [DEBUG] GlobalScope Model for 'htmlred._ast.ASTI' already exists. No need to load it.
+2016-04-02 11:53:53 [DEBUG] GeneratorHelper CD or Java type couldn't be resolved: htmlred._ast.ASTI
+2016-04-02 11:53:53 [DEBUG] d.m.c.m.TransformationHelper Checking existence of handwritten class htmlred._ast.HTMLRedNodeFactory by searching for htmlred/_ast/HTMLRedNodeFactory.java
+2016-04-02 11:53:53 [DEBUG] d.m.c.m.TransformationHelper Checking existence of handwritten class htmlred._ast.ASTP by searching for htmlred/_ast/ASTP.java
+2016-04-02 11:53:53 [DEBUG] d.m.c.m.TransformationHelper Checking existence of handwritten class htmlred._ast.ASTAlternatives by searching for htmlred/_ast/ASTAlternatives.java
+2016-04-02 11:53:53 [DEBUG] d.m.c.m.TransformationHelper Checking existence of handwritten class htmlred._ast.ASTB by searching for htmlred/_ast/ASTB.java
+2016-04-02 11:53:53 [DEBUG] d.m.c.m.TransformationHelper Checking existence of handwritten class htmlred._ast.ASTI by searching for htmlred/_ast/ASTI.java
+2016-04-02 11:53:53 [DEBUG] d.m.c.m.TransformationHelper Checking existence of handwritten class htmlred._ast.Builder_ASTP by searching for htmlred/_ast/Builder_ASTP.java
+2016-04-02 11:53:53 [DEBUG] d.m.c.m.TransformationHelper Checking existence of handwritten class htmlred._ast.Builder_ASTAlternatives by searching for htmlred/_ast/Builder_ASTAlternatives.java
+2016-04-02 11:53:53 [DEBUG] d.m.c.m.TransformationHelper Checking existence of handwritten class htmlred._ast.Builder_ASTB by searching for htmlred/_ast/Builder_ASTB.java
+2016-04-02 11:53:53 [DEBUG] d.m.c.m.TransformationHelper Checking existence of handwritten class htmlred._ast.Builder_ASTI by searching for htmlred/_ast/Builder_ASTI.java
+2016-04-02 11:53:53 [DEBUG] d.m.c.m.TransformationHelper Checking existence of handwritten class htmlred._ast.HTMLRedNodeFactory by searching for htmlred/_ast/HTMLRedNodeFactory.java
+2016-04-02 11:53:53 [DEBUG] d.m.c.m.TransformationHelper Checking existence of handwritten class htmlred._ast.ASTHTMLRedNode by searching for htmlred/_ast/ASTHTMLRedNode.java
+2016-04-02 11:53:53 [DEBUG] d.m.c.m.TransformationHelper Checking existence of handwritten class htmlred._ast.ASTConstantsHTMLRed by searching for htmlred/_ast/ASTConstantsHTMLRed.java
+2016-04-02 11:53:53 [DEBUG] SymbolTableGenerator Start symbol table generation for the grammar HTMLRed
+2016-04-02 11:53:53 [DEBUG] d.m.c.m.TransformationHelper Checking existence of handwritten class htmlred._symboltable.HTMLRedLanguage by searching for htmlred/_symboltable/HTMLRedLanguage.java
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template de.monticore.generating.templateengine.freemarker.Aliases
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template symboltable.ModelingLanguage
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_symboltable/HTMLRedLanguage.java written successfully!
+2016-04-02 11:53:53 [DEBUG] d.m.c.m.TransformationHelper Checking existence of handwritten class htmlred._symboltable.HTMLRedModelLoader by searching for htmlred/_symboltable/HTMLRedModelLoader.java
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template symboltable.ModelLoader
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_symboltable/HTMLRedModelLoader.java written successfully!
+2016-04-02 11:53:53 [DEBUG] SymbolTableGenerator End symbol table generation for the grammar HTMLRed
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template de.monticore.generating.templateengine.freemarker.Aliases
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.AstClass
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.AstImports
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.AstSuperTypes
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.AstSuperInterfaces
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.Attribute
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.Constructor
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.ParametersDeclaration
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.EmptyMethodBody
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.ConstructorParametersDeclaration
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.ConstructorAttributesSetter
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.ClassMethod
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.ErrorIfNull
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.additionalmethods.Accept
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.additionalmethods.DeepEqualsWithOrder
+2016-04-02 11:53:53 [DEBUG] SymbolReference Load full information of 'HTMLRed.ASTAlternatives' (Kind CDTypeSymbolKind).
+2016-04-02 11:53:53 [DEBUG] SymbolReference Loaded full information of 'HTMLRed.ASTAlternatives' successfully.
+2016-04-02 11:53:53 [DEBUG] SymbolReference Load full information of 'HTMLRed.ASTAlternatives' (Kind CDTypeSymbolKind).
+2016-04-02 11:53:53 [DEBUG] SymbolReference Loaded full information of 'HTMLRed.ASTAlternatives' successfully.
+2016-04-02 11:53:53 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTAlternatives' already loaded. Use cached version.
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.additionalmethods.DeepEqualsWithComments
+2016-04-02 11:53:53 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTAlternatives' already loaded. Use cached version.
+2016-04-02 11:53:53 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTAlternatives' already loaded. Use cached version.
+2016-04-02 11:53:53 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTAlternatives' already loaded. Use cached version.
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.additionalmethods.EqualAttributes
+2016-04-02 11:53:53 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTAlternatives' already loaded. Use cached version.
+2016-04-02 11:53:53 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTAlternatives' already loaded. Use cached version.
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.additionalmethods.EqualsWithComments
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.additionalmethods.GetChildren
+2016-04-02 11:53:53 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTAlternatives' already loaded. Use cached version.
+2016-04-02 11:53:53 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTAlternatives' already loaded. Use cached version.
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.additionalmethods.RemoveChild
+2016-04-02 11:53:53 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTAlternatives' already loaded. Use cached version.
+2016-04-02 11:53:53 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTAlternatives' already loaded. Use cached version.
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.additionalmethods.DeepCloneWithParameters
+2016-04-02 11:53:53 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTAlternatives' already loaded. Use cached version.
+2016-04-02 11:53:53 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTAlternatives' already loaded. Use cached version.
+2016-04-02 11:53:53 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTAlternatives' already loaded. Use cached version.
+2016-04-02 11:53:53 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTAlternatives' already loaded. Use cached version.
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.additionalmethods.Get
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.additionalmethods.Set
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.ClassContent
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.AstBuilder
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.BuilderAttribute
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.BuilderConstructorParametersDeclaration
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.AstBuilderAttributeSetter
+2016-04-02 11:53:53 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_ast/ASTP.java written successfully!
+2016-04-02 11:53:53 [DEBUG] SymbolReference Load full information of 'HTMLRed.ASTP' (Kind CDTypeSymbolKind).
+2016-04-02 11:53:53 [DEBUG] SymbolReference Loaded full information of 'HTMLRed.ASTP' successfully.
+2016-04-02 11:53:53 [DEBUG] SymbolReference Load full information of 'HTMLRed.ASTP' (Kind CDTypeSymbolKind).
+2016-04-02 11:53:53 [DEBUG] SymbolReference Loaded full information of 'HTMLRed.ASTP' successfully.
+2016-04-02 11:53:53 [DEBUG] SymbolReference Load full information of 'HTMLRed.ASTB' (Kind CDTypeSymbolKind).
+2016-04-02 11:53:53 [DEBUG] SymbolReference Loaded full information of 'HTMLRed.ASTB' successfully.
+2016-04-02 11:53:53 [DEBUG] SymbolReference Load full information of 'HTMLRed.ASTB' (Kind CDTypeSymbolKind).
+2016-04-02 11:53:53 [DEBUG] SymbolReference Loaded full information of 'HTMLRed.ASTB' successfully.
+2016-04-02 11:53:53 [DEBUG] SymbolReference Load full information of 'HTMLRed.ASTI' (Kind CDTypeSymbolKind).
+2016-04-02 11:53:53 [DEBUG] SymbolReference Loaded full information of 'HTMLRed.ASTI' successfully.
+2016-04-02 11:53:53 [DEBUG] SymbolReference Load full information of 'HTMLRed.ASTI' (Kind CDTypeSymbolKind).
+2016-04-02 11:53:53 [DEBUG] SymbolReference Loaded full information of 'HTMLRed.ASTI' successfully.
+2016-04-02 11:53:53 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTP' already loaded. Use cached version.
+2016-04-02 11:53:53 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTP' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTB' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTB' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTI' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTI' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTP' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTP' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTB' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTB' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTI' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTI' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTP' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTP' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTB' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTB' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTI' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTI' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTP' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTP' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTB' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTB' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTI' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTI' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTP' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTP' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTP' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTP' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTB' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTB' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTB' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTB' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTI' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTI' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTI' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTI' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_ast/ASTAlternatives.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_ast/ASTB.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_ast/ASTI.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.Class
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.AstNodeFactory
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.factorymethods.Create
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.factorymethods.DoCreate
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.factorymethods.CreateWithParams
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.factorymethods.DoCreateWithParams
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.factorymethods.ErrorIfNull
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_ast/HTMLRedNodeFactory.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.ASTConstantsClass
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_ast/ASTConstantsHTMLRed.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.AstInterface
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template ast.ASTNodeBase
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_ast/ASTHTMLRedNode.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template de.monticore.generating.templateengine.freemarker.Aliases
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template visitor.SimpleVisitor
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTAlternatives' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTAlternatives' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTAlternatives' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTP' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTP' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTB' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTB' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTI' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTI' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_visitor/HTMLRedVisitor.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template visitor.InheritanceVisitor
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_visitor/HTMLRedInheritanceVisitor.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template visitor.ParentAwareVisitor
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_visitor/HTMLRedParentAwareVisitor.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template visitor.DelegatorVisitor
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_visitor/HTMLRedDelegatorVisitor.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template visitor.CommonDelegatorVisitor
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_visitor/CommonHTMLRedDelegatorVisitor.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template de.monticore.generating.templateengine.freemarker.Aliases
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template cocos.CoCoInterface
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_cocos/HTMLRedASTPCoCo.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_cocos/HTMLRedASTAlternativesCoCo.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_cocos/HTMLRedASTBCoCo.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_cocos/HTMLRedASTICoCo.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_cocos/HTMLRedASTHTMLRedNodeCoCo.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template cocos.CoCoChecker
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_cocos/HTMLRedCoCoChecker.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template de.monticore.generating.templateengine.freemarker.Aliases
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template od.DiagramVisitor
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTAlternatives' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTAlternatives' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTP' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTP' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTB' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTB' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTI' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] CommonSymbolReference Full information of 'HTMLRed.ASTI' already loaded. Use cached version.
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_od/HTMLRed2OD.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template de.monticore.generating.templateengine.freemarker.Aliases
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template coder.Decoder
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_coder/HTMLRedDecoder.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template coder.DecoderVisitor
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_coder/HTMLRedDecoderVisitor.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template coder.Encoder
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_coder/HTMLRedEncoder.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template coder.EncoderVisitor
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_coder/HTMLRedEncoderVisitor.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template coder.Injector
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_coder/HTMLRedInjector.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template coder.Range
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_coder/HTMLRedRange.java written successfully!
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template de.monticore.generating.templateengine.freemarker.Aliases
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.f.MontiCoreTemplateLoader Requested template coder.Tool
+2016-04-02 11:53:54 [DEBUG] d.m.g.t.TemplateController /home/aether/Desktop/McHammerCoder/examples/HTMLRed/out/htmlred/_coder/HTMLRedTool.java written successfully!
+2016-04-02 11:53:54 [INFO]  MAIN Grammar HTMLRed processed successfully!

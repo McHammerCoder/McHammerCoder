@@ -585,7 +585,7 @@ OP set value (key, value):
 +--EncoderVisitor.ftl
 +--Injector.ftl
 +--Range.ftl
-+--JavaScriptSimpleTool.ftl
++--Tool.ftl
 ========================================================== Explanation
 Tree structure for template calls.
 Short forms:

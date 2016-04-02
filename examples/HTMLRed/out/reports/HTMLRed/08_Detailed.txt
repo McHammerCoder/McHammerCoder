@@ -1597,11 +1597,11 @@ setv       genHelper
            Range.ftl
 -file      htmlred._coder.HTMLRedRange.java   Range.ftl
            <<HTMLRed:MCGrammar>><5,0>
-+tpl(1T)   JavaScriptSimpleTool.ftl           <<HTMLRed:MCGrammar>><5,0>
--tpl(1T)   JavaScriptSimpleTool.ftl           <<HTMLRed:MCGrammar>><5,0>
-+file      HTMLRedSimpleTool.java             <<HTMLRed:MCGrammar>><5,0>
-           JavaScriptSimpleTool.ftl
--file      htmlred._coder.HTMLRedSimpleTool.java JavaScriptSimpleTool.ftl
++tpl(1T)   Tool.ftl                           <<HTMLRed:MCGrammar>><5,0>
+-tpl(1T)   Tool.ftl                           <<HTMLRed:MCGrammar>><5,0>
++file      HTMLRedTool.java                   <<HTMLRed:MCGrammar>><5,0>
+           Tool.ftl
+-file      htmlred._coder.HTMLRedTool.java    Tool.ftl
            <<HTMLRed:MCGrammar>><5,0>
 
 

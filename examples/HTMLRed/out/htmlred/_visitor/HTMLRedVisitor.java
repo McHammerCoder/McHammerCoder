@@ -47,7 +47,7 @@ public interface HTMLRedVisitor  {
    * @see HTMLRedDelegatorVisitor 
    */
   default public void setRealThis(HTMLRedVisitor realThis) {
-    throw new UnsupportedOperationException("0xA7011_851 The setter for realThis is not implemented. You might want to implement a wrapper class to allow setting/getting realThis.");
+    throw new UnsupportedOperationException("0xA7011_090 The setter for realThis is not implemented. You might want to implement a wrapper class to allow setting/getting realThis.");
   }
 
   /**

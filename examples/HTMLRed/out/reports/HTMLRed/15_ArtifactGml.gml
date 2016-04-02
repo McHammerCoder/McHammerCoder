@@ -58,7 +58,7 @@ graph [
   ]
   node [
     id 4
-    label "EncoderVisitor.ftl (1)"
+    label "Tool.ftl (1)"
     graphics [
       fill "#00FF00"
       type "ellipse"
@@ -67,7 +67,7 @@ graph [
   ]
   node [
     id 5
-    label "Injector.ftl (1)"
+    label "EncoderVisitor.ftl (1)"
     graphics [
       fill "#00FF00"
       type "ellipse"
@@ -76,7 +76,7 @@ graph [
   ]
   node [
     id 6
-    label "JavaScriptSimpleTool.ftl (1)"
+    label "Injector.ftl (1)"
     graphics [
       fill "#00FF00"
       type "ellipse"

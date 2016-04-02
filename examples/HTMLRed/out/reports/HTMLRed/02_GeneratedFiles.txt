@@ -76,8 +76,8 @@ HTMLRedInjector.java                    <<HTMLRed:MCGrammar>><5,0>
                                         Injector.ftl
 HTMLRedRange.java                       <<HTMLRed:MCGrammar>><5,0>
                                         Range.ftl
-HTMLRedSimpleTool.java                  <<HTMLRed:MCGrammar>><5,0>
-                                        JavaScriptSimpleTool.ftl
+HTMLRedTool.java                        <<HTMLRed:MCGrammar>><5,0>
+                                        Tool.ftl
 ========================================================== Explanation
 Generated Files: the list of generated files in the order they are generated.
 Each file knows:
