@@ -19,6 +19,8 @@ in McHammerCoder/core/Monticore
 5. Compile the ./out/grammarName/_mch_parser/com_upstandinghackers_hammer_Hammer.c (Soon automated)
    A compiled version for HTMLRed already exists in this folder: libjhammer_actions.so
 
+make REALLY_USE_OBSOLETE_BUILD_SYSTEM=yes
+
 6. Run run.sh to execute the example:
 
 > sh run.sh
