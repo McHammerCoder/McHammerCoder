@@ -35,7 +35,7 @@ Repository for the MontiCore4-Hammer-Coder project
 
 @ /examples/HTMLRed
 
-**java -Djava.library.path=./out/resources -cp "out/:monticore-cli.jar" example.HTMLRedTool <FILENAME> <INJECTION>**
+**java -Djava.library.path=./out/resources -cp "out/:monticore-cli.jar" example.HTMLRedTool FILENAME INJECTION**
 
-###FILENAME = The name of the template-file
-###INJECTION = Every occurence of "Text" in any token will be replaced with this injection
+######FILENAME = The name of the template-file (test.html)
+######INJECTION = Every occurence of "Text" in any token will be replaced with this injection
