@@ -7,13 +7,13 @@ Repository for the MontiCore4-Hammer-Coder project
 
 **sudo apt-get install gcc scons pkg-config libglib2.0-0 glib2.0-dev**
 
-##2. Installing Hammer (Maven)
+##2. Installing Hammer (Maven):
 
 @ /core/Hammer
 
 **mvn clean install**
 
-##3. Installing Monticore
+##3. Installing Monticore (Maven):
 
 @ /core/Monticore
 
@@ -29,10 +29,13 @@ Repository for the MontiCore4-Hammer-Coder project
 
 @ /examples/HTMLRed
 
-**sh compile.sh**
+**javac -cp monticore-cli.jar -sourcepath "out/" out/example/HTMLRedTool.java**
 
 ##6. Run TestTool:
 
 @ /examples/HTMLRed
 
-**sh run.sh**
+**java -Djava.library.path=./out/resources -cp "out/:monticore-cli.jar" example.HTMLRedTool <FILENAME> <INJECTION>**
+
+###FILENAME = The name of the template-file
+###INJECTION = Every occurence of "Text" in any token will be replaced with this injection
