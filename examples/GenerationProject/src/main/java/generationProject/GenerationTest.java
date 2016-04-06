@@ -69,7 +69,7 @@ public final class GenerationTest {
    * 
    * @param args the CLI arguments
    */
-  public static void run(String[] args) {
+  public static void main(String[] args) {
     if (args.length == 0) {
       // the only required input are the grammar file(s)/directories
       System.out

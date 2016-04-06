@@ -10,7 +10,7 @@
       <groupId>de.monticore.mojo</groupId>
       <artifactId>monticore-maven-plugin</artifactId>
       <version>4.3.0.1</version>
-    </dependency>    
+    </dependency>   
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -33,7 +33,7 @@
             <goal>exec</goal>
           </goals>
           <configuration>
-            <workingDirectory>${basedir}/out/resources</workingDirectory>
+            <workingDirectory>${basedir}/out/TestTool/src/main/java/resources</workingDirectory>
             <executable>make</executable>
             <arguments>
               <argument>REALLY_USE_OBSOLETE_BUILD_SYSTEM=yes</argument>
@@ -42,7 +42,70 @@
         </execution>
       </executions>
     </plugin>
-  </plugins>
+    <!--<plugin>
+      <groupId>org.codehouse.mojo</groupId>
+      <artifactId>exec-maven-plugin</artifactId>
+      <version>1.1.1</version>
+      <executions>  
+        <execution>  
+          <id>Build jHammer Actions</id>
+          <phase>package</phase>
+          <goals>
+            <goal>exec</goal>
+          </goals>
+          <configuration>
+            <workingDirectory>${basedir}/out/resources</workingDirectory>
+            <executable>java</executable>
+            <arguments>
+              <argument></argument>
+            </arguments>
+          </configuration>
+        </execution>  
+      </executions>  
+    </plugin>
+    
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>generateCode</id>
+            <phase>generate-test-sources</phase>
+            <goals>
+              <goal>java</goal>
+            </goals>
+            <configuration>
+              <mainClass>de.monticore.cli.MontiCoreCLI</mainClass>
+              <classpathScope>runtime</classpathScope>
+              <sourceRoot>${project.build.directory}/classes/generationProject</sourceRoot>
+              <arguments>
+                <argument>src/test/resources/HTMLRed.mc4</argument>
+                <argument>-o</argument>
+                <argument>${project.build.directory}/generated-sources/main/java</argument>
+              </arguments>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>addtoSourceFolder</id>
+            <goals>
+              <goal>add-test-source</goal>
+            </goals>
+            <phase>process-test-sources</phase>
+            <configuration>
+              <sources>
+                <source>${project.build.directory}/generated-sources/</source>
+              </sources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>-->
+    </plugins>
   </build>
   
 </project>

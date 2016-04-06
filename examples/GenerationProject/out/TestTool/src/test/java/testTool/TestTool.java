@@ -1,7 +1,9 @@
-package generationProject;
+package testTool;
 
 import java.io.File;
+import java.io.IOException;
 
+import example.HTMLRedTool;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -9,7 +11,7 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class GenerationJUnitTest 
+public class TestTool
     extends TestCase
 {
 	/**
@@ -17,7 +19,7 @@ public class GenerationJUnitTest
      *
      * @param testName name of the test case
      */
-    public GenerationJUnitTest( String testName )
+    public TestTool( String testName )
     {
         super( testName );
     }
@@ -27,7 +29,7 @@ public class GenerationJUnitTest
      */
     public static Test suite()
     {
-        return new TestSuite( GenerationJUnitTest.class );
+        return new TestSuite( TestTool.class );
     }
 
     /**
@@ -36,8 +38,17 @@ public class GenerationJUnitTest
     
     public void testParser()
     {    	
-    	String [] args = {"src/test/resources/HTMLRed.mc4", "-o", "out/TestTool/src/main/java/"};
-    	GenerationTest.main(args);
+    	String [] args = { "test.html", "<p>" };
+    	try 
+    	{
+			HTMLRedTool.main(args);
+		} catch (IOException e) 
+    	{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
+    	
     	assertTrue(true);
     }
 }

@@ -1,0 +1,5 @@
+*.so
+*.h
+/Makefile
+*.o
+*.mk
