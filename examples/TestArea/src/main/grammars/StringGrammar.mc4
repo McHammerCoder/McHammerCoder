@@ -1,0 +1,13 @@
+grammar StringGrammar {
+
+    token PLUS = ( 'a'..'z' )+;
+    token MANY = 'A'..'Z' ( 'A'..'Z' )*;
+    token OPTIONAL = '#' ( '#' )?;
+    
+    token PLUS_x = 'x'+;
+    token MANY_X = 'X' 'X'*;
+    token OPTIONAL_x = 'x' 'x'?;
+
+	StringGrammar = PLUS MANY OPTIONAL
+				    PLUS_x MANY_X OPTIONAL_x;
+}

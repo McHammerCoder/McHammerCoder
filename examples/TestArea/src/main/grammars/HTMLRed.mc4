@@ -2,7 +2,7 @@ grammar HTMLRed {
 
     token TEXTB = ( 'a'..'z' | 'A'..'Z' | '_' | '0'..'9' | ' ' | '#' | '$' )+;
 
-	P = "<p>" 
+	P =     "<p>" 
             (Alternatives)*
             "</p>"
         ;

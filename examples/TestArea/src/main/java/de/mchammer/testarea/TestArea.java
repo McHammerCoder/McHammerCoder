@@ -19,61 +19,15 @@ import org.antlr.v4.runtime.tree.gui.TreeViewer;
 import java.nio.file.Files;
 import com.upstandinghackers.hammer.ParseResult;
 
-import htmlred._mch_parser.tree.*;
-import htmlred._mch_parser.*;
-
-import htmlgreen._mch_parser.tree.*;
-import htmlgreen._mch_parser.*;
-
 public class TestArea 
 {
 
 	public static void main(String[] args)  throws IOException
 	{
-		System.out.println("HTMLRedTool :D");
 		
-		//String inputFile = new String();
-		//String injection = new String();
-		/*if ( args.length>1 ) 
-		{
-			// Input File
-			inputFile = args[0];
-			injection = args[1];
-			
-			Path path = Paths.get(inputFile);*/
-		
-			String text = "<p><b>Text</b></p>";
-			byte[] data = text.getBytes();
-			
-			// Parser
-			HTMLRedParser parser = new HTMLRedParser();
-			
-			HTMLGreenParser parser2 = new HTMLGreenParser();
-			
-			try 
-			{
-				ParseTree pt = parser.parse(data);
-								
-				System.out.println();
-				System.out.println("ParseResult:");
-				System.out.println(pt.getText());
-								
-				pt = parser2.parse(data);
-				
-				System.out.println();
-				System.out.println("ParseResult:");
-				System.out.println(pt.getText());
-				
-				displayParseTree(pt);
-			}
-			catch ( Exception ex )
-			{
-				System.err.println(ex.getMessage());
-			}
-		//}
 	}
 	
-	public static void displayParseTree(ParseTree tree)
+	/*public static void displayParseTree(ParseTree tree)
     {
         JFrame frame = new JFrame("Antlr AST");
         JPanel panel = new JPanel();
@@ -86,5 +40,5 @@ public class TestArea
         frame.setVisible(true);
         
         while(frame.isVisible());
-    }
+    }*/
 }
