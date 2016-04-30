@@ -72,6 +72,9 @@
         <version>4.3.0.1</version>
         <executions>
           <execution>
+            <configuration>
+              <script>src/main/scripts/monticoreOnlyParser.groovy</script>
+            </configuration>
             <goals>
               <goal>generate</goal>
             </goals>
@@ -114,8 +117,8 @@
 	        </goals>
 	        <configuration>
 	          <includeArtifactIds>monticore-generator</includeArtifactIds>
-	          <includes>resources/Makefile</includes>
-	          <outputDirectory>${project.build.directory}/generated-sources/monticore/sourcecode</outputDirectory>
+	          <includes>Makefile</includes>
+	          <outputDirectory>${project.build.directory}/generated-sources/monticore/sourcecode/resources</outputDirectory>
 	        </configuration>
 	      </execution>
 	    </executions>
