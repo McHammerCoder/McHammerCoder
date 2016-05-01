@@ -1,1 +1,0 @@
-awk '/fragment|token/,/;/' JavaScriptSimple.mc4 
