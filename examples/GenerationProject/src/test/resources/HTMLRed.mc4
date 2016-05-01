@@ -1,0 +1,19 @@
+//version "0.0.1";  //Removed for MC4
+/**
+ * JavaDSL is Basis
+ */
+grammar HTMLRed {
+
+    token TEXTB = ( 'a'..'z' | 'A'..'Z' | '_' | '0'..'9' | ' ' | '#' | '$' )+;
+
+	P = "<p>" 
+            (Alternatives)*
+            "</p>"
+        ;
+        Alternatives = P | B | I | TEXTB;
+	B = "<b>" text:TEXTB "</b>";
+	I = "<i>" text:TEXTB "</i>";
+
+
+
+}

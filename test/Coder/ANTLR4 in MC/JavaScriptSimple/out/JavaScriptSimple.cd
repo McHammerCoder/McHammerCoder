@@ -1,0 +1,130 @@
+classdiagram JavaScriptSimple{
+
+  public interface ASTJavaScriptSimpleNode;
+
+  public class ASTJavaScriptProgram{
+    protected Optional<JavaScriptSimple.ASTSourceElements> sourceElements;
+  }
+
+  public class ASTSourceElements{
+    protected JavaScriptSimple.ASTSourceElementList sourceElements;
+  }
+
+  public class ASTSourceElement{
+    protected JavaScriptSimple.ASTStatement statement;
+  }
+
+  public class ASTStatement{
+    protected JavaScriptSimple.ASTVariableStatement variableStatement;
+  }
+
+  public class ASTStatements{
+    protected JavaScriptSimple.ASTStatementList statements;
+  }
+
+  public class ASTVariableStatement{
+    protected String var;
+    protected String wS;
+    protected JavaScriptSimple.ASTVariableDeclarations variableDeclarations;
+    protected JavaScriptSimple.ASTEOS eOS;
+  }
+
+  public class ASTVariableDeclarations{
+    protected java.util.List<String> kOs;
+    protected java.util.List<String> wSs;
+    protected JavaScriptSimple.ASTVariableDeclarationList variableDeclaration;
+  }
+
+  public class ASTVariableDeclaration{
+    protected String identifier;
+    protected Optional<JavaScriptSimple.ASTInitialiser> initialiser;
+  }
+
+  public class ASTInitialiser{
+    protected String wS;
+    protected String eQ;
+    protected JavaScriptSimple.ASTSingleExpression singleExpression;
+  }
+
+  public class ASTExpressionSequence{
+    protected java.util.List<String> kOs;
+    protected java.util.List<String> wSs;
+    protected JavaScriptSimple.ASTSingleExpressionList singleExpressions;
+  }
+
+  public class ASTSingleExpression{
+    protected String wS;
+    protected JavaScriptSimple.ASTLiteral literal;
+  }
+
+  public class ASTLiteral{
+    protected String stringLiteral;
+  }
+
+  public class ASTNumericLiteral{
+    protected String decimalIntegerLiteral;
+  }
+
+  public class ASTEOS{
+    protected String semiColon;
+  }
+
+  public class ASTJavaScriptProgramList{
+    protected ArrayList<ASTJavaScriptProgram> list;
+  }
+
+  public class ASTSourceElementsList{
+    protected ArrayList<ASTSourceElements> list;
+  }
+
+  public class ASTSourceElementList{
+    protected ArrayList<ASTSourceElement> list;
+  }
+
+  public class ASTStatementList{
+    protected ArrayList<ASTStatement> list;
+  }
+
+  public class ASTStatementsList{
+    protected ArrayList<ASTStatements> list;
+  }
+
+  public class ASTVariableStatementList{
+    protected ArrayList<ASTVariableStatement> list;
+  }
+
+  public class ASTVariableDeclarationsList{
+    protected ArrayList<ASTVariableDeclarations> list;
+  }
+
+  public class ASTVariableDeclarationList{
+    protected ArrayList<ASTVariableDeclaration> list;
+  }
+
+  public class ASTInitialiserList{
+    protected ArrayList<ASTInitialiser> list;
+  }
+
+  public class ASTExpressionSequenceList{
+    protected ArrayList<ASTExpressionSequence> list;
+  }
+
+  public class ASTSingleExpressionList{
+    protected ArrayList<ASTSingleExpression> list;
+  }
+
+  public class ASTLiteralList{
+    protected ArrayList<ASTLiteral> list;
+  }
+
+  public class ASTNumericLiteralList{
+    protected ArrayList<ASTNumericLiteral> list;
+  }
+
+  public class ASTEOSList{
+    protected ArrayList<ASTEOS> list;
+  }
+
+  enum ASTConstantsJavaScriptSimple;
+
+}

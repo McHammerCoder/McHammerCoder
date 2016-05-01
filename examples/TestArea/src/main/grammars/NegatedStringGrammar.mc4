@@ -1,0 +1,6 @@
+grammar NegatedStringGrammar  {
+
+	token NEG_STRING = ~( 'a'..'z' )+;
+	
+	NegatedStringGrammar = NEG_STRING;
+}

@@ -1,0 +1,12 @@
+SemiColon=1
+EQ=2
+KO=3
+Var=4
+Identifier=5
+StringLiteral=6
+WS=7
+DecimalIntegerLiteral=8
+';'=1
+'='=2
+','=3
+'var'=4

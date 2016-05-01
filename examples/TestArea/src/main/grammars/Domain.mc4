@@ -1,0 +1,13 @@
+grammar Domain {
+
+    Domain = ( Subdomain | " " ) EOF;
+    token Subdomain = Label ("." Label)+;
+   	
+    fragment token Label = ( Let_dig Ldh_string ) | Let_dig; 
+    fragment token Ldh_string = Let_dig_hyp Ldh_string | Let_dig;
+    fragment token Let_dig_hyp = Let_dig | '-';
+    fragment token Let_dig = Letter | Digit;
+    fragment token Digit = '0'..'9';
+    fragment token Letter = ( 'a'..'z' | 'A'..'Z' );
+
+}

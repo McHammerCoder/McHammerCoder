@@ -8,23 +8,33 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface HelloListener extends ParseTreeListener {
 	/**
-	 * Enter a parse tree produced by {@link HelloParser#domain}.
+	 * Enter a parse tree produced by {@link HelloParser#hello}.
 	 * @param ctx the parse tree
 	 */
-	void enterDomain(HelloParser.DomainContext ctx);
+	void enterHello(HelloParser.HelloContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link HelloParser#domain}.
+	 * Exit a parse tree produced by {@link HelloParser#hello}.
 	 * @param ctx the parse tree
 	 */
-	void exitDomain(HelloParser.DomainContext ctx);
+	void exitHello(HelloParser.HelloContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link HelloParser#subdomain}.
+	 * Enter a parse tree produced by {@link HelloParser#state}.
 	 * @param ctx the parse tree
 	 */
-	void enterSubdomain(HelloParser.SubdomainContext ctx);
+	void enterState(HelloParser.StateContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link HelloParser#subdomain}.
+	 * Exit a parse tree produced by {@link HelloParser#state}.
 	 * @param ctx the parse tree
 	 */
-	void exitSubdomain(HelloParser.SubdomainContext ctx);
+	void exitState(HelloParser.StateContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HelloParser#transition}.
+	 * @param ctx the parse tree
+	 */
+	void enterTransition(HelloParser.TransitionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HelloParser#transition}.
+	 * @param ctx the parse tree
+	 */
+	void exitTransition(HelloParser.TransitionContext ctx);
 }
