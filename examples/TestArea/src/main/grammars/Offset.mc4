@@ -6,7 +6,7 @@ grammar Offset {
 
 	Offset = uint8#RuleOffset;
 	
-	MyRule = uint8#TestOffset;
+	MyRule = ubits4 uint8#TestOffset ubits4;
 	
 	
 	Test = "Test";

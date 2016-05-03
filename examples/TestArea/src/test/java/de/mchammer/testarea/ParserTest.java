@@ -253,7 +253,7 @@ public class ParserTest
     {
     	try 
     	{
-    		String message = "!...,...Test..,....,....,....,...#,....,...";
+    		String message = "!...,..Test...,....,....,....,...\"0....,...";
     	
     		ParseTree pt = offsetParser.parse(message.getBytes());		
     		
