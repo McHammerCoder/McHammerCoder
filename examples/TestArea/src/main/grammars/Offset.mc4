@@ -2,7 +2,7 @@ grammar Offset {
 
 	offset RuleOffset = MyRule : 8*x+0;
 	
-	offset TestOffset = Test : 8*x+0;
+	offset TestOffset = Test : -8*x+0;
 
 	Offset = uint8#RuleOffset;
 	
