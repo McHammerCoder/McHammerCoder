@@ -74,6 +74,9 @@
           <execution>
             <configuration>
               <script>src/main/scripts/monticoreOnlyParser.groovy</script>
+              <grammars>
+              	<grammar>src/main/grammarsOnlyParser</grammar>
+              </grammars>
             </configuration>
             <goals>
               <goal>generate</goal>

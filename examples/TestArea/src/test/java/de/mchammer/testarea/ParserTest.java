@@ -18,7 +18,7 @@ import org.antlr.v4.runtime.tree.gui.TreeViewer;
 
 import com.upstandinghackers.hammer.*;
 
-/*
+
 import htmlred._mch_parser.*;
 import htmlred._mch_parser.tree.*;
 
@@ -30,7 +30,6 @@ import stringgrammar._mch_parser.tree.*;
 
 import negatedstringgrammar._mch_parser.*;
 import negatedstringgrammar._mch_parser.tree.*;
-*/
 
 import offset._mch_parser.*;
 import offset._mch_parser.tree.*;
@@ -41,12 +40,10 @@ import offset._mch_parser.tree.*;
 public class ParserTest 
     extends TestCase
 {
-	/*
 	private HTMLRedParser htmlRedParser = new HTMLRedParser();
 	private DomainParser domainParser = new DomainParser();
 	private StringGrammarParser stringGrammarParser = new StringGrammarParser();
 	private NegatedStringGrammarParser negStringGrammarParser = new NegatedStringGrammarParser();
-	*/
 	private OffsetParser offsetParser = new OffsetParser();
 	
 	/**
@@ -67,10 +64,6 @@ public class ParserTest
         return new TestSuite( ParserTest.class );
     }
 
-    /**
-     * Rigourous Test :-)
-     */
-    /*
     public void testHTMLRedParser()
     {
     	try 
@@ -248,12 +241,12 @@ public class ParserTest
     		fail("negStringGrammarParser1 Failed!");
     	}
     }
-    */
+    
     public void testOffsetParser1()
     {
     	try 
     	{
-    		String message = "!...,..Test...,....,....,....,...\"0....,...";
+    		String message = "!...,...Test..,....,....,....,...3@....,...";
     	
     		ParseTree pt = offsetParser.parse(message.getBytes());		
     		
@@ -269,7 +262,7 @@ public class ParserTest
     	}
     }
     
-    public void displayParseTree(ParseTree tree)
+    /*public void displayParseTree(ParseTree tree)
     {
         JFrame frame = new JFrame("Antlr AST");
         JPanel panel = new JPanel();
@@ -282,5 +275,5 @@ public class ParserTest
         frame.setVisible(true);
         
         while(frame.isVisible());
-    }
+    }*/
 }
