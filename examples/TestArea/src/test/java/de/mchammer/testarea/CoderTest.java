@@ -57,9 +57,48 @@ public class CoderTest
     	{
     		String message = "<p><p><b>Text</b></p><i>Text</i></p>";
     	
+    		runTest(message,"Text");
+    		
     		runTest(message,"<p>");
     		
+    		runTest(message," <p>");	
+    		
+    		runTest(message, "<p><i><b> Test");
+    		
+    		runTest(message, " ### ");
+    		
+    		runTest(message, " ### <p>");
+    		
+    		runTest(message, " ");
+    		
+    		runTest(message, "Did we<p> break<b> yet</i> # $");
+    		
+    		runTest(message, "the quick brown fox jumps over the lazy dog###THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG");
+    		
+    		runTest(message, "Te<p>xt");
+    		
+    		message = "<p><b> </b><i>Text</i></p>";
+    		
     		runTest(message,"Text");
+    		
+    		runTest(message,"<p>");
+    		
+    		runTest(message," <p>");	
+    		
+    		runTest(message, "<p><i><b> Test");
+    		
+    		runTest(message, " ### ");
+    		
+    		runTest(message, " ### <p>");
+    		
+    		runTest(message, " ");
+    		
+    		runTest(message, "Did we<p> break<b> yet</i> # $");
+    		
+    		runTest(message, "the quick brown fox jumps over the lazy dog###THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG");
+    		
+    		runTest(message, "Te<p>xt");
+    		
     	}
     	catch(Exception ex)
     	{
