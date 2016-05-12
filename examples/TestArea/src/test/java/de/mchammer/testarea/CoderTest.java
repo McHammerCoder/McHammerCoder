@@ -19,11 +19,16 @@ import org.antlr.v4.runtime.tree.gui.TreeViewer;
 
 import com.upstandinghackers.hammer.*;
 
-
 import htmlred._mch_parser.*;
 import htmlred._mch_parser.tree.*;
 
+/*import binary._coder.*;
+import binary._mch_parser.*;
+import binary._coder.pp.*;*/
+
 import htmlred._coder.*;
+import htmlred._coder.pp.*;
+
 import stringgrammar._coder.*;
 
 /**
@@ -33,6 +38,7 @@ public class CoderTest
     extends TestCase
 {
 	private HTMLRedParser htmlRedParser = new HTMLRedParser();
+//	private BinaryParser binary = new BinaryParser();
 	private StringGrammarEncodings stringGencodings = new StringGrammarEncodings();
 	/**
      * Create the test case
@@ -56,7 +62,41 @@ public class CoderTest
     	assert(stringGencodings.getAllEncodings().isEmpty());
     	
     }
-
+    public void testPP(){
+    	String message = "<p>OURTESTISHERE</p>";
+    	try{
+    	ParseTree pt = htmlRedParser.parse(message.getBytes());
+    	HTMLRedPP pp = new HTMLRedPP();
+    	
+    	pp.prettyPrint(pt);
+    	
+    	assert(true);
+    	}
+    	catch(Exception e){
+    		System.out.println("PICKNIC");
+    		assert(false);
+    	}
+    	
+    	
+    }
+   /*public void testBinaryPP(){
+	   String message = "<b>a</b>";
+   	try{
+   	ParseTree pt = binary.parse(message.getBytes());
+   	BinaryPP pp = new BinaryPP();
+   	
+   	pp.prettyPrint(pt);
+   	
+   	assert(true);
+   	}
+   	catch(Exception e){
+   		System.out.println("PICKNIC 2");
+   		assert(false);
+   	}
+	   
+	   
+   }*/
+   
     public void testHTMLRedCoder()
     {
     	try 
