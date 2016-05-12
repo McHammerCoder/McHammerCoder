@@ -18,6 +18,7 @@ import org.antlr.v4.runtime.tree.gui.TreeViewer;
 
 import com.upstandinghackers.hammer.*;
 
+
 import htmlred._mch_parser.*;
 import htmlred._mch_parser.tree.*;
 
@@ -30,6 +31,9 @@ import stringgrammar._mch_parser.tree.*;
 import negatedstringgrammar._mch_parser.*;
 import negatedstringgrammar._mch_parser.tree.*;
 
+import offset._mch_parser.*;
+import offset._mch_parser.tree.*;
+
 /**
  * Unit test for simple App.
  */
@@ -40,6 +44,7 @@ public class ParserTest
 	private DomainParser domainParser = new DomainParser();
 	private StringGrammarParser stringGrammarParser = new StringGrammarParser();
 	private NegatedStringGrammarParser negStringGrammarParser = new NegatedStringGrammarParser();
+	private OffsetParser offsetParser = new OffsetParser();
 	
 	/**
      * Create the test case
@@ -59,10 +64,6 @@ public class ParserTest
         return new TestSuite( ParserTest.class );
     }
 
-    /**
-     * Rigourous Test :-)
-     */
-    
     public void testHTMLRedParser()
     {
     	try 
@@ -241,11 +242,31 @@ public class ParserTest
     	}
     }
     
-    public void displayParseTree(ParseTree tree)
+    public void testOffsetParser1()
+    {
+    	try 
+    	{
+    		String message = "!...,...Test..,....,....,....,...3@....,...";
+    	
+    		ParseTree pt = offsetParser.parse(message.getBytes());		
+    		
+    		assertTrue(pt != null);
+        	
+    		System.out.println("OffsetParser1:");
+    		System.out.println(pt.getText());
+    	}
+    	catch(Exception ex)
+    	{
+    		
+    		fail(ex.getMessage());
+    	}
+    }
+    
+    /*public void displayParseTree(ParseTree tree)
     {
         JFrame frame = new JFrame("Antlr AST");
         JPanel panel = new JPanel();
-        TreeViewer viewr = new TreeViewer(Arrays.asList( HTMLRedTreeHelper.RuleTypeNames ),tree);
+        TreeViewer viewr = new TreeViewer(Arrays.asList( OffsetTreeHelper.RuleTypeNames ),tree);
         viewr.setScale(1.5);//scale a little
         panel.add(viewr);
         frame.add(panel);
@@ -254,5 +275,5 @@ public class ParserTest
         frame.setVisible(true);
         
         while(frame.isVisible());
-    }
+    }*/
 }

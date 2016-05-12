@@ -1,16 +1,14 @@
+
 grammar HTMLRed {
 
-    token TEXTB = ( 'a'..'z' | 'A'..'Z' | '_' | '0'..'9' | ' ' | '#' | '$' )+;
+        token TEXTB = ( 'a'..'z' | 'A'..'Z' | '_' | '0'..'9' | ' ' | '#' | '$' )+;
 
-	P =     "<p>" 
+	P = "<p>" 
             (Alternatives)*
             "</p>"
         ;
-        
-    Alternatives = P | B | I | TEXTB;
-        
+        Alternatives = P | B | I | TEXTB;
 	B = "<b>" text:TEXTB "</b>";
-	
 	I = "<i>" text:TEXTB "</i>";
 
 

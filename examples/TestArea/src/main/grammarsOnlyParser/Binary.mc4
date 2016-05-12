@@ -1,0 +1,5 @@
+grammar Binary {
+
+    Binary = "<b>" uint8 "<\b>";
+
+}

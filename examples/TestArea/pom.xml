@@ -72,9 +72,19 @@
         <version>4.3.0.1</version>
         <executions>
           <execution>
+            <id>Binary</id>
             <configuration>
               <script>src/main/scripts/monticoreOnlyParser.groovy</script>
+              <grammars>
+              	<grammar>src/main/grammarsOnlyParser</grammar>
+              </grammars>
             </configuration>
+            <goals>
+              <goal>generate</goal>
+            </goals>
+          </execution>
+          <execution>
+          	<id>String</id>
             <goals>
               <goal>generate</goal>
             </goals>
@@ -82,7 +92,7 @@
         </executions>
       </plugin>
       
-      <!-- Other Configuration -->
+      <!-- Other Configuration -->      
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>${compiler.plugin}</version>
@@ -90,8 +100,22 @@
           <source>${java.version}</source>
           <target>${java.version}</target>
         </configuration>
+        <executions>
+        	<execution>
+	    		<id>Compile Coder Sources</id>
+	    		<phase>process-sources</phase>
+           		<goals>
+             			<goal>compile</goal>
+           		</goals>
+           		<configuration>
+           			<includes>
+           				<include>**/*EncodingGenerator.java</include>
+           			</includes>
+           		</configuration>
+        	</execution>
+        </executions>
       </plugin>
-      
+           
       <plugin>
 		<groupId>org.apache.maven.plugins</groupId>
 		<artifactId>maven-dependency-plugin</artifactId>
@@ -140,6 +164,26 @@
         <artifactId>exec-maven-plugin</artifactId>
         <version>1.4.0</version>
         <executions>
+          <execution>
+	    		<id>Compile Coder Sources</id>
+	    		<phase>process-sources</phase>
+           		<goals>
+             			<goal>java</goal>
+           		</goals>
+    			<configuration>
+             		<mainClass>htmlred._coder.HTMLRedEncodingGenerator</mainClass>
+           		</configuration>
+          </execution>
+          <execution>
+	    		<id>Compile Coder Sources 2</id>
+	    		<phase>process-sources</phase>
+           		<goals>
+             			<goal>java</goal>
+           		</goals>
+    			<configuration>
+             		<mainClass>stringgrammar._coder.StringGrammarEncodingGenerator</mainClass>
+           		</configuration>
+          </execution>
 	      <execution>
 	        <id>Make</id>
 	        <phase>compile</phase>

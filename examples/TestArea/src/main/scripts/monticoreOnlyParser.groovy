@@ -39,4 +39,5 @@ for (astGrammar in astGrammars) {
   
   // generate MCHammerParser
   generateMcHammerParser(symbolTable,astGrammar,out)
+  generateMcHammerParseTree(symbolTable,astGrammar,out)
 }

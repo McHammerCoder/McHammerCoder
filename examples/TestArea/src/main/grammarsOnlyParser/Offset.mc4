@@ -1,0 +1,16 @@
+grammar Offset {
+
+	offset RuleOffset = MyRule : 8*x+4;
+	
+	local offset TestOffset = Test : -4*x-4;
+
+	Offset = uint8#RuleOffset;
+	
+	MyRule = uint8#TestOffset;
+	
+	
+	Test = "Test";
+	
+	token Blubb = 'a';
+
+}
