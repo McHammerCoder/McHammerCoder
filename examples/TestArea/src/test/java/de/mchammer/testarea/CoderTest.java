@@ -68,9 +68,9 @@ public class CoderTest
     	ParseTree pt = htmlRedParser.parse(message.getBytes());
     	HTMLRedPP pp = new HTMLRedPP();
     	
-    	pp.prettyPrint(pt);
-    	
-    	assert(true);
+    	String test = new String(pp.prettyPrint(pt));
+    	System.out.println(test);
+    	assert(test.equals(message));
     	}
     	catch(Exception e){
     		System.out.println("PICKNIC");
