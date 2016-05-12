@@ -24,6 +24,7 @@ import htmlred._mch_parser.*;
 import htmlred._mch_parser.tree.*;
 
 import htmlred._coder.*;
+import stringgrammar._coder.*;
 
 /**
  * Unit test for simple App.
@@ -32,7 +33,7 @@ public class CoderTest
     extends TestCase
 {
 	private HTMLRedParser htmlRedParser = new HTMLRedParser();
-	
+	private StringGrammarEncodings stringGencodings = new StringGrammarEncodings();
 	/**
      * Create the test case
      *
@@ -49,6 +50,11 @@ public class CoderTest
     public static Test suite()
     {
         return new TestSuite( CoderTest.class );
+    }
+    public void testStringGrammar(){
+    	
+    	assert(stringGencodings.getAllEncodings().isEmpty());
+    	
     }
 
     public void testHTMLRedCoder()
