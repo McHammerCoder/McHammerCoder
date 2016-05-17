@@ -148,6 +148,7 @@ public class CoderTest
     	}
     	catch(Exception ex)
     	{
+    		ex.printStackTrace();
     		fail("HTMLRedCoder Failed!");
     	}
     }
@@ -157,7 +158,7 @@ public class CoderTest
     	ParseTree pt = htmlRedParser.parse(message.getBytes());
     			
 		// Injector
-		HTMLRedInjector injector = new HTMLRedInjector(injection);
+    	Injector injector = new Injector(injection);
 		ParseTreeWalker walker = new ParseTreeWalker();
 		walker.walk(injector, pt); 
 		

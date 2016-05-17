@@ -18,6 +18,7 @@ import org.antlr.v4.runtime.tree.gui.TreeViewer;
 
 import com.upstandinghackers.hammer.*;
 
+import de.monticore.mchammerparser.*;
 
 import htmlred._mch_parser.*;
 import htmlred._mch_parser.tree.*;
@@ -69,9 +70,10 @@ public class ParserTest
     	try 
     	{
     		String message = "<p><p><b>Text</b></p><i>Text</i></p>";
+    		String message2 = "<p><p><b>Text</b></p><i>Text</i></p>";
     	
     		ParseTree pt = htmlRedParser.parse(message.getBytes());
-    	
+    		
     		assertTrue(pt != null);
     	
     		System.out.println("HTMLRedParser:");

@@ -73,6 +73,7 @@
         <executions>
           <execution>
             <id>Binary</id>
+            <phase>generate-sources</phase>
             <configuration>
               <script>src/main/scripts/monticoreOnlyParser.groovy</script>
               <grammars>
@@ -85,9 +86,13 @@
           </execution>
           <execution>
           	<id>String</id>
+          	<phase>generate-sources</phase>
             <goals>
               <goal>generate</goal>
             </goals>
+            <configuration>
+              <script>src/main/scripts/monticoreParserAndCoderAndPP.groovy</script>
+            </configuration>
           </execution>
         </executions>
       </plugin>
@@ -103,12 +108,13 @@
         <executions>
         	<execution>
 	    		<id>Compile Coder Sources</id>
-	    		<phase>process-sources</phase>
+	    		<phase>process-resources</phase>
            		<goals>
              			<goal>compile</goal>
            		</goals>
            		<configuration>
            			<includes>
+           				<include>**/com/upstandinghackers/hammer/**.java</include>
            				<include>**/*EncodingGenerator.java</include>
            			</includes>
            		</configuration>
@@ -123,7 +129,7 @@
 		<executions>
 	  	  <execution>
 	        <id>resource-dependencies #1</id>
-	        <phase>process-resources</phase>
+	        <phase>initialize</phase>
 	        <goals>
 	          <goal>unpack-dependencies</goal>
 	        </goals>
@@ -135,7 +141,7 @@
 	      </execution>
 	      <execution>
 	        <id>resource-dependencies #2</id>
-	        <phase>process-resources</phase>
+	        <phase>initialize</phase>
 	        <goals>
 	          <goal>unpack-dependencies</goal>
 	        </goals>
@@ -165,28 +171,34 @@
         <version>1.4.0</version>
         <executions>
           <execution>
-	    		<id>Compile Coder Sources</id>
-	    		<phase>process-sources</phase>
+	    		<id>Run HTMLRedEncodingGenerator</id>
+	    		<phase>process-resources</phase>
            		<goals>
              			<goal>java</goal>
            		</goals>
     			<configuration>
              		<mainClass>htmlred._coder.HTMLRedEncodingGenerator</mainClass>
+             		<arguments>
+             			<argument>-Djava.library.path=${project.build.directory}/generated-sources/monticore/sourcecode/resources</argument>
+             		</arguments>
            		</configuration>
           </execution>
           <execution>
-	    		<id>Compile Coder Sources 2</id>
-	    		<phase>process-sources</phase>
+	    		<id>Run StringGrammarEncodingGenerator</id>
+	    		<phase>process-resources</phase>
            		<goals>
              			<goal>java</goal>
            		</goals>
     			<configuration>
              		<mainClass>stringgrammar._coder.StringGrammarEncodingGenerator</mainClass>
+             		<arguments>
+             			<argument>-Djava.library.path=${project.build.directory}/generated-sources/monticore/sourcecode/resources</argument>
+             		</arguments>
            		</configuration>
           </execution>
 	      <execution>
 	        <id>Make</id>
-	        <phase>compile</phase>
+	        <phase>process-sources</phase>
             <goals>
               <goal>exec</goal>
             </goals>
@@ -210,7 +222,7 @@
 		<executions>
     	  <execution>
             <id>copy-resources</id>
-            <phase>process-classes</phase>
+            <phase>process-sources</phase>
             <goals>
               <goal>copy-resources</goal>
             </goals>
