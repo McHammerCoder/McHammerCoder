@@ -1,0 +1,5 @@
+grammar Binary {
+
+    Binary = "<b>" Regel "</b>";
+	Regel = ubits2 ubits6[49] | uint8 Regel ; //49=1
+}

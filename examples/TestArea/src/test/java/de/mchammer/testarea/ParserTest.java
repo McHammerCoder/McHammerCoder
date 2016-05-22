@@ -34,6 +34,7 @@ import negatedstringgrammar._mch_parser.tree.*;
 
 import offset._mch_parser.*;
 import offset._mch_parser.tree.*;
+import offset._coder.pp.*;
 
 /**
  * Unit test for simple App.
@@ -253,9 +254,9 @@ public class ParserTest
     		ParseTree pt = offsetParser.parse(message.getBytes());		
     		
     		assertTrue(pt != null);
-        	
+    		OffsetPP pp = new OffsetPP();
     		System.out.println("OffsetParser1:");
-    		System.out.println(pt.getText());
+    		System.out.println(pp.prettyPrint(pt));
     	}
     	catch(Exception ex)
     	{

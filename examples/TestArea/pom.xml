@@ -183,6 +183,19 @@
              		</arguments>
            		</configuration>
           </execution>
+            <execution>
+	    		<id>Run BinaryEncodingGenerator</id>
+	    		<phase>process-resources</phase>
+           		<goals>
+             			<goal>java</goal>
+           		</goals>
+    			<configuration>
+             		<mainClass>binary._coder.BinaryEncodingGenerator</mainClass>
+             		<arguments>
+             			<argument>-Djava.library.path=${project.build.directory}/generated-sources/monticore/sourcecode/resources</argument>
+             		</arguments>
+           		</configuration>
+          </execution>
           <execution>
 	    		<id>Run StringGrammarEncodingGenerator</id>
 	    		<phase>process-resources</phase>
