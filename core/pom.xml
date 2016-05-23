@@ -22,8 +22,8 @@
   </organization>
 
   <modules>
-    <module>hammer</module>
-    <module>monticore</module>
+    <module>Hammer</module>
+    <module>Monticore</module>
     <module>mchc-lang</module>
   </modules>
 
