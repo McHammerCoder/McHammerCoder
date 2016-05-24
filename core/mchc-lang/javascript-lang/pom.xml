@@ -1,0 +1,220 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>de.monticore.mchammercoder.lang</groupId>
+  <artifactId>javascript-lang</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>JavaScript</name>
+<properties>
+  	<!-- .. Plugins ....................................................... -->
+    <assembly.plugin>2.5.4</assembly.plugin>
+    <compiler.plugin>3.3</compiler.plugin>
+  
+  	<!-- .. Misc .......................................................... -->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <antlr.version>4.5</antlr.version>
+    <java.version>1.8</java.version>
+  </properties>
+  
+  <dependencies>
+  	<!-- MontiCore Dependencies -->
+    <dependency>
+      <groupId>de.monticore</groupId>
+      <artifactId>monticore-runtime</artifactId>
+      <version>4.3.0.1</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>de.monticore</groupId>
+      <artifactId>monticore-generator</artifactId>
+      <version>4.3.0.1</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>com.upstandinghackers.hammer</groupId>
+      <artifactId>hammer</artifactId>
+      <version>1.0</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.antlr</groupId>
+      <artifactId>antlr4</artifactId>
+      <version>${antlr.version}</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.antlr</groupId>
+      <artifactId>antlr4-runtime</artifactId>
+      <version>${antlr.version}</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope> 
+    </dependency>
+  </dependencies>
+  
+  <!-- == PROJECT BUILD SETTINGS =========================================== -->
+
+  <build>
+    <plugins>
+      <!-- MontiCore Generation -->
+      <plugin>
+        <groupId>de.monticore.mojo</groupId>
+        <artifactId>monticore-maven-plugin</artifactId>
+        <version>4.3.0.1</version>
+        <executions>
+          <execution>
+          	<id>String</id>
+          	<phase>generate-sources</phase>
+            <goals>
+              <goal>generate</goal>
+            </goals>
+            <configuration>
+              <script>src/main/scripts/monticoreParserAndCoderAndPP.groovy</script>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      
+      <!-- Other Configuration -->      
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${compiler.plugin}</version>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+        </configuration>
+        <executions>
+        	<execution>
+	    		<id>Compile Coder Sources</id>
+	    		<phase>process-resources</phase>
+           		<goals>
+             			<goal>compile</goal>
+           		</goals>
+           		<configuration>
+           			<includes>
+           				<include>**/com/upstandinghackers/hammer/**.java</include>
+           				<include>**/*EncodingGenerator.java</include>
+           			</includes>
+           		</configuration>
+        	</execution>
+        </executions>
+      </plugin>
+           
+      <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-dependency-plugin</artifactId>
+		<version>2.4</version>
+		<executions>
+	  	  <execution>
+	        <id>resource-dependencies #1</id>
+	        <phase>initialize</phase>
+	        <goals>
+	          <goal>unpack-dependencies</goal>
+	        </goals>
+	        <configuration>
+	          <includeArtifactIds>hammer</includeArtifactIds>
+	          <includes>resources/**, com/**</includes>
+	          <outputDirectory>${project.build.directory}/generated-sources/monticore/sourcecode/resources</outputDirectory>
+	        </configuration>
+	      </execution>
+	      <execution>
+	        <id>resource-dependencies #2</id>
+	        <phase>initialize</phase>
+	        <goals>
+	          <goal>unpack-dependencies</goal>
+	        </goals>
+	        <configuration>
+	          <includeArtifactIds>monticore-generator</includeArtifactIds>
+	          <includes>Makefile</includes>
+	          <outputDirectory>${project.build.directory}/generated-sources/monticore/sourcecode/resources</outputDirectory>
+	        </configuration>
+	      </execution>
+	    </executions>
+      </plugin>
+      
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.12.4</version>
+        <configuration>
+          <forkMode>once</forkMode>
+          <argLine>-Djava.library.path=${project.build.directory}/generated-sources/monticore/sourcecode/resources</argLine>
+        </configuration>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.4.0</version>
+        <executions>
+          <execution>
+	    		<id>Run XMLSimpleEncodingGenerator</id>
+	    		<phase>process-resources</phase>
+           		<goals>
+             			<goal>java</goal>
+           		</goals>
+    			<configuration>
+             		<mainClass>javascript._coder.JavaScriptEncodingGenerator</mainClass>
+             		<arguments>
+             			<argument>-Djava.library.path=${project.build.directory}/generated-sources/monticore/sourcecode/resources</argument>
+             		</arguments>
+           		</configuration>
+          </execution>
+	      <execution>
+	        <id>Make</id>
+	        <phase>process-sources</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+	        <configuration>
+              <workingDirectory>${project.build.directory}/generated-sources/monticore/sourcecode/resources</workingDirectory>
+              <executable>make</executable>
+              <arguments>
+              	<argument>allfiles</argument>
+              	<argument>JAVA_HOME="/usr/lib/jvm/java-8-oracle"</argument>
+                <argument>REALLY_USE_OBSOLETE_BUILD_SYSTEM=yes</argument>
+	          </arguments>
+	        </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      
+      <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-resources-plugin</artifactId>
+		<version>2.6</version>
+		<executions>
+    	  <execution>
+            <id>copy-resources</id>
+            <phase>process-sources</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}/classes/resources</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>${project.build.directory}/generated-sources/monticore/sourcecode/resources</directory>
+                  <includes>
+                    <include>*.so</include>
+                  </includes>
+                </resource>
+                <resource>
+                  <directory>${project.build.directory}/generated-sources/monticore/sourcecode/resources/resources</directory>
+                  <includes>
+                    <include>*.so</include>
+                  </includes>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

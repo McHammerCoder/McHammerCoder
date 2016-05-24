@@ -1,8 +1,8 @@
 
 grammar HTMLRed {
 
-        token TEXTB = ( 'a'..'z' | 'A'..'Z' | '_' | '0'..'9' | ' ' | '#' | '$' )+;
-
+         token TEXTB = ( ~('<'|'>'))+;
+         
 	P = "<p>" 
             (Alternatives)*
             "</p>"
