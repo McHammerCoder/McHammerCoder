@@ -4,31 +4,8 @@ grammar XMLSimple {
     /*============================== OPTIONS =================================*/
     /*========================================================================*/
 
-    concept antlr {
-        lexer java {
-            boolean inTag = false;
-            boolean inScript = false;
-
-            private boolean checkBufferForScript(char[] buf, int begin, int length){
-                String script1 = "script";
-                String script2 = script1.toUpperCase();
-                int scriptPos = 0;
-                for(int i = 0; i < length ;i++){
-                    if(buf[begin+i] == script1.charAt(scriptPos) || buf[begin+i] == script2.charAt(scriptPos)){
-                        scriptPos++;
-                        if(scriptPos >= script1.length()){
-                            return true;
-                        }
-                    }else if(buf[begin+i] >= 0 && buf[begin+i] <= ' '){
-
-                    }else{
-                        return false;
-                    }
-
-                }
-                return false;
-            }
-        }
+    options {
+	hammer DoNotParseEntireFile;
     }
 
     XML =
@@ -36,43 +13,45 @@ grammar XMLSimple {
     ;
 
     XMLElements =
-        XMLElement+
+        XMLElement (WS* XMLElement)*
     ;
 
     XMLElement = 
-        XMLVoidTag |
-        XMLDoctypeTag |
-        XMLXMLTag |
-        (
-            content:TagBodyContent |
-            (
-                {tmpemb_lang = "script";}
-                script:ScriptTagBodyContent
-            )
-        ) |
-        XMLNormalTag
+        XMLVoidTag |		// <tag/>
+        XMLDoctypeTag | 	// <!tag>
+        XMLXMLTag |		// <?tag?>
+	XMLNormalTag |		// <tag> ... </tag>
+        TagBodyContent		// ...
     ;
 
 
     XMLVoidTag = TagOpenStart 
-                    {tmpemb_lang = "tag";}
-                    (Content)
-                    TagVoidEnd;
-    XMLNormalTag = XMLStartTag XMLElements? XMLEndTag;
+                 Content
+                 TagVoidEnd;
 
-    XMLDoctypeTag = TagOpenDoctypeStart Content TagEnd;
-    XMLXMLTag = TagXMLStart Content TagXMLEnd;
+    XMLNormalTag = XMLStartTag
+		   WS*
+                   (XMLElements)?
+                   WS*
+                   XMLEndTag;
 
-    XMLStartTag = TagOpenStart 
-                    {tmpemb_lang = "tag";}
-                    (Content)
+    XMLDoctypeTag = TagOpenDoctypeStart 
+                    Content 
                     TagEnd;
 
-    XMLEndTag = TagCloseStart Content TagEnd;
+    XMLXMLTag = TagXMLStart 
+                Content 
+                TagXMLEnd;
 
-    //DummyRegelWS = WS;
+    XMLStartTag = TagOpenStart 
+                  Content
+                  TagEnd;
 
-// TOKEN
+    XMLEndTag = TagCloseStart 
+                Content 
+		TagEnd;
+
+    // TOKEN
 
     token TagOpenStart                   = "<"  ;
     token TagOpenDoctypeStart            = "<!" ;
@@ -82,46 +61,22 @@ grammar XMLSimple {
     token TagVoidEnd                     = "/>" ;
     token TagXMLEnd                      = "?>" ;
 
+    token Content = ContentStart ContentMiddle? ;
 
-    // funktioniert nicht wie erhofft, da ANTLR kein Backtracking oder NFA->DFA Konvertierung macht.
-    // token Comment = CommentStart ( () | (('\u0020'..'\u01FF')* ~('-') ~('-') ~('>'))) CommentEnd;
-    token Content = 
-        {inTag}?
-        (ContentStart ({!((LA(1) == '?' && LA(2) == '>') || (LA(1) == '/' && LA(2) == '>'))}?ContentMiddle)*)
-        //{if(checkBufferForScript(text.getBuffer(), _begin, text.length()-_begin)){inScript = !inScript;}}
-    ;
-    token TagBodyContent = 
-        {!inTag && !inScript}?
-        (ContentStart ({!((LA(1) == '?' && LA(2) == '>') || (LA(1) == '/' && LA(2) == '>'))}?ContentMiddle)*)
-    ;
-    token ScriptTagBodyContent = 
-        {!inTag && inScript}?
-        (({!((LA(1) == '<' && LA(2) == '/' && LA(3) == 's'))}?~('\u0000'))+)
-    ;
+    token TagBodyContent = Content ;
 
-    /* encodeTable TagBodyContent = {
-        '&' -> "&amp;",
-        '<' -> "&lt;",
-        '>' -> "&gt;"
-    };
-    encodeTable ScriptTagBodyContent = {
-        "</script" -> "<\\/script" options{caseInsensitive; ignoreWS;}
-    }; */
+    token ScriptTagBodyContent = ~('\u0000')+ ;
 
+    token Comment = CommentStart CommentEnd;
 
-    token Comment = CommentStart (({LA(1) != '-' && LA(2) != '-' && LA(3) != '>'}?('\u0020'..'\u01FF'))* ) CommentEnd;
+    token CommentStart = "<!--";
+    token CommentEnd = "-->";
 
+    token ContentStart = ~('\n'|'\r'|'\t'|'<'|'>'|'!'|'/'|'?');
+    token ContentMiddle = ( ~('<'|'>'|'/'|'?') ContentMiddle?
+			  | ~('<'|'>') ContentMiddle
+			  );
 
-
-     token CommentStart = "<!--";
-     token CommentEnd = "-->";
-
-     token ContentStart = ~('\n'|'\r'|'\t'|'\u000B'|'\u000C'|'\u0020'|'\u00A0' | '<' | '>');
-     token ContentMiddle = ~('<' | '>');
-    //protected token All = ('\u0020'..'\u01FF');
-
-
-
-
-
+    token WS = ( " " | "\n" | "\r" | "\t" );
+   
 }
