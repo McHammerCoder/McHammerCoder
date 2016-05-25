@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Example Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <div>
+            <h1>User Registration Formular</h1>
+            <p>Hello <span>#name#</span></p>
+            <form method="GET" action="#actionURL#">
+                <div>
+                    <label for="input_name">Name: </label>
+                    <input type="text" id="input_name" name="name" value="#name#"/>
+                </div>
+                <div>
+                    <input type="submit" value="Register" />
+                </div>
+            </form>
+            <a href="javascript:callScript();">Login</a>
+            <div>
+                <p>#name#</p>
+                <button onclick="alert(&quot;#name#&quot;);">Test</button>
+                <button onclick="alert('#name#');">Test</button>
+                <input type="text" name="input" value="#name#"/>
+                <script>
+                    var name ="#name#" + '#name#';
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
