@@ -1,5 +1,9 @@
 grammar Offset {
 
+	options {
+		hammer DoNotParseEntireFile;
+	}
+
 	offset RuleOffset = MyRule : 8*x+4;
 	
 	local offset TestOffset = Test : -4*x-4;
