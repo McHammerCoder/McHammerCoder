@@ -77,6 +77,6 @@ grammar XMLSimple {
 			  | ~('<'|'>') ContentMiddle
 			  );
 
-    token WS = ( " " | "\n" | "\r" | "\t" );
+    token WS = ( ' ' | '\n' | '\r' | '\t' );
    
 }

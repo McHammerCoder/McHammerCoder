@@ -77,11 +77,15 @@ public class ExamplePage02 extends HttpServlet {
 		ParseTree pt = parser.parse(data);
 		XMLSimplePP pp = new XMLSimplePP();
 		walker.walk(new XMLSimpleDecoderVisitor(), pt);
-	    //String line = new String(pp.prettyPrint(pt));
+	    String line = new String(pp.prettyPrint(pt));
 	    String htmlred = getParam(req, "htmlred");
 	    walker.walk(new XMLVisitor(htmlred), pt); //Inject it
-	  // walker.walk(encoder, pt);
-	   String line2 = new String(pp.prettyPrint(pt));
+	    walker.walk(encoder, pt);
+	   // XMLSimpleDecoderVisitor decoder = new XMLSimpleDecoderVisitor();
+	   // walker.walk(decoder, pt);
+	   
+	   String line2 = new String(pp.prettyPrint(pt));	
+	   System.out.println(line2);
 	  // System.out.println("------------------------------------");
 	  // System.out.println(line2);
 	  // System.out.println("------------------------------------");
