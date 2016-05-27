@@ -197,6 +197,19 @@
            		</configuration>
           </execution>
           <execution>
+	    		<id>Run CustomEncodingGrammar</id>
+	    		<phase>process-resources</phase>
+           		<goals>
+             			<goal>java</goal>
+           		</goals>
+    			<configuration>
+             		<mainClass>customencoding._coder.CustomEncodingEncodingGenerator</mainClass>
+             		<arguments>
+             			<argument>-Djava.library.path=${project.build.directory}/generated-sources/monticore/sourcecode/resources</argument>
+             		</arguments>
+           		</configuration>
+          </execution>
+          <execution>
 	    		<id>Run StringGrammarEncodingGenerator</id>
 	    		<phase>process-resources</phase>
            		<goals>
