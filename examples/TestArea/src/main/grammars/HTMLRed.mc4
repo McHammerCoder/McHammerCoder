@@ -1,6 +1,10 @@
 
 grammar HTMLRed {
 
+	options {
+		hammer DoNotParseEntireFile;
+	}
+
         token TEXTB = ( 'a'..'z' | 'A'..'Z' | '_' | '0'..'9' | ' ' | '#' | '$' )+;
 
 	P = "<p>" 
