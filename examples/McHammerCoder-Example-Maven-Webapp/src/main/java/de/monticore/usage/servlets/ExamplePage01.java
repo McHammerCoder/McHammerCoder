@@ -79,15 +79,11 @@ public class ExamplePage01 extends HttpServlet{
 	    URI templateFile = new URI("file:///" + basePath + File.separator + "WEB-INF" + File.separator + "templates" + File.separator + "xhtmltemplate.xhtml");
 	    Path path = Paths.get(templateFile);
 	    BufferedReader br = new BufferedReader(new FileReader(path.toString()));
-	    String line = null;
-	    while ((line = br.readLine()) != null) {
-	    	out.print(line);
-	    }
-	    
+	    out.print("This page is still under construction, chack back later");
 	    
 	    String htmlred = getParam(req, "htmlred");
 
-	    doParsing(basePath, htmlred, contextPath, out);
+	   // doParsing(basePath, htmlred, contextPath, out);
 	    }
 	    catch(Exception e){
 	    	e.printStackTrace();
@@ -137,7 +133,7 @@ public class ExamplePage01 extends HttpServlet{
 		 
 		public void visitTerminal(TerminalNode node) {
 		Token token = (Token)node.getPayload();
-			encoder.encode(token);
+			//encoder.encode(token);
 		}
 
 		/**
