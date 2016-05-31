@@ -77,11 +77,14 @@ while (grammarIterator.hasNext()) {
       //generateParser(astGrammar, symbolTable, handcodedPath, out)
       //generateParserWrappers(astGrammar, symbolTable, handcodedPath, out)
       
-      // M7 generate MCHammerParseTree
+      // M7.1 generate MCHammerParseTree
   	  generateMcHammerParseTree(symbolTable,astGrammar,out)
       
-      // M7.5 generate MCHammerParser
+      // M7.2 generate MCHammerParser
   	  generateMcHammerParser(symbolTable,astGrammar,out)
+  	  
+  	  // M7.3 generate MCHammerChecker
+  	  generateMcHammerChecker(symbolTable,astGrammar,out)
       
       // store result of the first pass
       storeCDForGrammar(astGrammar, astClassDiagram)
