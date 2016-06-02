@@ -24,6 +24,7 @@
   <modules>
     <module>html-red-lang</module>
     <module>xml-simple-lang</module>
+    <module>dns-simple-lang</module>
   </modules>
 
 </project>
