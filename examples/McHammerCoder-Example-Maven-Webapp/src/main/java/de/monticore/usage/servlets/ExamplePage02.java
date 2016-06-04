@@ -35,6 +35,7 @@ import java.nio.file.Paths;
 
 import com.upstandinghackers.hammer.ParseResult;
 
+import de.monticore.mchammerparser.HAParseTree;
 import htmlred._mch_parser.tree.*;
 import htmlred._mch_parser.*;
 import htmlred._coder.*;
@@ -80,16 +81,27 @@ public class ExamplePage02 extends HttpServlet {
 	    String line = new String(pp.prettyPrint(pt));
 	    String htmlred = getParam(req, "htmlred");
 	    walker.walk(new XMLVisitor(htmlred), pt); //Inject it
+	    ParseTree originalPt = pt;
 	    walker.walk(encoder, pt);
-	   // XMLSimpleDecoderVisitor decoder = new XMLSimpleDecoderVisitor();
-	   // walker.walk(decoder, pt);
-	   
-	   String line2 = new String(pp.prettyPrint(pt));	
-	   System.out.println(line2);
-	  // System.out.println("------------------------------------");
-	  // System.out.println(line2);
-	  // System.out.println("------------------------------------");
-	   out.print(line2); //Print our PT
+	    if(encoder.foundException()){
+	    	out.print(line + "<b> Exception was thrown while encoding. The encoding has been aborted and the template reset to prevent an injection. </b>");
+	    }
+	    else{
+		    String line2 = new String(pp.prettyPrint(pt));	
+		    XMLSimpleDecoderVisitor decoder = new XMLSimpleDecoderVisitor();
+		    walker.walk(decoder, pt);
+		    System.out.println("------------------------------------");
+			System.out.println(line2);
+			System.out.println("------------------------------------");
+		   //if(((HAParseTree)pt).deepEquals((HAParseTree)originalPt)){	  
+		    	
+		    	out.print(line2);
+		 //  }
+		//  else{
+		//  	out.print("<b> DeepEquals failed! </b>");
+		//   }
+	    }
+	   //Print our PT
 	   
 	   
 	    }
