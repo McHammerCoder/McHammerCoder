@@ -93,13 +93,13 @@ public class ExamplePage02 extends HttpServlet {
 		    System.out.println("------------------------------------");
 			System.out.println(line2);
 			System.out.println("------------------------------------");
-		   //if(((HAParseTree)pt).deepEquals((HAParseTree)originalPt)){	  
+		   if(((HAParseTree)pt).deepEquals((HAParseTree)originalPt)){	  
 		    	
 		    	out.print(line2);
-		 //  }
-		//  else{
-		//  	out.print("<b> DeepEquals failed! </b>");
-		//   }
+		   }
+		  else{
+		 	out.print("<b> DeepEquals failed! </b>");
+		   }
 	    }
 	   //Print our PT
 	   
