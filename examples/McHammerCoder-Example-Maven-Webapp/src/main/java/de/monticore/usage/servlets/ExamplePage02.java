@@ -84,23 +84,33 @@ public class ExamplePage02 extends HttpServlet {
 	    ParseTree originalPt = pt;
 	    walker.walk(encoder, pt);
 	    if(encoder.foundException()){
-	    	out.print(line + "<b> Exception was thrown while encoding. The encoding has been aborted and the template reset to prevent an injection. </b>");
+	    	System.out.println("--------------------------------------------------------------------------------");
+	    	System.err.println("RESETING EVERYTHING");
+	    	System.err.println("Exception was thrown while encoding. The encoding has been aborted and the template reset to prevent an injection.");
+	    	System.out.println("--------------------------------------------------------------------------------");
+	    	out.print(line);
+
+	    	encoder.clearException();
 	    }
 	    else{
 		    String line2 = new String(pp.prettyPrint(pt));	
 		    XMLSimpleDecoderVisitor decoder = new XMLSimpleDecoderVisitor();
 		    walker.walk(decoder, pt);
-		    System.out.println("------------------------------------");
+		    System.out.println("--------------------------------------------------------------------------------");
 			System.out.println(line2);
-			System.out.println("------------------------------------");
+			System.out.println("--------------------------------------------------------------------------------");
 		   if(((HAParseTree)pt).deepEquals((HAParseTree)originalPt)){	  
 		    	
 		    	out.print(line2);
 		   }
 		  else{
+		  	System.out.println("--------------------------------------------------------------------------------");
+	    	System.err.println("DEEP EQUALS FAILED");
+	    	System.err.println("I will be stuck on <b> DeepEquals failed! </b> so you can notice this!");
+	    	System.out.println("--------------------------------------------------------------------------------");
 		 	out.print("<b> DeepEquals failed! </b>");
 		   }
-	    }
+	   }
 	   //Print our PT
 	   
 	   
