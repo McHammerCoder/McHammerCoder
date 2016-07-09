@@ -78,13 +78,13 @@ while (grammarIterator.hasNext()) {
       //generateParserWrappers(astGrammar, symbolTable, handcodedPath, out)
       
       // M7.1 generate MCHammerParseTree
-  	  generateMcHammerParseTree(symbolTable,astGrammar,out)
+      generateMcHammerParseTree(symbolTable,astGrammar,out)
       
       // M7.2 generate MCHammerParser
-  	  generateMcHammerParser(symbolTable,astGrammar,out)
+      generateMcHammerParser(symbolTable,astGrammar,out)
   	  
-  	  // M7.3 generate MCHammerChecker
-  	  generateMcHammerChecker(symbolTable,astGrammar,out)
+      // M7.3 generate MCHammerChecker
+      generateMcHammerChecker(symbolTable,astGrammar,out)
       
       // store result of the first pass
       storeCDForGrammar(astGrammar, astClassDiagram)
@@ -107,21 +107,9 @@ for (astGrammar in getParsedGrammars()) {
   // M8: decorate Class Diagram AST
   decorateCd(glex, astClassDiagram, symbolTable, handcodedPath)
   
-  // M?: generate symbol table
-  //generateSymbolTable(astGrammar, symbolTable, astClassDiagram, out, handcodedPath)
-  
-  // M9: generate AST classes
-  //generate(glex, symbolTable, astClassDiagram, out, templatePath)
-  
-  // M9.5.1 generate McCoder
-  generateMcCoder(symbolTable,out,astGrammar)
-
-  // M9.5.2 generate McCoderPP
+  // M9: generate PrettyPrinter
   generatePP(glex,out,astGrammar)
-  
-  // M9.5.3 generate McCoderExample
-  //generateExample(glex,out,astGrammar)
-  
+
   info("Grammar " + astGrammar.getName() + " processed successfully!")
 
   // M10: flush reporting

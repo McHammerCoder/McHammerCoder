@@ -72,7 +72,7 @@
               <goal>generate</goal>
             </goals>
             <configuration>
-              <script>src/main/scripts/monticoreParserAndCoderAndPP.groovy</script>
+              <script>src/main/scripts/monticoreParserAndPP.groovy</script>
             </configuration>
           </execution>
         </executions>
@@ -96,7 +96,7 @@
            		<configuration>
            			<includes>
            				<include>**/com/upstandinghackers/hammer/**.java</include>
-           				<include>**/*EncodingGenerator.java</include>
+           				<!--include>**/*EncodingGenerator.java</include-->
            			</includes>
            		</configuration>
         	</execution>
@@ -104,35 +104,35 @@
       </plugin>
            
       <plugin>
-		<groupId>org.apache.maven.plugins</groupId>
-		<artifactId>maven-dependency-plugin</artifactId>
-		<version>2.4</version>
-		<executions>
-	  	  <execution>
-	        <id>resource-dependencies #1</id>
-	        <phase>initialize</phase>
-	        <goals>
-	          <goal>unpack-dependencies</goal>
-	        </goals>
-	        <configuration>
-	          <includeArtifactIds>hammer</includeArtifactIds>
-	          <includes>resources/**, com/**</includes>
-	          <outputDirectory>${project.build.directory}/generated-sources/monticore/sourcecode/resources</outputDirectory>
-	        </configuration>
-	      </execution>
-	      <execution>
-	        <id>resource-dependencies #2</id>
-	        <phase>initialize</phase>
-	        <goals>
-	          <goal>unpack-dependencies</goal>
-	        </goals>
-	        <configuration>
-	          <includeArtifactIds>monticore-generator</includeArtifactIds>
-	          <includes>Makefile</includes>
-	          <outputDirectory>${project.build.directory}/generated-sources/monticore/sourcecode/resources</outputDirectory>
-	        </configuration>
-	      </execution>
-	    </executions>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-dependency-plugin</artifactId>
+	<version>2.4</version>
+	<executions>
+  	  <execution>
+            <id>resource-dependencies #1</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>unpack-dependencies</goal>
+            </goals>
+            <configuration>
+              <includeArtifactIds>hammer</includeArtifactIds>
+              <includes>resources/**, com/**</includes>
+              <outputDirectory>${project.build.directory}/generated-sources/monticore/sourcecode/resources</outputDirectory>
+            </configuration>
+          </execution>
+          <execution>
+            <id>resource-dependencies #2</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>unpack-dependencies</goal>
+            </goals>
+            <configuration>
+              <includeArtifactIds>monticore-generator</includeArtifactIds>
+              <includes>Makefile</includes>
+              <outputDirectory>${project.build.directory}/generated-sources/monticore/sourcecode/resources</outputDirectory>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
       
       
@@ -146,48 +146,48 @@
         </configuration>
       </plugin>
       
-      <plugin>
+      <!--plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
         <version>1.4.0</version>
         <executions>
           <execution>
-	    		<id>Run DNSSimpleEncodingGenerator</id>
-	    		<phase>process-resources</phase>
-           		<goals>
-             			<goal>java</goal>
-           		</goals>
-    			<configuration>
-             		<mainClass>dnssimple._coder.DNSSimpleEncodingGenerator</mainClass>
-             		<arguments>
-             			<argument>-Djava.library.path=${project.build.directory}/generated-sources/monticore/sourcecode/resources</argument>
-             		</arguments>
-           		</configuration>
-          </execution>
-	      <execution>
-	        <id>Make</id>
-	        <phase>process-sources</phase>
+	  <id>Run DNSSimpleEncodingGenerator</id>
+	  <phase>process-resources</phase>
+	  <goals>
+	    <goal>java</goal>
+	  </goals>
+	  <configuration>
+	    <mainClass>dnssimple._coder.DNSSimpleEncodingGenerator</mainClass>
+	    <arguments>
+	      <argument>-Djava.library.path=${project.build.directory}/generated-sources/monticore/sourcecode/resources</argument>
+	    </arguments>
+	  </configuration>
+        </execution>
+	<execution>
+          <id>Make</id>
+          <phase>process-sources</phase>
             <goals>
               <goal>exec</goal>
             </goals>
-	        <configuration>
+	    <configuration>
               <workingDirectory>${project.build.directory}/generated-sources/monticore/sourcecode/resources</workingDirectory>
               <executable>make</executable>
               <arguments>
               	<argument>allfiles</argument>
               	<argument>JAVA_HOME="/usr/lib/jvm/java-8-oracle"</argument>
                 <argument>REALLY_USE_OBSOLETE_BUILD_SYSTEM=yes</argument>
-	          </arguments>
-	        </configuration>
+	      </arguments>
+	    </configuration>
           </execution>
         </executions>
-      </plugin>
+      </plugin-->
       
       <plugin>
-		<groupId>org.apache.maven.plugins</groupId>
-		<artifactId>maven-resources-plugin</artifactId>
-		<version>2.6</version>
-		<executions>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-resources-plugin</artifactId>
+	<version>2.6</version>
+	<executions>
     	  <execution>
             <id>copy-resources</id>
             <phase>process-sources</phase>

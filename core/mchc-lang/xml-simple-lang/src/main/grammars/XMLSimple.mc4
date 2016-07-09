@@ -73,9 +73,7 @@ grammar XMLSimple {
     token CommentEnd = "-->";
 
     token ContentStart = ~('\n'|'\r'|'\t'|'<'|'>'|'!'|'/'|'?');
-    token ContentMiddle = ( ~('<'|'>'|'/'|'?') ContentMiddle?
-			  | ~('<'|'>') ContentMiddle
-			  );
+    token ContentMiddle = ~('<'|'>'|'/'|'?')+;
 
     token WS = ( ' ' | '\n' | '\r' | '\t' );
    
