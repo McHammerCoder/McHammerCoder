@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Peach xmlns="http://peachfuzzer.com/2012/Peach" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://peachfuzzer.com/2012/Peach ../peach.xsd">
+
+	<Defaults>
+	    	<Number signed="false" endian="little" />
+	</Defaults>
+
+
+	<DataModel name="DNS">
+		<Block name="Header" mutable="false">
+			<Number size="7" value="0" mutable="false"/>
+			<Number size="9" value="257" mutable="false"/>
+		</Block>
+	</DataModel>
+
+	
+	
+
+	<StateModel name="State" initialState="State1" >
+		<State name="State1"  >
+			<Action type="output" >
+				<DataModel ref="DNS"/>
+			</Action>
+		</State>
+	</StateModel>	
+
+	<Test name="Default">
+
+		<StateModel ref="State"/>
+
+		<Publisher class="FilePerIteration">
+   			<Param name="FileName" value="files/fuzzed_{0}.dns" />
+  		</Publisher>
+	</Test>
+		
+</Peach>
+<!-- end -->
