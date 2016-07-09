@@ -159,9 +159,12 @@
            		</goals>
     			<configuration>
              		<mainClass>htmlred._coder.HTMLRedEncodingGenerator</mainClass>
-             		<arguments>
-             			<argument>-Djava.library.path=${project.build.directory}/generated-sources/monticore/sourcecode/resources</argument>
-             		</arguments>
+			<systemProperties>
+				<property>
+					<key>java.library.path</key>
+					<value>${project.build.directory}/generated-sources/monticore/sourcecode/resources:${project.build.directory}/generated-sources/monticore/sourcecode/resources/resources</value>
+				</property>
+			</systemProperties>
            		</configuration>
           </execution>
 	      <execution>
