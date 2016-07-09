@@ -1,0 +1,66 @@
+
+grammar DNSSimple {
+
+	/*options{
+		hammer DoNotParseEntireFile;
+		hammer ParseWithOverlappingOffsets;
+	}*/
+
+	DNS =    Header
+		 uint16.L{QDCount}		// QDCount
+		 uint16.L{ANCount}		// ANCount
+		 uint16.L{NSCount} 		// NSCount
+		 uint16.L{ARCount}		// ARCount
+		 Question.D{QDCount} 		// The question for the name server
+		 Answer.D{ANCount} 		// Answers to the question
+		 Authority.D{NSCount}
+		 Additional.D{ARCount}
+		 ;
+
+	Header = uint16 		// ID
+	  	 ubits1			// QR
+	  	 ubits4			// Opcode
+	  	 ubits1 		// AA
+	  	 ubits1 		// TC
+	  	 ubits1 		// RD
+	 	 ubits1 		// RA
+	 	 ubits3 		// Z
+		 ubits4 		// RCODE
+		 ;
+		
+	// Question
+			 
+	Question = QName
+		   QType
+		   QClass
+		   ;
+		
+	QName = DNS_Label+ 
+		uint8[0]
+		;	
+		   
+	DNS_Label = ~uint8[0].L{DNS_Label} 
+		    uint8.D{DNS_Label}
+		    ;
+			   
+    	binary QType = uint16[0x01 .. 0x16] 
+		       | uint16[0xFC .. 0xFF] 
+                       ;
+ 
+   	binary QClass = uint16[0x01 .. 0x04] 
+    		       | uint16[0xFFFF]
+		       ; 
+    		 
+	// Answer
+
+	Answer = QName
+		 uint16[0x01 .. 0x16] 	// Type
+		 uint16[0x01 .. 0x04]	// Class
+		 uint32			// TTL
+		 uint16.L{RLen} 	// RLength
+		 uint8.D{RLen}		// RData
+		 ;	
+
+	token Authority = ' ';
+	token Additional = ' ';
+}
