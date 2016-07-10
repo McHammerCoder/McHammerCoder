@@ -1,1 +1,0 @@
-java -cp "src/:out/:monticore-cli.jar" JavaScriptSimpleTool example/simple02.js

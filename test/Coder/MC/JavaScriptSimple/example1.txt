@@ -1,9 +1,0 @@
-17:54:38.070 [main] INFO  JavaScriptSimpleTool - JavaScript DSL Tool
-17:54:38.074 [main] INFO  JavaScriptSimpleTool - ------------------
-17:54:38.074 [main] INFO  JavaScriptSimpleTool - example/simple01.js
-17:54:38.177 [main] INFO  JavaScriptSimpleTool - Success!
-17:54:38.177 [main] INFO  JavaScriptSimpleTool - example/simple01.js parsed successfully!
-17:54:38.180 [main] INFO  JavaScriptSimpleTool - Pretty printing the parsed JS into console:
-I found 10 states!
-#
-var a = "test";

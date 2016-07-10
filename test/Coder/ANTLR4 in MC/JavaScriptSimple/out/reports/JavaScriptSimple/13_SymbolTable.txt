@@ -1,4 +1,0 @@
-========================================================== Symbol Table
-========================================================== Explanation
-Reporter is not implemented yet.
-Shows symbol table after finishing the generation process.

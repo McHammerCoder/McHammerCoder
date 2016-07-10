@@ -1,5 +1,0 @@
-========================================================== Applied Transformations
-Transformation Name                     AST-Node                                Transformation Type
-========================================================== Explanation
-Applied Transformations: the list of transformations in the order they are applied.
-(EOF)

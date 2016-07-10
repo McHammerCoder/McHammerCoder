@@ -1,1 +1,0 @@
-javac -cp monticore-cli.jar -sourcepath "src/:out/" src/*.java
