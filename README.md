@@ -7,40 +7,21 @@ Repository for the MontiCore4-Hammer-Coder project
 
 **sudo apt-get install gcc scons pkg-config libglib2.0-0 glib2.0-dev**
 
-##2. Installing Hammer (Maven):
+##2. Installing McHammerCoder (Maven):
 
-@ /core/Hammer
-
-**mvn clean install**
-
-##3. Installing Monticore (Maven):
-
-@ /core/Monticore
+@ /core
 
 **mvn clean install**
 
-##4. Code Generation:
+## Running Example Project:
 
-@ /examples/HTMLRed
+@ /examples/McHammerCoder-Example-Maven-Webapp
 
-**sh codegen.sh**
+**mvn clean jetty:run**
 
-##5. Compile Generated Code:
+This starts a simple website. It allows to test McHammerCoder's capabilities in the context of XML and HTML.
 
-@ /examples/HTMLRed
-
-**javac -cp monticore-cli.jar -sourcepath "out/" out/example/HTMLRedTool.java**
-
-##6. Run TestTool:
-
-@ /examples/HTMLRed
-
-**java -Djava.library.path=./out/resources -cp "out/:monticore-cli.jar" example.HTMLRedTool FILENAME INJECTION**
-
-######FILENAME = The name of the template-file (test.html)
-######INJECTION = Every occurrence of "Text" in any token will be replaced with this injection
-
-##Folder Structure:
+##Output Folder Structure:
 
 ######/out/resources - libjhammer_actions.so
 ######/out/examples - HTMLRedTool + HTMLRedInjector
