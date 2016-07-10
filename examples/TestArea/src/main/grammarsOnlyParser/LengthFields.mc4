@@ -1,0 +1,5 @@
+grammar LengthFields {
+
+    LengthFields = uint8.L{Length} uint8.D{Length};
+
+}
