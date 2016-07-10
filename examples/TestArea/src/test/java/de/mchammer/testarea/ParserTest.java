@@ -18,6 +18,7 @@ import org.antlr.v4.runtime.tree.gui.TreeViewer;
 
 import com.upstandinghackers.hammer.*;
 
+import de.monticore.mchammerparser.*;
 
 import htmlred._mch_parser.*;
 import htmlred._mch_parser.tree.*;
@@ -33,6 +34,7 @@ import negatedstringgrammar._mch_parser.tree.*;
 
 import offset._mch_parser.*;
 import offset._mch_parser.tree.*;
+import offset._coder.pp.*;
 
 /**
  * Unit test for simple App.
@@ -69,9 +71,10 @@ public class ParserTest
     	try 
     	{
     		String message = "<p><p><b>Text</b></p><i>Text</i></p>";
+    		String message2 = "<p><p><b>Text</b></p><i>Text</i></p>";
     	
     		ParseTree pt = htmlRedParser.parse(message.getBytes());
-    	
+    		
     		assertTrue(pt != null);
     	
     		System.out.println("HTMLRedParser:");
@@ -251,9 +254,9 @@ public class ParserTest
     		ParseTree pt = offsetParser.parse(message.getBytes());		
     		
     		assertTrue(pt != null);
-        	
+    		OffsetPP pp = new OffsetPP();
     		System.out.println("OffsetParser1:");
-    		System.out.println(pt.getText());
+    		System.out.println(pp.prettyPrint(pt));
     	}
     	catch(Exception ex)
     	{

@@ -1,16 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  
-  <!-- == PROJECT COORDINATES ============================================= -->
-  
-  <groupId>de</groupId>
-  <artifactId>TestArea</artifactId>
-  <version>0.1</version>
-  <name>TestArea</name>
-  
-  
-  
-  <properties>
+  <groupId>de.monticore.mchammercoder.lang</groupId>
+  <artifactId>html-red-lang</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>HTMLRed</name>
+    <properties>
   	<!-- .. Plugins ....................................................... -->
     <assembly.plugin>2.5.4</assembly.plugin>
     <compiler.plugin>3.3</compiler.plugin>
@@ -71,19 +65,6 @@
         <artifactId>monticore-maven-plugin</artifactId>
         <version>4.3.0.1</version>
         <executions>
-          <execution>
-            <id>Binary</id>
-            <phase>generate-sources</phase>
-            <configuration>
-              <script>src/main/scripts/monticoreOnlyParser.groovy</script>
-              <grammars>
-              	<grammar>src/main/grammarsOnlyParser</grammar>
-              </grammars>
-            </configuration>
-            <goals>
-              <goal>generate</goal>
-            </goals>
-          </execution>
           <execution>
           	<id>String</id>
           	<phase>generate-sources</phase>
@@ -178,48 +159,12 @@
            		</goals>
     			<configuration>
              		<mainClass>htmlred._coder.HTMLRedEncodingGenerator</mainClass>
-             		<arguments>
-             			<argument>-Djava.library.path=${project.build.directory}/generated-sources/monticore/sourcecode/resources</argument>
-             		</arguments>
-           		</configuration>
-          </execution>
-            <execution>
-	    		<id>Run BinaryEncodingGenerator</id>
-	    		<phase>process-resources</phase>
-           		<goals>
-             			<goal>java</goal>
-           		</goals>
-    			<configuration>
-             		<mainClass>binary._coder.BinaryEncodingGenerator</mainClass>
-             		<arguments>
-             			<argument>-Djava.library.path=${project.build.directory}/generated-sources/monticore/sourcecode/resources</argument>
-             		</arguments>
-           		</configuration>
-          </execution>
-          <execution>
-	    		<id>Run CustomEncodingGrammar</id>
-	    		<phase>process-resources</phase>
-           		<goals>
-             			<goal>java</goal>
-           		</goals>
-    			<configuration>
-             		<mainClass>customencoding._coder.CustomEncodingEncodingGenerator</mainClass>
-             		<arguments>
-             			<argument>-Djava.library.path=${project.build.directory}/generated-sources/monticore/sourcecode/resources</argument>
-             		</arguments>
-           		</configuration>
-          </execution>
-          <execution>
-	    		<id>Run StringGrammarEncodingGenerator</id>
-	    		<phase>process-resources</phase>
-           		<goals>
-             			<goal>java</goal>
-           		</goals>
-    			<configuration>
-             		<mainClass>stringgrammar._coder.StringGrammarEncodingGenerator</mainClass>
-             		<arguments>
-             			<argument>-Djava.library.path=${project.build.directory}/generated-sources/monticore/sourcecode/resources</argument>
-             		</arguments>
+			<systemProperties>
+				<property>
+					<key>java.library.path</key>
+					<value>${project.build.directory}/generated-sources/monticore/sourcecode/resources:${project.build.directory}/generated-sources/monticore/sourcecode/resources/resources</value>
+				</property>
+			</systemProperties>
            		</configuration>
           </execution>
 	      <execution>

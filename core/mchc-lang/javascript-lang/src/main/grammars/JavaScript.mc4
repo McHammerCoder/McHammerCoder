@@ -1,0 +1,503 @@
+/**
+ * A exemplary MontiCore grammar.
+ *
+ * @author Stefan Nessel
+ */
+grammar JavaScript  {
+
+  /* ======================================================================= */
+  /* =============================== OPTIONS =============================== */
+  /* ======================================================================= */
+
+ /* options {
+    parser lookahead=3
+    lexer lookahead=4
+	nostring
+	noident
+	nows
+  } */
+  
+  /* ======================================================================= */
+  /* =============================== GRAMMAR =============================== */
+  /* ======================================================================= */
+  
+  /* ##### Program and Function ##### */
+  
+  Program = SourceElement*;
+  
+  interface SourceElement;
+  
+  FunctionDeclaration implements ("function") => SourceElement = "function" Identifier "(" FormalParameterList? ")" "{" FunctionBody "}";
+  
+  FunctionExpression = "function" Identifier? "(" FormalParameterList? ")" "{" FunctionBody "}";
+  
+  FormalParameterList = Identifier ("," Identifier)*;
+  
+  FunctionBody = SourceElement*;
+  
+  /* ##### Statements ##### */
+  
+  SemiColon = ((";")=>";"
+              | ("}") =>
+              | (EOF) =>
+              | {(LT(0).getLine()<LT(1).getLine())}?
+              );
+
+  interface Statement extends SourceElement;  
+  
+  Block implements ("{") => Statement = "{" (Statement)* "}";
+  
+  VariableStatement implements Statement = "var" VariableList SemiColon; 
+  
+  VariableList = VariableDeclaration (options {greedy=true;} : "," VariableDeclaration)*;
+  VariableListNoIn = VariableDeclarationNoIn (options {greedy=true;} : "," VariableDeclarationNoIn)*;
+
+  VariableDeclaration = Name:Identifier (options {greedy=true;} : Initialiser)?;
+  VariableDeclarationNoIn = Name:Identifier (options {greedy=true;} :InitialiserNoIn)?;
+  
+  Initialiser = "=" AssignmentExpression;
+  InitialiserNoIn = "=" AssignmentExpressionNoIn;
+  
+  // no automatic semicolon insertion if it results in an empty statement
+  EmptyStatement implements Statement = ";";
+  
+  ExpressionStatement implements Statement = Expression SemiColon;
+  
+  IfStatement implements Statement = "if" "(" Expression ")" Statement (options {greedy=true;} : "else" Statement)?;
+  
+  IterationStatement implements Statement = ( "do" Statement "while" "(" Expression ")" SemiColon
+  										    |  "while" "(" Expression ")" Statement
+  										    | "for" "(" ForStatement ")" Statement);
+  // no automatic semicolon insertion in the for header 
+  ForStatement = (("var" VariableListNoIn ";") => "var" VariableListNoIn ";" Expression? ";" Expression? |
+  				  (LeftHandSideExpression "in") => LeftHandSideExpression "in" Expression |
+  				  ("var" VariableListNoIn "in") => "var" VariableListNoIn "in" Expression |
+  				  (ExpressionNoIn? ";" Expression? ";" Expression?));
+  
+  //check NoLineTerminator										 
+  ContinueStatement implements Statement = ( {LT(1).getLine()==LT(2).getLine()}? "continue" Identifier SemiColon | "continue" SemiColon);				 								      
+
+  //check NoLineTerminator
+  BreakStatement implements Statement = ({LT(1).getLine()==LT(2).getLine()}? "break" Identifier SemiColon | "break" SemiColon   );
+  
+  //check NoLineTerminator 
+  ReturnStatement implements Statement = ( {LT(1).getLine()==LT(2).getLine()}? "return" Expression SemiColon | "return" SemiColon  );
+   
+  WithStatement implements Statement = "with" "(" Expression ")" Statement; 
+    										      
+  LabelledStatement implements Statement = Identifier ":" Statement;
+  
+  SwitchStatement implements Statement = "switch" "(" Expression ")" CaseBlock;
+  CaseBlock = ( "{" CaseClause* (DefaultClause CaseClause*)? "}" );
+  CaseClause = "case" Expression ":" Statement*;
+  DefaultClause = "default" ":" Statement*;
+  
+  //check NoLineTerminator 
+  ThrowStatement implements Statement = {LT(1).getLine()==LT(2).getLine()}? "throw" Expression SemiColon;
+  
+  TryStatement implements Statement = "try" Block ((Catch Finally) => Catch Finally | Catch | Finally);
+  Catch = "catch" "(" Identifier ")" Block;
+  Finally = "finally" Block;
+  
+  DebuggerStatement implements Statement = "debugger" SemiColon;
+  
+  /* ##### Expressions ##### */
+    
+  PrimaryExpression = ( "this" |
+  					   Literal |
+  					   ArrayLiteral |
+  					   ObjectLiteral |
+  					   "(" Expression ")" | 
+  					   Identifier); 
+  
+  ArrayLiteral = "[" AssignmentExpression? ("," (AssignmentExpression)?)* "]";
+  
+  ObjectLiteral = "{" PropertyNameAndValueList?  "}";
+  PropertyNameAndValueList = PropertyAssignment (options{greedy=true;}: PropertyNameAndValueListExt)* (",")?;
+  PropertyNameAndValueListExt = "," PropertyAssignment;
+  
+ 
+  PropertyAssignment = ( ("get" PropertyName "(" ")" "{" FunctionBody "}")=>"get" PropertyName "(" ")" "{" FunctionBody "}" |
+  						 ("set" PropertyName "(" PropertySetParameterList ")" "{" FunctionBody "}")=>"set" PropertyName "(" PropertySetParameterList ")" "{" FunctionBody "}" |
+  						 PropertyName ":" AssignmentExpression );
+  
+
+  	 
+  PropertyName = (IdentifierName | StringLiteral | NumericLiteral); 
+  PropertySetParameterList = Identifier;
+  
+  MemberExpression = (ArrayExpression | FieldExpression);
+   
+  ArrayExpression  = "[" Expression "]";
+
+  FieldExpression  = Point IdentifierName;
+  
+
+  CallExpressionExt = (Arguments | ArrayExpression | FieldExpression);
+  				
+  Arguments = "(" ArgumentList? ")";
+  ArgumentList = AssignmentExpression (options{greedy=true;}: "," AssignmentExpression)*;
+  
+  
+ 
+  NewExpression = "new" LeftHandSideExpression (options{greedy=true;}: Arguments)?;
+  LeftHandSideExpression = (("new") => NewExpression | PrimaryExpression | FunctionExpression) (options{greedy=true;}: MemberExpression)*;
+  LeftHandSideExpressionCallExp = (("new") => NewExpression | PrimaryExpression | FunctionExpression) (options{greedy=true;}: CallExpressionExt)*;
+
+  //check NoLineTerminator				 
+  // nachfolgende Zeile problematisch für PrettyPrinting. Es werden zu viele ++ ausgegeben.
+  PostfixExpression = // {LT(1).getLine()==LT(2).getLine()}? (LeftHandSideExpressionCallExp ("++"|"--"))=>LeftHandSideExpressionCallExp ("++"|"--") |
+  					  LeftHandSideExpressionCallExp;
+
+  UnaryExpression = (UnaryOperator)*  PostfixExpression;
+  UnaryOperator = ("delete" | "void" | "typeof" | "++" | "--" | "+" | "-"  | "~"  | "!");
+  
+  MultiplicativeExpression = UnaryExpression (options{greedy=true;}: ( "*" | SLASH |"%") UnaryExpression)* ;
+  
+  AdditiveExpression = MultiplicativeExpression (options{greedy=true;}:( "+" |"-") MultiplicativeExpression)* ;
+  						 
+  ShiftExpression = AdditiveExpression (( "<<" |">>" |">>>") AdditiveExpression)* ;
+  
+  RelationalExpression = ShiftExpression (options {greedy=true;} : ( "<"  | ">"  | "<=" | ">="  |"instanceof" | "in") ShiftExpression )* ;
+  RelationalExpressionNoIn = ShiftExpression (options {greedy=true;} : ( "<"  | ">"  | "<=" | ">="  |"instanceof") ShiftExpression )* ;
+			     						   
+  EqualityExpression = RelationalExpression ((  "==" | "!=" | "===" | "!==") RelationalExpression )* ;
+  EqualityExpressionNoIn = RelationalExpressionNoIn ((  "==" | "!=" | "===" | "!==") RelationalExpressionNoIn )* ;
+      
+  BitwiseANDExpression = EqualityExpression ( "&" EqualityExpression)*;
+  BitwiseANDExpressionNoIn = EqualityExpressionNoIn ( "&" EqualityExpressionNoIn)*;
+
+  BitwiseXORExpression = BitwiseANDExpression ( "^" BitwiseANDExpression)*;
+  BitwiseXORExpressionNoIn = BitwiseANDExpressionNoIn ( "^" BitwiseANDExpressionNoIn)*;
+                             
+  BitwiseORExpression = BitwiseXORExpression ( "|" BitwiseXORExpression)*;
+  BitwiseORExpressionNoIn = BitwiseXORExpressionNoIn ( "|" BitwiseXORExpressionNoIn)*;
+
+  LogicalANDExpression = BitwiseORExpression ( "&&" BitwiseORExpression)*;
+  LogicalANDExpressionNoIn = BitwiseORExpressionNoIn ( "&&" BitwiseORExpressionNoIn)*;
+  
+  LogicalORExpression = LogicalANDExpression ( "||" LogicalANDExpression)*;
+  LogicalORExpressionNoIn = LogicalANDExpressionNoIn ( "||" LogicalANDExpressionNoIn)*;
+
+  ConditionalExpression = LogicalORExpression ("?" AssignmentExpression ":" AssignmentExpression )?;
+  ConditionalExpressionNoIn = LogicalORExpressionNoIn ("?" AssignmentExpression ":" AssignmentExpressionNoIn )?;			                            
+  
+  AssignmentExpression = ((AssignmentExt AssignmentExpression)=> AssignmentExt AssignmentExpression | (ConditionalExpression) => ConditionalExpression);
+  AssignmentExpressionNoIn = ((AssignmentExt AssignmentExpressionNoIn)=> AssignmentExt AssignmentExpressionNoIn | ConditionalExpressionNoIn);
+  AssignmentOperator = ("*=" | SLASHEQUALS | "%=" | "+=" | "-=" | "<<=" | ">>=" | ">>>=" | "&=" | "^=" | "|=" );
+  AssignmentExt = LeftHandSideExpression ("=" | AssignmentOperator);
+  
+  Expression = AssignmentExpression ("," AssignmentExpression)*;
+  ExpressionNoIn = AssignmentExpressionNoIn ("," AssignmentExpressionNoIn)*;
+
+  /* ##### Literals ##### */
+  
+  interface Literal;
+
+  StringLiteral implements Literal = (sourceA:StringA|sourceB:StringB);
+  
+  token StringA = ('"' (DoubleStringChar)* '"');
+  token StringB = ('\'' (SingleStringChar)* '\'');
+
+   /* encodeTable StringA = {
+        options{
+            prefix= "\"";
+            suffix= "\"";
+        }
+// Reihenfolge wichtig. Erst Backslash escaping.
+        "\\" -> "\\\\",
+        '"' -> "\\\""
+        
+    };
+    encodeTable StringB = {
+        options{
+            prefix= "'";
+            suffix= "'";
+        }
+        "\\" -> "\\\\",
+        "'" -> "\\'"
+        
+    }; */
+/*
+\' 	single quote
+\" 	double quote
+\\ 	backslash
+\n 	new line
+\r 	carriage return
+\t 	tab
+\b 	backspace
+\f 	form feed
+  */               
+  protected token DoubleStringChar = ('\\' EscapeSequence
+                                     | LineContinuation 
+                                     | ~('"' | '\\' | '\n' | '\r' | '\u2028' | '\u2029') );
+
+  protected token SingleStringChar = ('\\' EscapeSequence
+                                     | LineContinuation 
+                                     | ~('\'' | '\\' | '\n' | '\r' | '\u2028' | '\u2029') );
+                                                                          
+  protected token LineContinuation = '\\' LineTerminatorSequence;
+      
+  protected token LineTerminatorSequence = 
+      ( '\n' // Line Feed <LF>
+      | ("\r\n") => "\r\n" // <CR><LF>
+      | '\r' // Carriage Return <CR>
+      | '\u2028' // Line separator <LS>
+      | '\u2029' // Paragraph separator <PS>
+      );
+      
+  protected token EscapeSequence =
+      ( CharacterEscapeSequence
+      | {!Character.isDigit(LA(2))}? '0'   
+      // null character
+      | HexEscapeSequence
+      | UnicodeEscapeSequence );
+  
+  protected token CharacterEscapeSequence =
+      ( '\'' | '"' | '\\' | 'b' | 'f' | 'n' | 'r' | 't' | 'v'
+      | NonEscapeCharacter );
+      
+
+  protected token NonEscapeCharacter = 
+      ~('\'' | '"' | '\\' | 'b' | 'f' | 'n' | 'r' | 't' | 'v'  // SingleEscapeCharacter
+      | '0'..'9'
+      | 'x'
+      | 'u' 
+      | '\n' | '\r' | '\u2028' | '\u2029'); // LineTerminator
+
+ 
+  BooleanLiteral implements Literal = ("true" | "false");
+  NullLiteral implements Literal = "null";
+  
+  interface NumericLiteral extends Literal;
+
+  DecimalLiteral implements NumericLiteral = Decimal;
+
+  token Decimal = (('.' DecimalDigits ('e'|'E')) => '.' DecimalDigits ExponentPart |
+  				  ('.' DecimalDigits) => '.' DecimalDigits |
+  				  ('.') => '.' { _ttype = Point; } |
+  					(DecimalIntegerLiteral '.' DecimalDigits ('e'|'E')) => DecimalIntegerLiteral '.' DecimalDigits ExponentPart |
+  				  (DecimalIntegerLiteral '.' DecimalDigits) => DecimalIntegerLiteral '.' DecimalDigits |
+  				  (DecimalIntegerLiteral '.' ('e'|'E')) => DecimalIntegerLiteral '.' ExponentPart |
+  				  (DecimalIntegerLiteral '.' ) => DecimalIntegerLiteral '.' |
+  				  (DecimalIntegerLiteral ('e'|'E')) => DecimalIntegerLiteral ExponentPart |
+  				  (DecimalIntegerLiteral) => DecimalIntegerLiteral);
+  				  
+
+  protected token DecimalIntegerLiteral = ('0' | '1'..'9' (DecimalDigits)?);
+  protected token DecimalDigits = (DecimalDigit)+;
+  protected token DecimalDigit = ('0'..'9');
+  protected token ExponentPart = ('e'|'E') ('+'|'-')? DecimalDigits;
+
+  
+  HexIntegerLiteral implements NumericLiteral = Hex;
+  token Hex = '0' ('x'|'X') (HexDigit)+;
+  protected token HexDigit = ('0'..'9'|'a'..'f'|'A'..'F');
+  protected token HexEscapeSequence = 'x' HexDigit HexDigit;
+  
+  protected token UnicodeEscapeSequence = 'u' HexDigit HexDigit HexDigit HexDigit;
+  
+
+
+  /* ##### RegularExpressionLiteral ##### */   
+  RegularExpressionLiteral implements Literal = source:RegularExpression;
+  //token SLASH = "/";
+  //token SLASHEQUALS = "/=";
+  token RegularExpression  = 
+    ( {allowDivPunctuator()}? ( ("/=") => "/=" {_ttype = SLASHEQUALS;}
+                              | ("/") => "/" {_ttype = SLASH;} )
+    | {allowRegExp()}? "/" REBody "/" (Name)? 
+    );
+/*                           {
+System.out.println(getLastToken());
+System.out.println(allowDivPunctuator());
+
+
+}
+                          ( ("/" REBody "/")=> "/" REBody "/" (Name)? |
+
+                           ("/=") => "/=" {_ttype = SLASHEQUALS;} |
+                           ("/") => "/" {_ttype = SLASH;});
+*/
+  protected token REBody = REFirstChar (REChar)*;
+  protected token REFirstChar = (REClass | ('\\' RENonTerminator) | RENoStarLBracket );
+  protected token REChar = (REClass | ('\\' RENonTerminator) | RENoLBracket );
+  protected token RENoStarLBracket = ( ~('*' | '[' | '\n' | '\r' | '/' | '\\' ) ) ;
+  protected token RENonTerminator = (~('\n' | '\r' ) ) ;
+  protected token RENoLBracket = ( ~('[' | '\n' | '\r' | '/' | '\\' ) ) ;
+  protected token RENoRBracket = ( ~(']' | '\n' | '\r' | '\\' ) ) ;
+  protected token REClass = '[' (RENoRBracket | ('\\' RENonTerminator))* ']';
+  
+  /* ##### Identifier ##### */
+    
+  Identifier  = Name | "get" | "set";
+  IdentifierName = Name | ReservedWord | "get" | "set";     
+  
+  //UnicodeLetter = Lu, Ll, Lt, Lm, Lo, Nl
+  //UnicodeCombiningMark = Mn, Mc
+  //UnicodeDigit = Nd
+  //UnicodeConnectorPunctuation = Pc
+  
+  // Whitespace -- ignored
+  token WS =
+        (
+          ' ' | '\t' | '\f' | '\u00A0' | '\u1680' | '\u180E' | '\u2000'..'\u200A' | '\u202F' | '\u205F' | '\u3000'
+          |
+          (
+            options{generateAmbigWarnings=false;}:
+            "\r\n" | '\r' | '\n'
+          )
+          {newline();}
+        )+
+        {_ttype = Token.SKIP;};
+        
+  token Name options{testLiterals=true;} = 
+  // IdentifierStart
+  ( '$'
+  | '_'
+  | '\\' 'u'
+  ('0'..'9'|'a'..'f'|'A'..'F')
+  ('0'..'9'|'a'..'f'|'A'..'F')
+  ('0'..'9'|'a'..'f'|'A'..'F')
+  ('0'..'9'|'a'..'f'|'A'..'F')
+  |
+  ({ //IdentStart
+     Character.getType(LA(1))==Character.UPPERCASE_LETTER ||
+     Character.getType(LA(1))==Character.LOWERCASE_LETTER || 
+     Character.getType(LA(1))==Character.TITLECASE_LETTER ||
+     Character.getType(LA(1))==Character.MODIFIER_LETTER ||  
+     Character.getType(LA(1))==Character.OTHER_LETTER ||    
+     Character.getType(LA(1))==Character.LETTER_NUMBER        
+  }?
+  ('\u0041'..'\u005A' | '\u0061'..'\u007A' | '\u00AA'..'\u167F' | '\u1681'..'\u180D' 
+   | '\u1810'..'\u1FFE' |'\u200B'..'\u202E' | '\u2030'..'\u205E' | '\u2060'..'\u2FFB' | '\u3001'..'\ufffe')
+  )
+  )
+  // (IdentifierPart)*   
+  ( '$'
+  | '_'
+  | '\\' 'u'
+  ('0'..'9'|'a'..'f'|'A'..'F')
+  ('0'..'9'|'a'..'f'|'A'..'F')
+  ('0'..'9'|'a'..'f'|'A'..'F')
+  ('0'..'9'|'a'..'f'|'A'..'F')
+  | '\u200C'
+  | '\u200D'
+  |
+  ({ // IdentPart
+     // UnicodeLetter
+     Character.getType(LA(1))==Character.UPPERCASE_LETTER ||
+     Character.getType(LA(1))==Character.LOWERCASE_LETTER ||
+     Character.getType(LA(1))==Character.TITLECASE_LETTER ||
+     Character.getType(LA(1))==Character.MODIFIER_LETTER ||
+     Character.getType(LA(1))==Character.OTHER_LETTER ||
+     Character.getType(LA(1))==Character.LETTER_NUMBER ||
+     // UnicodeCombiningMark
+     Character.getType(LA(1))==Character.NON_SPACING_MARK ||
+     Character.getType(LA(1))==Character.COMBINING_SPACING_MARK || 
+     // UnicodeDigit
+     Character.getType(LA(1))==Character.DECIMAL_DIGIT_NUMBER ||
+     // UnicodeConnectorPunctuation
+     Character.getType(LA(1))==Character.CONNECTOR_PUNCTUATION
+  }?
+  ('\u0030'..'\u0039' | '\u0041'..'\u005A' | '\u0061'..'\u007A' | '\u00AA'..'\u167F' | '\u1681'..'\u180D' 
+   | '\u1810'..'\u1FFE' |'\u200E'..'\u202E' | '\u2030'..'\u205E' | '\u2060'..'\u2FFB' | '\u3001'..'\ufffe')
+  )
+  )*;
+  
+  
+  ReservedWord = ( Keyword | 
+  				   FutureReservedWord | 
+  				   NullLiteral | 
+  				   BooleanLiteral );
+  
+  Keyword = ( "break" | "do" | "instanceof" | "typeof" | "case" | "else" |
+  			  "new" | "var" | "catch" | "finally" | "return" | "void" |
+  			  "continue" | "for" | "switch" | "while" | "debugger" |
+  			  "function" | "this" | "with" | "default" | "if" | "throw" |
+  			  "delete" | "in" | "try" );
+  
+  FutureReservedWord = ( "class" | "enum" | "extends" | "super" | "const" |
+  						 "export" | "import" );
+  
+  /* nur bei strict mode						 
+  FutureReservedWords = ( "implements" | "let" | "private" | "public" | 
+  						  "interface" | "package" | "protected" | "static" | 
+  						  "yield" );
+  */
+
+  /* ======================================================================= */
+  /* =============================== CONCEPTS ============================== */
+  /* ======================================================================= */
+
+  concept antlr {
+    lexer java {
+      private int lastToken;
+
+      @Override
+      protected Token makeToken(int t) {
+        setLastToken(t);
+        return super.makeToken(t);
+      }
+  
+      private int getLastToken() {
+        return lastToken;
+      }
+
+      private void setLastToken(int t) {
+        lastToken = t;
+      }
+
+      private boolean isLastToken(int... types) {
+        int last = getLastToken();
+        for(int t : types) {
+          if(t==last)
+            return true;
+        }
+        return false;
+      }
+
+      private boolean allowRegExp() {
+        return isLastToken(0,-1,EXCLAMATIONMARK,EXCLAMATIONMARKEQUALS,
+          EXCLAMATIONMARKEQUALSEQUALS,PERCENT,PERCENTEQUALS,AND,ANDAND,   
+          ANDEQUALS,LPAREN,STAR,STAREQUALS,PLUS,PLUSEQUALS,COMMA,MINUS,
+          MINUSEQUALS,Point,SLASH,SLASHEQUALS,COLON,SEMI,LT,LTLT,LTLTEQUALS,   
+          LTEQUALS,EQUALS,EQUALSEQUALS,EQUALSEQUALSEQUALS,GT,GTEQUALS,GTGT,   
+          GTGTEQUALS,GTGTGT,GTGTGTEQUALS,LBRACK,ROOF,ROOFEQUALS,LCURLY,   
+          PIPE,PIPEEQUALS,PIPEPIPE,LITERAL_break,LITERAL_case,LITERAL_catch,
+          LITERAL_class,LITERAL_const,LITERAL_continue,LITERAL_debugger,
+          LITERAL_default,LITERAL_delete,LITERAL_do,LITERAL_else,LITERAL_enum,
+          LITERAL_export,LITERAL_extends,LITERAL_finally,LITERAL_for,
+          LITERAL_function,LITERAL_if,LITERAL_import,LITERAL_in,
+          LITERAL_instanceof,LITERAL_new,LITERAL_return,LITERAL_switch,
+          LITERAL_throw,LITERAL_try,LITERAL_typeof,LITERAL_var,LITERAL_while,
+          LITERAL_with      
+        );
+      }
+  
+      private boolean allowDivPunctuator() {
+        return isLastToken(
+          Name,
+          Decimal,
+          Hex,
+          RegularExpression,
+          StringA,
+          StringB,
+          LITERAL_get,
+          LITERAL_set,
+          RPAREN,
+          PLUSPLUS,
+          MINUSMINUS,
+          RBRACK,
+          RCURLY,
+          LITERAL_this,
+          LITERAL_false,
+          LITERAL_true,
+          LITERAL_null,
+          LITERAL_super
+        );
+      }
+    }
+  }
+
+}

@@ -22,9 +22,9 @@ import com.upstandinghackers.hammer.*;
 import htmlred._mch_parser.*;
 import htmlred._mch_parser.tree.*;
 
-/*import binary._coder.*;
+import binary._coder.*;
 import binary._mch_parser.*;
-import binary._coder.pp.*;*/
+import binary._coder.pp.*;
 
 import htmlred._coder.*;
 import htmlred._coder.pp.*;
@@ -38,7 +38,7 @@ public class CoderTest
     extends TestCase
 {
 	private HTMLRedParser htmlRedParser = new HTMLRedParser();
-//	private BinaryParser binary = new BinaryParser();
+	private BinaryParser binary = new BinaryParser();
 	private StringGrammarEncodings stringGencodings = new StringGrammarEncodings();
 	/**
      * Create the test case
@@ -66,36 +66,46 @@ public class CoderTest
     	String message = "<p>OURTESTISHERE</p>";
     	try{
     	ParseTree pt = htmlRedParser.parse(message.getBytes());
+    	System.out.println("STARTING PP");
     	HTMLRedPP pp = new HTMLRedPP();
+    	System.out.println("CREATED PP");
+    	String test = new String(pp.prettyPrint(pt));
     	
-    	pp.prettyPrint(pt);
     	
-    	assert(true);
+    	//System.out.println("PRETTY PRINTER TEST");
+    	//System.out.println("Original: " + message + " " + message.length());
+    	//System.out.println("PPed: " + test.length() + " DAS WAR DIE LAENGE "+ test );
+    	assert(test.equals(message));
     	}
     	catch(Exception e){
     		System.out.println("PICKNIC");
+    		e.printStackTrace();
     		assert(false);
     	}
     	
     	
     }
-   /*public void testBinaryPP(){
-	   String message = "<b>a</b>";
+   public void testBinaryPP(){
+	   String message = "<b>this test ends1</b>";
    	try{
    	ParseTree pt = binary.parse(message.getBytes());
    	BinaryPP pp = new BinaryPP();
    	
-   	pp.prettyPrint(pt);
-   	
-   	assert(true);
+   	//pp.prettyPrint(pt);
+	String test = new String(pp.prettyPrint(pt));
+	System.out.println("PRETTY PRINTER TEST ");
+	System.out.println("Original: " + message + " " + message.length());
+	System.out.println("PPed: " + test.length() + " DAS WAR DIE LAENGE "+ test );
+   	assert(test.equals(message));
    	}
    	catch(Exception e){
    		System.out.println("PICKNIC 2");
+   		e.printStackTrace();
    		assert(false);
    	}
 	   
 	   
-   }*/
+   }
    
     public void testHTMLRedCoder()
     {
@@ -148,6 +158,7 @@ public class CoderTest
     	}
     	catch(Exception ex)
     	{
+    		ex.printStackTrace();
     		fail("HTMLRedCoder Failed!");
     	}
     }
@@ -157,7 +168,7 @@ public class CoderTest
     	ParseTree pt = htmlRedParser.parse(message.getBytes());
     			
 		// Injector
-		HTMLRedInjector injector = new HTMLRedInjector(injection);
+    	Injector injector = new Injector(injection);
 		ParseTreeWalker walker = new ParseTreeWalker();
 		walker.walk(injector, pt); 
 		

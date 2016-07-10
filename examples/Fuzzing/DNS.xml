@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Peach xmlns="http://peachfuzzer.com/2012/Peach" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://peachfuzzer.com/2012/Peach ../peach.xsd">
+
+	<Defaults>
+	    	<Number signed="false" endian="big" />
+	</Defaults>
+
+	<DataModel name="Question">
+		<String value="Test" mutable="false"/>
+	</DataModel>
+
+	<DataModel name="DNS">
+		<Block name="Header" mutable="false">
+			<Number size="16" value="257" mutable="false" />
+		    	<Number size="1"  value="0" mutable="false" />
+		    	<Number size="4"  value="0" mutable="false" />
+		    	<Number size="1"  value="0"  />
+		    	<Number size="1"  value="0" mutable="false" />
+		    	<Number size="1"  value="0"  />
+		    	<Number size="1"  value="0"  />
+		    	<Number size="3"  value="0" mutable="false" />
+		    	<Number size="4"  value="0" mutable="false" />
+		
+			<Number size="16"  value="1">
+				<Relation type="count" of="Question"/>
+			</Number>
+			<Number size="16"  value="1" mutable="false">
+				<Relation type="count" of="Answer"/>
+			</Number>
+			<Number size="16"  value="0" mutable="false">
+			</Number>
+			<Number size="16"  value="0" mutable="false">
+			</Number>
+		</Block>
+		<Block name="Question" mutable="false">
+			<Block name="SubDomain">
+				<Number size="2" value="0" mutable="false"/>
+				<Number size="6" value="6" >
+					<Relation type="size" of="Label"/>
+				</Number>
+				<String name="Label" value="google" />	
+			</Block>	
+			<Number size="8" value="0" mutable="false" />	
+			<Number size="16" value="1" mutable="false" />		
+			<Number size="16" value="1" mutable="false" />
+		</Block>
+		<Block name="Answer" mutable="false">
+			<Block name="SubDomain">
+				<Number size="2" value="0" mutable="false"/>
+				<Number size="6" value="6" >
+					<Relation type="size" of="Label"/>
+				</Number>
+				<String name="Label" value="google" />	
+			</Block>	
+			<Number size="8" value="0" mutable="false" />	
+			<Number size="16" value="1" />		
+			<Number size="16" value="1" />
+			<Number size="32" value="1" />
+			<Number size="16" value="1" >
+				<Relation type="count" of="RR"/>
+			</Number>
+			<Number name="RR" size="8" value="96"/>
+		</Block>
+	</DataModel>
+
+	
+	
+
+	<StateModel name="State" initialState="State1" >
+		<State name="State1"  >
+			<Action type="output" >
+				<DataModel ref="DNS"/>
+			</Action>
+		</State>
+	</StateModel>	
+
+	<Test name="Default">
+
+		<StateModel ref="State"/>
+
+		<Publisher class="FilePerIteration">
+   			<Param name="FileName" value="files/fuzzed_{0}.dns" />
+  		</Publisher>
+
+		<!--Logger class="Filesystem">
+		    <Param name="Path" value="logs" />
+		</Logger-->
+	</Test>
+		
+</Peach>
+<!-- end -->
