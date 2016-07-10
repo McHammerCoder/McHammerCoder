@@ -1,10 +1,10 @@
 
 grammar DNSSimple {
 
-	/*options{
-		hammer DoNotParseEntireFile;
-		hammer ParseWithOverlappingOffsets;
-	}*/
+	options{
+		//hammer DoNotParseEntireFile;
+		//hammer ParseWithOverlappingOffsets;
+	}
 
 	DNS =    Header
 		 uint16.L{QDCount}		// QDCount
@@ -40,8 +40,11 @@ grammar DNSSimple {
 		;	
 		   
 	DNS_Label = ~uint8[0].L{DNS_Label} 
-		    uint8.D{DNS_Label}
+		    DNS_Label_Text
 		    ;
+
+	DNS_Label_Text = uint8.D{DNS_Label}
+			 ;
 			   
     	binary QType = uint16[0x01 .. 0x16] 
 		       | uint16[0xFC .. 0xFF] 
@@ -49,7 +52,7 @@ grammar DNSSimple {
  
    	binary QClass = uint16[0x01 .. 0x04] 
     		       | uint16[0xFFFF]
-		       ; 
+		       ;
     		 
 	// Answer
 

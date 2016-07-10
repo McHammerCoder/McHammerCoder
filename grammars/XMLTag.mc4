@@ -1,0 +1,67 @@
+grammar XMLTag {
+
+    /*========================================================================*/
+    /*============================== OPTIONS =================================*/
+    /*========================================================================*/
+
+    concept antlr {
+        lexer java {
+            
+            boolean ident = true;
+            private void flip() {
+                ident = !ident;
+            }
+
+        }
+    }
+
+    XMLTag =
+        name:Ident
+        XMLAttributes?
+    ;
+
+    XMLAttributes =
+        XMLAttribute+
+    ;
+
+    XMLAttribute = 
+        name:Ident 
+        {
+            if(a.getName().startsWith("on")){
+                tmpemb_lang = "script";
+            }else{
+                tmpemb_lang = "AttrValue";
+            }
+        }
+        Equal Quote (value:AttrValue)? Quote
+    ;
+
+
+
+// TOKEN
+
+    token Equal                          = "="  ;
+    token Quote                          = '"'  ;
+
+
+    token Ident = {ident}? ((IdentChar)+);
+    token AttrValue = {!ident}? ((AttrChar)+);
+
+   /* encodeTable AttrValue = {
+        '&' -> "&#x26;",
+        '"' -> "&quot;",
+        '<' -> "&lt;",
+        '>' -> "&gt;",
+        '\'' -> "&apos;",
+        "javascript:" -> ""
+    }; */
+
+
+
+    token IdentChar = ~('\n'|'\r'|'\t'|'\u000B'|'\u000C'|'\u0020'|'\u00A0' | '"' | '=');
+    token AttrChar = ~('"');
+
+
+
+
+}
