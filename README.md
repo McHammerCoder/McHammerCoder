@@ -4,6 +4,7 @@ Repository for the MontiCore4-Hammer-Coder project
 # Prerequisites
 
 **JDK 8**
+ 
 **Maven**
 
 # Installation Guide
