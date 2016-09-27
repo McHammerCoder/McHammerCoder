@@ -1,5 +1,6 @@
 # McHammerCoder
-Repository for the MontiCore4-Hammer-Coder project
+McHammerCoder is a binary capable parser and unparser generator. It generates a parser and unparser based on a grammar defining their input and output language.
+Injection attacks for the defined language are prevented by the unparser through automatic extraction and generation of an encoding.
 
 # Prerequisites
 
