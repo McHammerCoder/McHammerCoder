@@ -4,37 +4,11 @@
  */
 grammar HTMLRed {
 
-    /*========================================================================*/
-    /*============================== OPTIONS =================================*/
-    /*========================================================================*/
-
-    	/*options {
-	  //parser lookahead=4 //Removed for MC4
-	  //lexer lookahead=4 //Removed for MC4
-          // HTML-Kommentare sind anders
-          noslcomments 
-          nomlcomments
-          noident
-          nostring
-          // anything macht mir den Text-Token kaputt
-          noanything
-        }*/
-
-
-	// token TEXT = ( ~'\u0000' )*; frisst alles bis zum Ende
-        // token TEXT = ( ~'\u0000' )+;
-        // token TEXT = ( ~('<'|'>'))+;
+	options {
+		hammer DoNotParseEntireFile;	
+	}
         token TEXTB = ( 'a'..'z' | 'A'..'Z' | '_' | '0'..'9' | ' ' | '#' | '$' )+;
-        // token BUCHSTABEN = ( 'a'..'z' | 'A'..'Z' )+;
-        // token ZAHLEN = ( '0'..'9' )+;
 
-/* //Removed for MC4
-        encodeTable TEXT = {
-            '<' -> "&lt;",
-            '>' -> "&gt;",
-            '"' -> "&quote;"
-        };
-*/
 	P = "<p>" 
             (Alternatives)*
             "</p>"
