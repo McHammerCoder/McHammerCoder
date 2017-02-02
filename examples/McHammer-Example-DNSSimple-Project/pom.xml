@@ -26,13 +26,13 @@
     <dependency>
       <groupId>de.monticore</groupId>
       <artifactId>monticore-runtime</artifactId>
-      <version>4.3.0.1</version>
+      <version>4.5.0.1</version>
     </dependency>
     
     <dependency>
       <groupId>de.monticore</groupId>
       <artifactId>monticore-generator</artifactId>
-      <version>4.3.0.1</version>
+      <version>4.5.0.1</version>
     </dependency>
     
     <dependency>
