@@ -1,0 +1,80 @@
+grammar XMLSimple {
+
+    /*========================================================================*/
+    /*============================== OPTIONS =================================*/
+    /*========================================================================*/
+
+    options {
+	hammer DoNotParseEntireFile;
+    }
+
+    XML =
+        XMLElements?
+    ;
+
+    XMLElements =
+        XMLElement (WS* XMLElement)*
+    ;
+
+    XMLElement = 
+        XMLVoidTag |		// <tag/>
+        XMLDoctypeTag | 	// <!tag>
+        XMLXMLTag |		// <?tag?>
+	XMLNormalTag |		// <tag> ... </tag>
+        TagBodyContent		// ...
+    ;
+
+
+    XMLVoidTag = TagOpenStart 
+                 Content
+                 TagVoidEnd;
+
+    XMLNormalTag = XMLStartTag
+		   WS*
+                   (XMLElements)?
+                   WS*
+                   XMLEndTag;
+
+    XMLDoctypeTag = TagOpenDoctypeStart 
+                    Content 
+                    TagEnd;
+
+    XMLXMLTag = TagXMLStart 
+                Content 
+                TagXMLEnd;
+
+    XMLStartTag = TagOpenStart 
+                  Content
+                  TagEnd;
+
+    XMLEndTag = TagCloseStart 
+                Content 
+		TagEnd;
+
+    // TOKEN
+
+    token TagOpenStart                   = "<"  ;
+    token TagOpenDoctypeStart            = "<!" ;
+    token TagXMLStart                    = "<?" ;
+    token TagCloseStart                  = "</" ;
+    token TagEnd                         = ">"  ;
+    token TagVoidEnd                     = "/>" ;
+    token TagXMLEnd                      = "?>" ;
+
+    token Content = ContentStart ContentMiddle? ;
+
+    token TagBodyContent = Content ;
+
+    token ScriptTagBodyContent = ~('\u0000')+ ;
+
+    token Comment = CommentStart CommentEnd;
+
+    token CommentStart = "<!--";
+    token CommentEnd = "-->";
+
+    token ContentStart =  ( 'a'..'z' | 'A'..'Z' | '_' | '0'..'9' | ' ' | '#' | '$' )+;
+    token ContentMiddle = ( 'a'..'z' | 'A'..'Z' | '_' | '0'..'9' | ' ' | '#' | '$' )+;
+
+    token WS = ( ' ' | '\n' | '\r' | '\t' );
+   
+}

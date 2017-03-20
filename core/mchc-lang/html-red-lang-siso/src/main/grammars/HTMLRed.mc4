@@ -1,0 +1,18 @@
+grammar HTMLRed
+{
+     options {
+     hammer DoNotParseEntireFile;
+     }
+     token WS = (' ' | '\t' | '\r' '\n' | '\r' | '\n' );
+     token TEXTB = ( 'a'..'z' | 'A'..'Z' | '_' | '0'..'9' | ' ' | '#' | '$' )+;
+     
+
+     P = "<p>"  WS* (Alternatives)* "</p>";
+
+     Alternatives implements TestInterface = P | B | I | TEXTB;
+     B = "<b>" TEXTB "</b>";
+     I = "<i>" TEXTB "</i>";
+
+     interface TestInterface;
+
+}

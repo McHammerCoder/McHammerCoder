@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.monticore.mchammercoder.lang</groupId>
-  <artifactId>html-red-lang</artifactId>
+  <artifactId>xml-simple-lang-siso</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>HTMLRed</name>
-    <properties>
+  <name>XMLSimple</name>
+<properties>
   	<!-- .. Plugins ....................................................... -->
     <assembly.plugin>2.5.4</assembly.plugin>
     <compiler.plugin>3.3</compiler.plugin>
@@ -152,22 +152,35 @@
         <version>1.4.0</version>
         <executions>
           <execution>
-	    		<id>Run HTMLRedEncodingGenerator</id>
+	    		<id>Run XMLSimpleEncodingGenerator</id>
+	    		<phase>process-resources</phase>
+           		<goals>
+             			<goal>java</goal>
+           		</goals>
+    		    	<configuration>
+             		<mainClass>xmlsimple._coder.XMLSimpleEncodingGenerator</mainClass>
+               	<arguments>
+                    <argument>siso</argument>
+                </arguments>
+                <systemProperties>
+                  <property>
+                    <key>java.library.path</key>
+                    <value>${project.build.directory}/generated-sources/monticore/sourcecode/resources:${project.build.directory}/generated-sources/monticore/sourcecode/resources/resources</value>
+                  </property>
+                </systemProperties>
+           		</configuration>
+          </execution>
+          <execution>
+	    		<id>Run XMLTagEncodingGenerator</id>
 	    		<phase>process-resources</phase>
            		<goals>
              			<goal>java</goal>
            		</goals>
     			<configuration>
-             		<mainClass>htmlred._coder.HTMLRedEncodingGenerator</mainClass>
-               <!--  <arguments>
-                  <argument> siso </argument>
-                </arguments> -->
-			<systemProperties>
-				<property>
-					<key>java.library.path</key>
-					<value>${project.build.directory}/generated-sources/monticore/sourcecode/resources:${project.build.directory}/generated-sources/monticore/sourcecode/resources/resources</value>
-				</property>
-			</systemProperties>
+             		<mainClass>xmltag._coder.XMLTagEncodingGenerator</mainClass>
+             		<arguments>
+             			<argument>-Djava.library.path=${project.build.directory}/generated-sources/monticore/sourcecode/resources</argument>
+             		</arguments>
            		</configuration>
           </execution>
 	      <execution>

@@ -46,6 +46,12 @@ import xmlsimple._coder.pp.*;
 import xmlsimple._mch_parser.*;
 import xmlsimple._mch_parser.tree.*;
 
+
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
 /**
  * TODO: Write me!
  *
@@ -82,7 +88,13 @@ public class ExamplePage02 extends HttpServlet {
 	    String htmlred = getParam(req, "htmlred");
 	    walker.walk(new XMLVisitor(htmlred), pt); //Inject it
 	    ParseTree originalPt = pt;
+	    long startTime = System.currentTimeMillis();
 	    walker.walk(encoder, pt);
+	    long stopTime = System.currentTimeMillis();
+	    long elapsedTime = stopTime - startTime;
+	   //String s = String.valueOf(elapsedTime);
+	    toFile(String.valueOf(elapsedTime));
+	    System.out.println("Time for an encoding step:"  + elapsedTime + "ms");
 	    if(encoder.foundException()){
 	    	System.out.println("--------------------------------------------------------------------------------");
 	    	System.err.println("RESETING EVERYTHING");
@@ -134,13 +146,23 @@ public class ExamplePage02 extends HttpServlet {
 		 
 		 
 		 }*/
+	private void toFile(String content){
 	 
+	 	String FILENAME = "/home/aether/Desktop/McHammerCoder/examples/McHammerCoder-Example-Maven-Webapp/testreport.txt";
+
+		try
+		{
+		    FileWriter fw = new FileWriter(FILENAME,true); //the true will append the new data
+		    fw.write(content + "\n");//appends the string to the file
+		    fw.close();
+		}
+		catch(IOException ioe)
+		{
+		    System.err.println("IOException: " + ioe.getMessage());
+		}
+	 }
 	 
-	 
-	 
-	 
-	 
-		 public static class XMLVisitor  implements ParseTreeListener{
+	public static class XMLVisitor  implements ParseTreeListener{
 			
 			 private String htmlred = "";
 			 public XMLVisitor(String h){

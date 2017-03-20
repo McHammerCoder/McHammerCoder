@@ -21,11 +21,13 @@
     </dependency>
     <dependency>
 	  <groupId>de.monticore.mchammercoder.lang</groupId>
- 	 <artifactId>xml-simple-lang</artifactId>
+   <artifactId>xml-simple-lang</artifactId>
+ 	 <!--  <artifactId>xml-simple-lang-siso</artifactId>-->
   	<version>0.0.1-SNAPSHOT</version>
     </dependency>
      <dependency>
 	 <groupId>de.monticore.mchammercoder.lang</groupId>
+     <!--  <artifactId>html-red-lang-siso</artifactId> -->
   	 <artifactId>html-red-lang</artifactId>
  	 <version>0.0.1-SNAPSHOT</version>
     </dependency>
