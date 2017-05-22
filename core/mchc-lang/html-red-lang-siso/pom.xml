@@ -181,7 +181,7 @@
               <executable>make</executable>
               <arguments>
               	<argument>allfiles</argument>
-              	<argument>JAVA_HOME="/usr/lib/jvm/java-8-oracle"</argument>
+              	<argument>JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"</argument>
                 <argument>REALLY_USE_OBSOLETE_BUILD_SYSTEM=yes</argument>
 	          </arguments>
 	        </configuration>
