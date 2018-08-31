@@ -22,6 +22,8 @@ It is presented at the LangSec Workshop http://spw17.langsec.org/papers.html#aut
 
 **mvn clean install**
 
+If the installation does not complete on your system, there is a docker image available at https://hub.docker.com/r/notaname/mchammercoder/
+
 # Combined Example Project:
 
 @ /examples/McHammerCoder-Example-Maven-Webapp
